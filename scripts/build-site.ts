@@ -38,8 +38,8 @@ interface Grammar {
 }
 
 const OUT = process.argv[2] ?? join(ROOT, '_site');
-const SITE_URL = (process.env.SITE_URL ?? 'https://AntaresGG.github.io/OpenJLPT/').replace(/\/?$/, '/');
-const REPO = process.env.REPO_URL ?? 'https://github.com/AntaresGG/OpenJLPT';
+const SITE_URL = (process.env.SITE_URL ?? 'https://AntaresGG.github.io/OpenJLPT-ZH-premium/').replace(/\/?$/, '/');
+const REPO = process.env.REPO_URL ?? 'https://github.com/AntaresGG/OpenJLPT-ZH-premium';
 const LEVEL_NAMES = LEVELS.map((l) => l.level);
 const readJson = <T>(p: string): T => JSON.parse(readFileSync(p, 'utf8'));
 
@@ -195,7 +195,7 @@ function writePage(p: Page): void {
 <link rel="canonical" href="${esc(url)}">
 ${p.noindex ? '<meta name="robots" content="noindex">' : ''}
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="OpenJLPT">
+<meta property="og:site_name" content="OpenJLPT-ZH-premium">
 <meta property="og:title" content="${esc(p.title)}">
 <meta property="og:description" content="${esc(p.description)}">
 <meta property="og:url" content="${esc(url)}">
@@ -210,7 +210,7 @@ ${scripts}
 </head>
 <body data-root="${root}">
 <header class="site-header"><div class="wrap">
-<a class="brand" href="${root}index.html"><span class="brand-mark">あ</span>OpenJLPT</a>
+<a class="brand" href="${root}index.html"><span class="brand-mark">あ</span>OpenJLPT-ZH-premium</a>
 ${p.path === 'index.html' ? '' : `<form class="hsearch" action="${root}index.html" role="search"><input type="search" name="q" placeholder="Search words, kanji, grammar…" aria-label="Search"></form>`}
 <nav class="nav" aria-label="Main">${nav}</nav>
 <a class="gh-btn" href="${REPO}" rel="noopener">${GITHUB_ICON}<span>Star on GitHub</span></a>
@@ -219,7 +219,7 @@ ${p.path === 'index.html' ? '' : `<form class="hsearch" action="${root}index.htm
 ${p.body}
 </div></main>
 <footer class="site-footer"><div class="wrap">
-<p><strong>OpenJLPT</strong> — the open JLPT dataset. <a href="${REPO}">GitHub</a> · <a href="${root}data.html">Download the data</a> · <a href="${REPO}/issues/new/choose">Report an error</a></p>
+<p><strong>OpenJLPT-ZH-premium</strong> — the open JLPT dataset. <a href="${REPO}">GitHub</a> · <a href="${root}data.html">Download the data</a> · <a href="${REPO}/issues/new/choose">Report an error</a></p>
 <p>Data <a href="${REPO}/blob/main/LICENSE">CC BY-SA 4.0</a>. Level lists by <a href="https://www.tanos.co.uk/jlpt/">Jonathan Waller</a> (CC BY);
 dictionary data from <a href="https://www.edrdg.org/">JMdict &amp; KANJIDIC2 (EDRDG)</a>; example sentences from <a href="https://tatoeba.org">Tatoeba</a> (CC BY 2.0 FR);
 stroke order from <a href="https://kanjivg.tagaini.net/">KanjiVG</a> (CC BY-SA 3.0). JLPT levels are unofficial: the JLPT does not publish word lists.</p>
@@ -335,7 +335,7 @@ function vocabPages(): void {
       writePage({
         path: vocabPath(v),
         active: `${level.toLowerCase()}/index.html`,
-        title: `${v.word} (${v.word === v.reading ? '' : `${v.reading}, `}${v.romaji}) meaning: ${truncate(gloss, 40)} — JLPT ${level} | OpenJLPT`,
+        title: `${v.word} (${v.word === v.reading ? '' : `${v.reading}, `}${v.romaji}) meaning: ${truncate(gloss, 40)} — JLPT ${level} | OpenJLPT-ZH-premium`,
         description: `${v.word} (${v.reading}, ${v.romaji}) means “${truncate(gloss, 90)}”. JLPT ${level} vocabulary with example sentences, part of speech and kanji breakdown.`,
         body: `${crumbs(root, [[`JLPT ${level}`, `${level.toLowerCase()}/index.html`], ['Vocabulary', `${level.toLowerCase()}/vocab.html`], [v.word]])}
 <div class="entry-head"><h1 class="headword" lang="ja">${furigana(v.word, v.reading)}</h1>${speak(v.reading)}${lvl(v.level)}</div>
@@ -357,7 +357,7 @@ ${kanjiCards ? `<h2>Kanji</h2><div class="kanji-links">${kanjiCards}</div>` : ''
         } · <a href="${reportUrl('Vocabulary', `${v.word} (${level})`)}" rel="noopener">Report an error</a></p>
 </aside>
 </div>
-${jsonBlock(v, `import { getVocabById } from 'openjlpt';\ngetVocabById('${v.id}'); // ${v.word}`)}
+${jsonBlock(v, `import { getVocabById } from 'openjlpt-zh-premium';\ngetVocabById('${v.id}'); // ${v.word}`)}
 ${pager(root, list[i - 1] && [vocabPath(list[i - 1]), list[i - 1].word], list[i + 1] && [vocabPath(list[i + 1]), list[i + 1].word])}`,
       });
     });
@@ -378,7 +378,7 @@ function kanjiPages(): void {
       writePage({
         path: kanjiPath(k.character),
         active: `${level.toLowerCase()}/index.html`,
-        title: `${k.character} kanji: ${truncate(k.meanings.slice(0, 3).join(', '), 36)} — readings, stroke order | JLPT ${level} · OpenJLPT`,
+        title: `${k.character} kanji: ${truncate(k.meanings.slice(0, 3).join(', '), 36)} — readings, stroke order | JLPT ${level} · OpenJLPT-ZH-premium`,
         description: `The kanji ${k.character} means “${truncate(k.meanings.join(', '), 60)}”. JLPT ${level}. On'yomi ${k.onyomi.join('、') || '—'}; kun'yomi ${k.kunyomi.join('、') || '—'}. ${k.strokes ?? '?'} strokes${k.radical ? `, radical ${k.radical}` : ''}. Example words and stroke order.`,
         body: `${crumbs(root, [[`JLPT ${level}`, `${level.toLowerCase()}/index.html`], ['Kanji', `${level.toLowerCase()}/kanji.html`], [k.character]])}
 <div class="two-col">
@@ -404,7 +404,7 @@ ${k.supplementary ? `<p class="muted" style="font-size:14px">Not in Waller's JLP
 </div>
 ${words ? `<h2>Words with ${esc(k.character)}</h2><table class="list"><tbody>${words}</tbody></table>` : ''}
 <p class="muted" style="margin-top:24px"><a href="https://jisho.org/search/${encodeURIComponent(k.character)}%20%23kanji" rel="noopener">Jisho</a> · <a href="${reportUrl('Kanji', `${k.character} (${level})`)}" rel="noopener">Report an error</a></p>
-${jsonBlock(k, `import { findKanji } from 'openjlpt';\nfindKanji('${k.character}');`)}
+${jsonBlock(k, `import { findKanji } from 'openjlpt-zh-premium';\nfindKanji('${k.character}');`)}
 ${pager(root, list[i - 1] && [kanjiPath(list[i - 1].character), list[i - 1].character], list[i + 1] && [kanjiPath(list[i + 1].character), list[i + 1].character])}`,
       });
     });
@@ -424,7 +424,7 @@ function grammarPages(): void {
       writePage({
         path: grammarPath(g),
         active: `${level.toLowerCase()}/index.html`,
-        title: `${g.pattern} (${g.romaji}) — ${truncate(g.meaning, 44)} | JLPT ${level} grammar · OpenJLPT`,
+        title: `${g.pattern} (${g.romaji}) — ${truncate(g.meaning, 44)} | JLPT ${level} grammar · OpenJLPT-ZH-premium`,
         description: `JLPT ${level} grammar: ${g.pattern} (${g.romaji}) — ${truncate(g.meaning, 80)}. Formation: ${truncate(g.formation, 60)}. With example sentences and usage notes.`,
         body: `${crumbs(root, [[`JLPT ${level}`, `${level.toLowerCase()}/index.html`], ['Grammar', `${level.toLowerCase()}/grammar.html`], [g.pattern]])}
 <div class="entry-head"><h1 class="headword" lang="ja" style="font-size:clamp(34px,6vw,54px)">${esc(g.pattern)}</h1>${lvl(g.level)}</div>
@@ -439,7 +439,7 @@ ${g.notes ? `<h2>Notes</h2><p class="note">${esc(g.notes)}</p>` : ''}
 <div class="chips">${g.tags.map((t) => `<span class="chip">#${esc(t)}</span>`).join('')}</div>
 ${related ? `<h2>Related ${level} grammar</h2><div class="chips">${related}</div>` : ''}
 <p class="muted" style="margin-top:24px"><a href="${reportUrl('Grammar', `${g.pattern} (${level})`)}" rel="noopener">Suggest an improvement</a></p>
-${jsonBlock(g, `import { getGrammarById } from 'openjlpt';\ngetGrammarById('${g.id}');`)}
+${jsonBlock(g, `import { getGrammarById } from 'openjlpt-zh-premium';\ngetGrammarById('${g.id}');`)}
 ${pager(root, list[i - 1] && [grammarPath(list[i - 1]), list[i - 1].pattern], list[i + 1] && [grammarPath(list[i + 1]), list[i + 1].pattern])}`,
       });
     });
@@ -480,7 +480,7 @@ function levelPages(): void {
     writePage({
       path: `${lc}/index.html`,
       active: `${lc}/index.html`,
-      title: `JLPT ${level} — ${v.length.toLocaleString('en-US')} words, ${k.length} kanji, ${g.length} grammar points | OpenJLPT`,
+      title: `JLPT ${level} — ${v.length.toLocaleString('en-US')} words, ${k.length} kanji, ${g.length} grammar points | OpenJLPT-ZH-premium`,
       description: `Everything for the JLPT ${level}: ${plural(v.length, 'vocabulary word')}, ${plural(k.length, 'kanji')} and ${plural(g.length, 'grammar point')} with readings, meanings and example sentences. Free and open data.`,
       body: `${crumbs(root, [[`JLPT ${level}`]])}
 <h1>JLPT ${level} ${lvl(level)}</h1>
@@ -544,7 +544,7 @@ function homePage(): void {
   ).join('');
   writePage({
     path: 'index.html',
-    title: 'OpenJLPT — JLPT N5–N1 vocabulary, kanji and grammar lists, free and open',
+    title: 'OpenJLPT-ZH-premium — JLPT N5–N1 vocabulary, kanji and grammar lists, free and open',
     description: `Free, open JLPT dataset and study site: ${c.vocab.total.toLocaleString('en-US')} vocabulary words, ${c.kanji.total.toLocaleString('en-US')} kanji and ${c.grammar.total} grammar points for N5–N1, with example sentences. Search, flashcards, text analyzer, and downloads as JSON, CSV, SQLite and Anki.`,
     body: `<section class="hero">
 <h1>Every word, kanji and grammar point on the JLPT study lists.<br><span class="accent">Free and open.</span></h1>
@@ -571,12 +571,12 @@ function homePage(): void {
 </div>
 <h2>Built for developers</h2>
 <p class="muted">The same data powers this site and can power your app: free to use, including commercially, under CC BY-SA 4.0.</p>
-<pre><code>npm install openjlpt        # or: pip install openjlpt
+<pre><code>npm install git+https://github.com/AntaresGG/OpenJLPT-ZH-premium.git#v0.4.0
 
-import { findWord, getGrammar } from 'openjlpt';
+import { findWord, getGrammar } from 'openjlpt-zh-premium';
 findWord('食べる');   // { reading: 'たべる', level: 'N5', pos: ['v1','vt'], examples: [...] }
 getGrammar('N4');     // ${c.grammar.N4} grammar points with examples</code></pre>
-<div class="btn-row"><a class="btn primary" href="${REPO}">${GITHUB_ICON} Star OpenJLPT on GitHub</a><a class="btn" href="data.html">Get the data</a></div>`,
+<div class="btn-row"><a class="btn primary" href="${REPO}">${GITHUB_ICON} OpenJLPT-ZH-premium on GitHub</a><a class="btn" href="data.html">Get the data</a></div>`,
     scripts: ['assets/search.js'],
   });
 }
@@ -585,7 +585,7 @@ function toolPages(): void {
   writePage({
     path: 'flashcards.html',
     active: 'flashcards.html',
-    title: 'JLPT Flashcards — free spaced repetition for N5–N1 | OpenJLPT',
+    title: 'JLPT Flashcards — free spaced repetition for N5–N1 | OpenJLPT-ZH-premium',
     description: 'Free JLPT flashcards in your browser: vocabulary, kanji and grammar for N5 to N1 with spaced repetition. No sign-up; progress is saved locally.',
     scripts: ['assets/flashcards.js'],
     body: `<div class="fc">
@@ -612,7 +612,7 @@ function toolPages(): void {
   writePage({
     path: 'analyzer.html',
     active: 'analyzer.html',
-    title: 'What JLPT level is this text? — Japanese kanji level analyzer | OpenJLPT',
+    title: 'What JLPT level is this text? — Japanese kanji level analyzer | OpenJLPT-ZH-premium',
     description: 'Paste any Japanese text to see the JLPT level (N5–N1) of every kanji, color-coded, with a level breakdown. Free and runs in your browser.',
     scripts: ['assets/analyzer.js'],
     body: `<h1>What JLPT level is this text?</h1>
@@ -630,8 +630,8 @@ function toolPages(): void {
   writePage({
     path: 'data.html',
     active: 'data.html',
-    title: 'Download the JLPT dataset — JSON, CSV, SQLite, Anki | OpenJLPT',
-    description: 'Download every JLPT N5–N1 word, kanji and grammar point as JSON, CSV or SQLite, or use the npm and PyPI packages and a free CDN. CC BY-SA 4.0.',
+    title: 'Download the JLPT dataset — JSON, CSV, SQLite, Anki | OpenJLPT-ZH-premium',
+    description: 'Download every JLPT N5–N1 word, kanji and grammar point as JSON, CSV or SQLite, or install the loaders from the project repository. CC BY-SA 4.0.',
     body: `<h1>Data &amp; API</h1>
 <p class="lead">All data is free to use — including commercially — under <a href="${REPO}/blob/main/LICENSE">CC BY-SA 4.0</a>, with attribution to OpenJLPT and the <a href="${REPO}/blob/main/NOTICE.md">upstream sources</a>.</p>
 <h2>Download</h2>
@@ -652,20 +652,20 @@ ${LEVEL_NAMES.map((l) => `<tr><td>${lvl(l)}</td>${(['vocab', 'kanji', 'grammar']
 <h2 id="yomitan">Yomitan dictionary</h2>
 <p>See the JLPT level of any word or kanji right in the <a href="https://yomitan.wiki/">Yomitan</a> pop-up: <a href="downloads/openjlpt-yomitan.zip">⬇ openjlpt-yomitan.zip</a>, then import it in Yomitan's settings → Dictionaries. Yomitan can update it for you when the data is refreshed (Dictionaries → Check for updates).</p>
 <h2>CDN (no install)</h2>
-<p>Every file is served by jsDelivr — fetch it straight from a browser app:</p>
+<p>Fetch the dataset directly from this deployment:</p>
 <pre><code>const n5 = await fetch('${cdn}/dataset/json/vocab/n5.json').then(r =&gt; r.json());</code></pre>
 <h2>JavaScript / TypeScript</h2>
-<pre><code>npm install openjlpt
+<pre><code>npm install git+https://github.com/AntaresGG/OpenJLPT-ZH-premium.git#v0.4.0
 
-import { getVocab, findWord, findKanji, searchVocab, getGrammar } from 'openjlpt';
+import { getVocab, findWord, findKanji, searchVocab, getGrammar } from 'openjlpt-zh-premium';
 getVocab('N5');            // ${meta.counts.vocab.N5} words, fully typed
 findKanji('日');           // { strokes: 4, radical: '日', onyomi: ['ニチ','ジツ'], words: [...] }
 searchVocab('taberu');     // kanji, kana, romaji or English
 getGrammar('N3');          // ${meta.counts.grammar.N3} grammar points
 
-npx openjlpt 食べる         # command-line lookup (also: kanji, grammar, quiz, random)</code></pre>
+npx --package=openjlpt-zh-premium openjlpt 食べる         # command-line lookup (also: kanji, grammar, quiz, random)</code></pre>
 <h2>Python</h2>
-<pre><code>pip install openjlpt
+<pre><code>pip install "git+https://github.com/AntaresGG/OpenJLPT-ZH-premium.git@v0.4.0"
 
 from openjlpt import get_vocab, find_word, search_vocab, query
 find_word("食べる").meanings          # ['to eat']
@@ -680,7 +680,7 @@ WHERE vocab_fts MATCH 'weather';</code></pre>
 <script type="application/ld+json">${jsonLd({
   '@context': 'https://schema.org',
   '@type': 'Dataset',
-  name: 'OpenJLPT',
+  name: 'OpenJLPT-ZH-premium',
   description: `Open JLPT N5–N1 dataset: ${meta.counts.vocab.total} vocabulary words, ${meta.counts.kanji.total} kanji and ${meta.counts.grammar.total} grammar points with readings, meanings, part of speech and example sentences.`,
   url: SITE_URL,
   sameAs: REPO,
@@ -711,7 +711,7 @@ WHERE vocab_fts MATCH 'weather';</code></pre>
 
   writePage({
     path: '404.html',
-    title: 'Page not found | OpenJLPT',
+    title: 'Page not found | OpenJLPT-ZH-premium',
     description: 'Page not found.',
     noindex: true,
     body: `<h1>Page not found</h1><p class="lead">That page doesn't exist. Try the <a href="${SITE_URL}">search on the home page</a>.</p>`,

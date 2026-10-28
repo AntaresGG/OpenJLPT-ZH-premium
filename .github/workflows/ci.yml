@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, "feat/**"]
+    branches: [main, "feat/**", "feature/**", "integration/**"]
   pull_request:
   workflow_dispatch: {}
 
@@ -87,3 +87,14 @@ jobs:
           python -m venv /tmp/venv
           /tmp/venv/bin/pip install wheelhouse/*.whl
           cd /tmp && /tmp/venv/bin/openjlpt kanji 日
+
+  dependencies:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm audit --audit-level=high

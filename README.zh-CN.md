@@ -1,6 +1,6 @@
-# OpenJLPT 中文改进版
+# OpenJLPT-ZH-premium 中文说明
 
-此 fork 为 OpenJLPT 增加简体中文内容与数据质量检查。上游项目和数据来源的署名见 [NOTICE.md](NOTICE.md)。
+本项目独立维护，源自 OpenJLPT，为其 增加简体中文内容与数据质量检查。上游项目和数据来源的署名见 [NOTICE.md](NOTICE.md)。
 
 N3、N2、N1 的词汇与语法中文已全量完成。N5、N4 各覆盖 100 个词汇、15 个语法点，剩余内容尚未中文化。按项目所有者授权，内容由 Codex 审校后转为正式稿；审核标记仅保留在数据和维护记录中，学习页面、搜索、闪卡及 Anki 不显示这些提示。这不是独立人工复核。
 
@@ -57,7 +57,7 @@ uv run --no-project --with genanki python scripts/build_exports.py _site/downloa
 
 部署目标已改为 LAN 内的 Mac mini，不再使用 VPS。PC 提交并推送至 GitHub，Mac 拉取同一提交；PC/CI 构建可追溯的静态产物，包含网页、数据和下载包，Mac 通过 Caddy 托管。操作与登录后自启动说明见 [Mac mini 部署文档](docs/DEPLOY-MACOS.md)。SITE_URL 必须使用实际局域网访问地址重新构建。
 
-GitHub 定时更新需要开启允许 Actions 创建 PR 的仓库设置。fork 已保持默认只读 token 权限；更新 workflow 单独请求写入权限。更新失败时保留数据产物供排查。
+GitHub 定时更新需要开启允许 Actions 创建 PR 的仓库设置。仓库保持默认只读 token 权限；更新 workflow 单独请求写入权限。更新失败时保留数据产物供排查。
 
 ## 实施记录
 

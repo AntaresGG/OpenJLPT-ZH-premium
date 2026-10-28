@@ -25,7 +25,7 @@ import genanki
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "json")
 LEVELS = ["N5", "N4", "N3", "N2", "N1"]
-REPO = "https://github.com/AntaresGG/OpenJLPT"
+REPO = "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
 
 # Fixed IDs so every release produces the same note types and decks.
 VOCAB_MODEL_ID = 1_730_100_001
@@ -260,7 +260,8 @@ def build_yomitan(out: str, version: str) -> str:
         updated = (json.load(f).get("sources", {}).get("jmdict", {}) or {}).get("created", "")
     # Yomitan offers an update when the index at indexUrl has a newer revision, so the
     # revision carries the data date: monthly rebuilds reach users without a new release.
-    site = os.environ.get("SITE_URL", "https://AntaresGG.github.io/OpenJLPT/").rstrip("/") + "/"
+    site = os.environ.get("SITE_URL")
+    downloads = site.rstrip("/") + "/downloads/" if site else REPO + "/releases/latest/download/"
     index = {
         "title": "OpenJLPT",
         "revision": f"{version}.{updated.replace('-', '')}" if updated else version,
@@ -274,8 +275,8 @@ def build_yomitan(out: str, version: str) -> str:
         "sourceLanguage": "ja",
         "targetLanguage": "en",
         "isUpdatable": True,
-        "indexUrl": site + "downloads/openjlpt-yomitan-index.json",
-        "downloadUrl": site + "downloads/openjlpt-yomitan.zip",
+        "indexUrl": downloads + "openjlpt-yomitan-index.json",
+        "downloadUrl": downloads + "openjlpt-yomitan.zip",
     }
     with open(os.path.join(out, "openjlpt-yomitan-index.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False)

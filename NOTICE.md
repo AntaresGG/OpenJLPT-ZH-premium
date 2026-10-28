@@ -1,5 +1,11 @@
 # NOTICE — Data Sources & Attribution
 
+OpenJLPT-ZH-premium is independently maintained by AntaresGG and derives from
+[OpenJLPT by Evan Clan and contributors](https://github.com/evanclan/OpenJLPT).
+Chinese translations, usage notes, example additions and fork-specific changes
+are distributed under the existing CC BY-SA 4.0 license. Upstream attribution
+and the source-specific notices below remain applicable.
+
 OpenJLPT is a **derived work**. It is assembled from the open sources below, plus original
 content written for the project (the grammar dataset and the corrections file). Because it
 incorporates data licensed under **CC BY-SA 4.0** (a share-alike license), the entire
@@ -49,5 +55,5 @@ levels follow the consensus of common JLPT preparation materials.
 ## Data freshness
 
 Per the EDRDG license, projects redistributing this data should keep it reasonably current.
-OpenJLPT rebuilds from upstream monthly (`.github/workflows/update-data.yml`), and
+This project stages data refreshes for explicit review (`.github/workflows/update-data.yml`), and
 `data/json/meta.json` records the upstream versions used.

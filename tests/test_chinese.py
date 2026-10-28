@@ -63,3 +63,20 @@ def test_anki_chinese_and_source_attribution():
     assert note.fields[4] == "肥皂 / soap"
     word["zh"]["status"] = "stale"
     assert "肥皂" not in exports.vocab_note(word, {}).fields[4]
+
+
+def test_yomitan_update_urls_follow_release_or_explicit_site(tmp_path, monkeypatch):
+    pytest.importorskip("genanki")
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("exports_urls", Path(__file__).parents[1] / "scripts" / "build_exports.py")
+    exports = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(exports)
+    monkeypatch.delenv("SITE_URL", raising=False)
+    exports.build_yomitan(str(tmp_path), "0.4.0")
+    index = json.loads((tmp_path / "openjlpt-yomitan-index.json").read_text(encoding="utf-8"))
+    assert index["indexUrl"] == "https://github.com/AntaresGG/OpenJLPT-ZH-premium/releases/latest/download/openjlpt-yomitan-index.json"
+    assert index["downloadUrl"].endswith("/releases/latest/download/openjlpt-yomitan.zip")
+    monkeypatch.setenv("SITE_URL", "http://127.0.0.1:8765/")
+    exports.build_yomitan(str(tmp_path), "0.4.0")
+    index = json.loads((tmp_path / "openjlpt-yomitan-index.json").read_text(encoding="utf-8"))
+    assert index["indexUrl"] == "http://127.0.0.1:8765/downloads/openjlpt-yomitan-index.json"

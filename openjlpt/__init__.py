@@ -38,7 +38,7 @@ from ._data import (
 from ._models import Example, Grammar, Kanji, Level, Vocab
 from ._sqlite import connect, db_path, query
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
 __all__ = [
     "connect",

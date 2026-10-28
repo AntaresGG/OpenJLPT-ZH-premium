@@ -1,12 +1,13 @@
 [project]
-name = "openjlpt"
-version = "0.3.0"
+name = "openjlpt-zh-premium"
+version = "0.4.0"
 description = "Open JLPT N5–N1 dataset for Python — 7,800+ words, 2,300+ kanji, 500+ grammar points with example sentences, plus SQLite and a CLI"
 readme = "README.md"
 license = "CC-BY-SA-4.0"
 requires-python = ">=3.9"
 authors = [
   { name = "Evan Clan" },
+  { name = "AntaresGG" },
 ]
 keywords = [
   "jlpt",
@@ -65,11 +66,11 @@ test = ["pytest>=7"]
 openjlpt = "openjlpt.__main__:main"
 
 [project.urls]
-Homepage = "https://evanclan.github.io/OpenJLPT/"
-Documentation = "https://github.com/evanclan/OpenJLPT#readme"
-Repository = "https://github.com/evanclan/OpenJLPT"
-Issues = "https://github.com/evanclan/OpenJLPT/issues"
-Changelog = "https://github.com/evanclan/OpenJLPT/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
+Documentation = "https://github.com/AntaresGG/OpenJLPT-ZH-premium#readme"
+Repository = "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
+Issues = "https://github.com/AntaresGG/OpenJLPT-ZH-premium/issues"
+Changelog = "https://github.com/AntaresGG/OpenJLPT-ZH-premium/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["setuptools>=77.0"]

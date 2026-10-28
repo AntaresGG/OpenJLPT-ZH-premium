@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0 — 2026-10-28 (first independent release)
+
+- Established OpenJLPT-ZH-premium as the product repository; the original fork remains the upstream contribution channel. Full Git ancestry and original attribution are retained.
+- Complete reviewed Chinese vocabulary and grammar for N3, N2 and N1: 6,507 words and 347 grammar points. Including the N5/N4 pilot: 6,707 words, 377 grammar points, 14,093 translated examples.
+- Preserve flashcard sessions across deck switches and reloads; add persistent shuffle mode.
+- Guard source corrections and Chinese review hashes; preserve stable entry and Anki IDs.
+- Add reproducible Mac LAN deployment, release artifacts and selective upstream synchronization governance.
+- Distribution names are now openjlpt-zh-premium; Python imports and the openjlpt CLI remain compatible. No npm/PyPI publication is implied by this GitHub release.
+
+
 All notable changes to OpenJLPT are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [semantic versioning](https://semver.org/). Data changes that alter field names or meanings

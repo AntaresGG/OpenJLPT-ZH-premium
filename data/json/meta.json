@@ -1,8 +1,8 @@
 {
-  "name": "OpenJLPT",
-  "version": "0.3.0",
+  "name": "OpenJLPT-ZH-premium",
+  "version": "0.4.0",
   "license": "CC-BY-SA-4.0",
-  "homepage": "https://github.com/evanclan/OpenJLPT",
+  "homepage": "https://github.com/AntaresGG/OpenJLPT-ZH-premium",
   "counts": {
     "vocab": {
       "N5": 674,

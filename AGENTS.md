@@ -8,3 +8,13 @@
 - The website is statically generated. Avoid introducing a backend for localization or search.
 - Keep review status and provenance in data and maintenance records. Do not display pilot notices, draft/review badges or AI-review labels in learner-facing pages, search, flashcards or Anki exports (owner preference, 2026-10-28).
 - Keep deployment hosts and credentials out of committed documentation. Production SITE_URL is deployment configuration.
+
+## Repository governance
+
+- This standalone repository is the product source of truth. origin is AntaresGG/OpenJLPT-ZH-premium; fork is AntaresGG/OpenJLPT; upstream is evanclan/OpenJLPT.
+- Preserve the inherited history and migration-baseline-2026-10-28. Never rewrite or force-push product main.
+- Use feature/* branches and reviewed PRs for product changes. Keep fork/main tracking upstream/main by fast-forward only.
+- Create contrib/* branches from a freshly fetched upstream/main, with isolated patches and tests. Track source SHAs and dependencies in UPSTREAM_CONTRIBUTIONS.md.
+- Evaluate upstream changes in integration branches; neither code nor data refreshes are automatically merged.
+- PC commit/push precedes Mac pull/deploy. Preserve browser storage keys, entry IDs and Anki IDs during branding and version changes.
+- GitHub Releases are the distribution channel. npm/PyPI/Hugging Face publication and public Pages hosting require separate explicit configuration.

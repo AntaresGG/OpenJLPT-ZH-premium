@@ -20,6 +20,7 @@ concurrency:
 
 jobs:
   build:
+    if: vars.PUBLISH_PAGES == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

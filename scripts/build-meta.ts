@@ -59,10 +59,10 @@ async function main() {
   }
 
   writeJson(metaPath, {
-    name: 'OpenJLPT',
+    name: 'OpenJLPT-ZH-premium',
     version: pkg.version,
     license: 'CC-BY-SA-4.0',
-    homepage: 'https://github.com/evanclan/OpenJLPT',
+    homepage: 'https://github.com/AntaresGG/OpenJLPT-ZH-premium',
     counts,
     vocab_with_examples: sentences,
     sources: {

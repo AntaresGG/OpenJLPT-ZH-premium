@@ -1,6 +1,6 @@
 # Mac mini LAN deployment
 
-The PC checkout is the source of truth. Commit and push changes to GitHub first, then pull the same revision on the Mac. Do not commit changes on the deployment host.
+The PC standalone checkout of AntaresGG/OpenJLPT-ZH-premium is the source of truth. The Mac origin remote must point to that repository and track main; the old AntaresGG/OpenJLPT remote may remain as fork for history. Commit and push changes to GitHub first, then pull the same revision on the Mac. Do not commit changes on the deployment host.
 
 The site is static. Build on PC/CI with `SITE_URL=http://LAN-IP:8086/`, using the actual private IP in local configuration only:
 

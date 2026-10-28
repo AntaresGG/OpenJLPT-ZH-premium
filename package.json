@@ -1,7 +1,7 @@
 {
-  "name": "openjlpt",
-  "version": "0.3.0",
-  "description": "Open, correctly-licensed JLPT N5–N1 dataset — 7,800+ words, 2,300+ kanji and 500+ grammar points with example sentences, as JSON, CSV and SQLite, plus a typed loader and CLI.",
+  "name": "openjlpt-zh-premium",
+  "version": "0.4.0",
+  "description": "Chinese JLPT learning data and flashcards, independently maintained from OpenJLPT.",
   "keywords": [
     "anki",
     "cli",
@@ -46,13 +46,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "author": "Evan Clan (https://github.com/evanclan)",
-  "homepage": "https://evanclan.github.io/OpenJLPT/",
+  "homepage": "https://github.com/AntaresGG/OpenJLPT-ZH-premium",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evanclan/OpenJLPT.git"
+    "url": "git+https://github.com/AntaresGG/OpenJLPT-ZH-premium.git"
   },
   "bugs": {
-    "url": "https://github.com/evanclan/OpenJLPT/issues"
+    "url": "https://github.com/AntaresGG/OpenJLPT-ZH-premium/issues"
   },
   "funding": {
     "type": "github",
@@ -111,5 +111,8 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "contributors": [
+    "AntaresGG"
+  ]
 }

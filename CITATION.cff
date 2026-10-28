@@ -1,16 +1,17 @@
 cff-version: 1.2.0
-message: "If you use OpenJLPT, please cite it as below."
-title: "OpenJLPT: an open JLPT N5–N1 dataset of vocabulary, kanji and grammar"
+message: "If you use OpenJLPT-ZH-premium, please cite it as below."
+title: "OpenJLPT-ZH-premium: an open JLPT N5–N1 dataset of vocabulary, kanji and grammar"
 type: dataset
 authors:
+  - name: "AntaresGG"
   - name: "OpenJLPT contributors"
   - family-names: "Clan"
     given-names: "Evan"
-repository-code: "https://github.com/evanclan/OpenJLPT"
-url: "https://evanclan.github.io/OpenJLPT/"
+repository-code: "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
+url: "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
 license: CC-BY-SA-4.0
-version: 0.3.0
-date-released: 2026-09-29
+version: 0.4.0
+date-released: 2026-10-28
 keywords:
   - JLPT
   - Japanese
@@ -20,6 +21,11 @@ keywords:
   - dataset
   - language learning
 references:
+  - type: software
+    title: "OpenJLPT (upstream)"
+    authors:
+      - name: "Evan Clan and OpenJLPT contributors"
+    url: "https://github.com/evanclan/OpenJLPT"
   - type: data
     title: "JMdict / KANJIDIC2"
     authors:

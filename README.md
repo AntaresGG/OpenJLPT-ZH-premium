@@ -1,338 +1,78 @@
-<div align="center">
+# OpenJLPT-ZH-premium
 
-<img src="https://raw.githubusercontent.com/evanclan/OpenJLPT/main/assets/logo-160.png" width="88" height="88" alt="OpenJLPT logo">
+基于 [OpenJLPT](https://github.com/evanclan/OpenJLPT) 的独立中文日语学习项目，由 AntaresGG 维护。继承上游完整提交历史、静态站点架构、数据接口和来源署名，独立管理 Issue、CI 与 Release。
 
-# OpenJLPT
+[![CI](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml)
 
-Chinese fork: see [中文改进说明](README.zh-CN.md) for reviewed coverage, corrections and deployment.
+## 当前能力
 
-**The JLPT N5–N1 word, kanji and grammar lists: cleaned, cross-checked against JMdict, and free to use.**
+| 等级 | 中文词汇 | 中文语法 | 中文例句 |
+| --- | ---: | ---: | ---: |
+| N3 | 1,659 | 101 | 3,602 |
+| N2 | 1,778 | 123 | 3,651 |
+| N1 | 3,070 | 123 | 6,351 |
 
-<!-- counts:line -->7,811 words · 2,383 kanji · 526 grammar points · example sentences for 99.8% of words<!-- /counts:line -->
+加上 N5/N4 已完成部分，共 6,707 个词汇、377 个语法点和 14,093 条中文例句。支持中文搜索、闪卡进度保存和 Shuffle，以及 JSON、CSV、SQLite、Anki 和 Yomitan 导出。N5/N4 尚未全量中文化；汉字中文释义不在当前完成范围。详见 [中文数据说明](README.zh-CN.md)。
 
-[![CI](https://github.com/evanclan/OpenJLPT/actions/workflows/ci.yml/badge.svg)](https://github.com/evanclan/OpenJLPT/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/openjlpt?color=cb3837&label=npm)](https://www.npmjs.com/package/openjlpt)
-[![PyPI](https://img.shields.io/pypi/v/openjlpt?color=3775a9)](https://pypi.org/project/openjlpt/)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/data-CC%20BY--SA%204.0-blue.svg)](https://github.com/evanclan/OpenJLPT/blob/main/LICENSE)
+## 获取与运行
 
-**Learners:** [🌐 Browse online](https://evanclan.github.io/OpenJLPT/) ·
-[🃏 Anki decks](https://evanclan.github.io/OpenJLPT/data.html#anki) ·
-[📖 Yomitan dictionary](https://evanclan.github.io/OpenJLPT/data.html#yomitan) ·
-[🔍 What level is this text?](https://evanclan.github.io/OpenJLPT/analyzer.html)<br>
-**Developers:** `npm i openjlpt` · `pip install openjlpt` ·
-[JSON / CSV / SQLite](#download) · [API](#api-at-a-glance) ·
-**[日本語](https://github.com/evanclan/OpenJLPT/blob/main/README.ja.md)**
+从 [GitHub Releases](https://github.com/AntaresGG/OpenJLPT-ZH-premium/releases) 下载数据、Anki 牌组、Yomitan 词典以及 JavaScript/Python 安装包。当前独立版本为 **v0.4.0**；继承的 v0.1.0、v0.2.0 标签属于上游历史。
 
-<img src="https://raw.githubusercontent.com/evanclan/OpenJLPT/main/assets/demo.png" width="860" alt="An OpenJLPT word page (勉強) with furigana over its example sentences, and the text analyzer coloring every kanji by JLPT level">
+npm/PyPI 上的 `openjlpt` 是上游产品，不包含本项目的全部改进。本项目未发布到 npm/PyPI，使用 Release 包或源码安装：
 
-</div>
-
-> [!NOTE]
-> The JLPT hasn't published official vocabulary, kanji or grammar lists since 2010. Word and kanji
-> levels here follow [Jonathan Waller's community lists](https://www.tanos.co.uk/jlpt/), the ones
-> Jisho.org uses. Treat every level as a well-informed approximation. [More on levels ↓](#a-note-on-jlpt-levels)
-
-## Why OpenJLPT?
-
-Most JLPT datasets are copies of the same lists, and they come with the same garbled readings, no
-example sentences, and unclear licensing. OpenJLPT fixes the data and makes it easy to use:
-
-- **Verified against JMdict.** 99.7% of words are linked to their dictionary entry, which adds part
-  of speech and a JMdict ID and catches wrong readings. [Hundreds of source errors are fixed](#how-the-data-is-built),
-  each backed by a unit test.
-- **Example sentences.** Coverage: <!-- counts:examples -->99.8%<!-- /counts:examples --> of words.
-  The fork combines attributed Tatoeba sentences with original examples added during review.
-  Original examples do not reuse Tatoeba IDs; furigana is retained where available.
-- **526 grammar points.** Original, reviewed explanations with formation rules, 2–3 examples each,
-  and notes on easily confused patterns.
-- **Ready for your stack.** JSON, CSV, SQLite with full-text search, Anki, Yomitan, npm, PyPI, a CLI,
-  and a CDN. Every entry has a **stable ID**, so saved progress survives data updates.
-- **Honestly licensed and kept fresh.** CC BY-SA 4.0 with [per-field attribution](https://github.com/evanclan/OpenJLPT/blob/main/NOTICE.md),
-  rebuilt monthly from upstream, and schema-validated in CI.
-
-## What's inside
-
-<!-- counts:table -->
-| Level | Words | Kanji | Grammar | |
-|:---:|---:|---:|---:|---|
-| **N5** | 674 | 84 | 81 | Beginner |
-| **N4** | 630 | 169 | 98 | Elementary |
-| **N3** | 1,659 | 387 | 101 | Intermediate |
-| **N2** | 1,778 | 398 | 123 | Upper intermediate |
-| **N1** | 3,070 | 1,345 | 123 | Advanced |
-| **Total** | **7,811** | **2,383** | **526** | |
-<!-- /counts:table -->
-
-Each word appears once, at the easiest level that lists it. The counts come from
-[`data/json/meta.json`](https://github.com/evanclan/OpenJLPT/blob/main/data/json/meta.json), which also records the upstream versions.
-
-## Quick start
-
-### No code
-
-- **[The website](https://evanclan.github.io/OpenJLPT/)** has a page for every word, kanji and grammar point,
-  plus search, spaced-repetition flashcards, and a *"what JLPT level is this text?"* analyzer.
-- **[Anki decks](https://evanclan.github.io/OpenJLPT/data.html#anki)** for each level, with furigana, example sentences and text-to-speech.
-- **[Yomitan dictionary](https://evanclan.github.io/OpenJLPT/data.html#yomitan)** that shows JLPT levels in your pop-up dictionary.
-- **Spreadsheets:** open any [CSV](https://github.com/evanclan/OpenJLPT/tree/main/data/csv) in Excel or Google Sheets.
-
-### JavaScript / TypeScript
-
-```bash
-npm install openjlpt
+```sh
+git clone https://github.com/AntaresGG/OpenJLPT-ZH-premium.git
+cd OpenJLPT-ZH-premium
+npm ci
+npm run build:pkg
+uv run --no-project --with pytest --with genanki python -m pytest -q
 ```
 
-```ts
-import { findWord, findKanji, searchVocab, getGrammar, kanjiIn } from 'openjlpt';
+Python 分发名为 `openjlpt-zh-premium`，导入名和 CLI 仍为 `openjlpt`。请在独立环境中使用，避免与上游同名导入包混装：
 
-findWord('食べる');             // { reading: 'たべる', romaji: 'taberu', pos: ['v1', 'vt'], examples: [...] }
-findKanji('日');                // { strokes: 4, radical: '日', onyomi: ['ニチ','ジツ'], words: ['明日', ...] }
-searchVocab('taberu');          // kanji, kana, romaji or English; ranked
-getGrammar('N4');               // 98 grammar points with examples
-kanjiIn('日本語を勉強する').map((k) => k.level);   // ['N5', 'N5', 'N5', 'N4', 'N4']
-```
-
-**In the browser or a bundler** (Vite, Next.js, React Native): the main entry reads files with
-`node:fs`, so import the JSON directly instead, or fetch it from the CDN:
-
-```ts
-import n5 from 'openjlpt/data/json/vocab/n5.json';   // bundled, fully static
-const n4 = await fetch('https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/json/vocab/n4.json').then((r) => r.json());
-```
-
-### Python
-
-```bash
-pip install openjlpt
+```sh
+uv venv
+uv pip install --python .venv/bin/python .
+# Windows: uv pip install --python .venv/Scripts/python.exe .
 ```
 
 ```python
-from openjlpt import find_word, search_vocab, get_grammar, query
-
-find_word("食べる").meanings                  # ['to eat']
-search_vocab("weather", level="N5")[0].word  # '天気'
-query("SELECT word, reading FROM vocab WHERE level = 'N5' LIMIT 2")
-# [{'word': '会う', 'reading': 'あう'}, {'word': '青', 'reading': 'あお'}]
+from openjlpt import search_vocab, get_grammar
+words = search_vocab("肥皂")
+grammar = get_grammar("N3")
 ```
 
-### Command line
+JavaScript 可安装 Release 中的 `.tgz` 包或 Git 仓库，然后从 `openjlpt-zh-premium` 导入；`openjlpt` CLI 命令保持兼容。
 
-```console
-$ npx openjlpt 食べる          # or: pip install openjlpt && openjlpt 食べる
-[N5] 食べる たべる taberu
-   to eat
-   Ichidan verb, transitive verb
-   › ちょうど食べたかったものでした。
-     That hit the spot.
+## 验证与部署
 
-$ npx openjlpt kanji 日        # kanji details
-$ npx openjlpt grammar ながら   # grammar points
-$ npx openjlpt quiz N4         # 10-word reading quiz in your terminal
+```sh
+npm run check:data
+npm run validate
+npm run typecheck
+npm test
+npm run build:pkg
+npm run audit:data
 ```
 
-### SQLite
+静态网站无需数据库服务。设置实际部署的 `SITE_URL`，构建站点和下载包；详细步骤见 [Mac mini 部署](docs/DEPLOY-MACOS.md)。GitHub Pages 默认关闭，现有 LAN 部署仍是运行入口。主机地址仅保存在本地配置中。
 
-```sql
--- Full-text search over words, readings, romaji and meanings
-SELECT v.word, v.reading, v.level
-FROM vocab_fts f JOIN vocab v ON v.rowid = f.rowid
-WHERE vocab_fts MATCH 'weather';
+```sh
+npm run build:site -- _site
+uv run --no-project --with genanki python scripts/build_exports.py _site/downloads
 ```
 
-## API at a glance
+## Git 治理
 
-| TypeScript | Python | Returns |
-|---|---|---|
-| `getVocab(level?)` | `get_vocab(level=None)` | all words, or one level's |
-| `findWord(word)` · `findWords(word)` | `find_word(word)` · `find_words(word)` | a word by spelling (also alternative spellings) · all homographs |
-| `getVocabById(id)` | `get_vocab_by_id(id)` | a word by its stable ID |
-| `searchVocab(q, {level, limit})` | `search_vocab(q, level, limit)` | ranked search over kanji, kana, romaji and English |
-| `getKanji(level?)` · `findKanji(ch)` | `get_kanji(level)` · `find_kanji(ch)` | kanji |
-| `kanjiIn(text)` | `kanji_in(text)` | the JLPT kanji in a text, in order |
-| `getGrammar(level?)` · `getGrammarById(id)` | `get_grammar(level)` · `get_grammar_by_id(id)` | grammar points |
-| `findGrammar(pattern)` · `searchGrammar(q)` | `find_grammar(pattern)` · `search_grammar(q)` | grammar lookup and search |
-| `meta()` · `posLabels()` | `meta()` · `pos_labels()` | counts, source versions · part-of-speech legend |
-| `sample(items, n)` | `sample(items, n, rng)` | random picks for flashcards and quizzes |
-| `toRubyHtml(furigana)` | `to_ruby_html(furigana)` | an example's furigana as `<ruby>` HTML |
-| — | `query(sql, params)` · `connect()` | the bundled SQLite database (read-only) |
+- 产品：`AntaresGG/OpenJLPT-ZH-premium`，`origin/main` 是唯一产品主线。
+- 上游贡献通道：`AntaresGG/OpenJLPT`，保留为 Fork；不向其 main 混入产品特有改动。
+- 上游：`evanclan/OpenJLPT`；`contrib/*` 从其最新 main 创建，按功能提取补丁。
+- 迁移基线：`migration-baseline-2026-10-28`，对应 `f72221983fb4c970411ac9a753f6796473321164`。
 
-## Download
+执行规则见 [治理与发布](docs/GOVERNANCE.md)，贡献拆分见 [Upstream Backlog](UPSTREAM_CONTRIBUTIONS.md)。
 
-| Format | Where |
-|---|---|
-| JSON, per level | [`data/json/`](https://github.com/evanclan/OpenJLPT/tree/main/data/json): `vocab/`, `kanji/`, `grammar/` × `n5.json` … `n1.json` |
-| CSV, per level | [`data/csv/`](https://github.com/evanclan/OpenJLPT/tree/main/data/csv) |
-| SQLite, everything | [`data/openjlpt.sqlite`](https://github.com/evanclan/OpenJLPT/raw/main/data/openjlpt.sqlite): tables `vocab`, `kanji`, `grammar`, `pos` and the FTS index `vocab_fts` |
-| Everything in one zip | [`openjlpt-data.zip`](https://github.com/evanclan/OpenJLPT/releases/latest/download/openjlpt-data.zip) from the latest release: JSON, CSV and SQLite |
-| pandas, R, spreadsheets | `pd.read_csv("https://cdn.jsdelivr.net/gh/evanclan/OpenJLPT@main/data/csv/vocab-n5.csv")` |
-| Anki decks, Yomitan | [the website](https://evanclan.github.io/OpenJLPT/data.html#anki) and [Releases](https://github.com/evanclan/OpenJLPT/releases) |
+## 来源与许可
 
-## Data format
+Originally based on [OpenJLPT](https://github.com/evanclan/OpenJLPT) by Evan Clan and contributors. This project is independently maintained and adds Chinese learning content and study workflow improvements.
 
-Every entry is validated against the [JSON Schemas](https://github.com/evanclan/OpenJLPT/tree/main/schema) in CI.
-
-<details open>
-<summary><b>Vocabulary</b>: <code>data/json/vocab/n5.json</code></summary>
-
-```json
-{
-  "id": "86f67e2dc3",
-  "word": "食べる",
-  "reading": "たべる",
-  "romaji": "taberu",
-  "meanings": ["to eat"],
-  "level": "N5",
-  "pos": ["v1", "vt"],
-  "jmdict_id": 1358280,
-  "examples": [
-    {
-      "ja": "ちょうど食べたかったものでした。",
-      "furigana": "ちょうど{食|た}べたかったものでした。",
-      "en": "That hit the spot.",
-      "tatoeba_id": 202896
-    }
-  ]
-}
-```
-
-| Field | |
-|---|---|
-| `id` | Stable ID. It is assigned once and frozen in [`sources/ids.lock.json`](https://github.com/evanclan/OpenJLPT/blob/main/sources/ids.lock.json), so it survives spelling and reading fixes. |
-| `word` · `reading` · `romaji` | Headword, kana reading (kana-only words read as themselves), and Hepburn romaji without macrons (`toukyou`). |
-| `meanings` | English glosses, most important first. |
-| `pos` · `jmdict_id` | JMdict part-of-speech codes for the matching sense ([legend](https://github.com/evanclan/OpenJLPT/blob/main/data/json/pos.json): `v1` means "Ichidan verb"), and the JMdict entry number. |
-| `other_forms` · `other_readings` | Other spellings (あさって → 明後日) and readings (四 → よん). Optional. |
-| `examples` | Up to two Tatoeba sentences, with `tatoeba_id` for attribution. Optional. |
-| `examples[].furigana` | The sentence with readings over its kanji, in `{漢字\|かんじ}` notation. Present only when every kanji could be read with confidence. `toRubyHtml()` / `to_ruby_html()` turn it into `<ruby>` HTML. |
-
-</details>
-
-<details>
-<summary><b>Kanji</b>: <code>data/json/kanji/n5.json</code></summary>
-
-```json
-{
-  "character": "日", "level": "N5", "strokes": 4, "grade": 1, "freq": 1,
-  "radical": "日", "radical_number": 72,
-  "onyomi": ["ニチ", "ジツ"], "kunyomi": ["ひ", "-び", "-か"], "nanori": ["あ", "あき", "いる"],
-  "meanings": ["day", "sun", "Japan", "counter for days"],
-  "words": ["明日", "一日", "五日", "昨日", "今日", "九日", "十日", "七日"]
-}
-```
-
-- `freq` is the newspaper frequency rank (1 = most common).
-- `radical` is the classical (Kangxi) radical.
-- `kunyomi` uses KANJIDIC2 notation: `た.べる` marks okurigana, `-` marks prefix or suffix use.
-- `words` lists OpenJLPT words that use the kanji, easiest first.
-- `"supplementary": true` marks the 172 jōyō kanji that are missing from Waller's pre-2010 lists
-  (誰, 頃, and even 分). They are placed at the easiest level of a word that uses them, otherwise N1.
-
-</details>
-
-<details>
-<summary><b>Grammar</b>: <code>data/json/grammar/n5.json</code></summary>
-
-```json
-{
-  "id": "te-mo-ii",
-  "pattern": "〜てもいい",
-  "romaji": "te mo ii",
-  "level": "N5",
-  "meaning": "may; it's okay to",
-  "formation": "Verb-te + もいい",
-  "examples": [
-    { "ja": "この辞書を使ってもいいですか。", "en": "May I use this dictionary?" },
-    { "ja": "今日は早く帰ってもいいです。", "en": "You may go home early today." }
-  ],
-  "tags": ["permission"],
-  "notes": "Add ですか to ask for permission. A polite refusal is often just すみません、ちょっと…."
-}
-```
-
-Patterns with kanji also have a kana `reading` (〜に対して → 〜にたいして). `tags` come from a
-[controlled vocabulary](https://github.com/evanclan/OpenJLPT/blob/main/schema/grammar.schema.json).
-
-</details>
-
-## How the data is built
-
-Waller's lists, JMdict, KANJIDIC2 and Tatoeba go in, and `scripts/build-*.ts` turns them into
-`data/`. CI then validates the result. The level lists are the community standard, but the raw
-files are messy. The build fixes them systematically, and
-[`tests/ts/normalize.test.ts`](https://github.com/evanclan/OpenJLPT/blob/main/tests/ts/normalize.test.ts)
-quotes the real source card behind every rule:
-
-| Problem in the source | Example | Fix |
-|---|---|---|
-| Missing readings on kana words | `あさって` → `""` | reading = word (1,096 words) |
-| する baked into readings | `勉強` → `べんきょうする` | strip it (30 words) |
-| Notes and mojibake as readings | `はい` → `（感）`, `賛成` → `Uӣ[い` | reject; fill from JMdict |
-| Glosses split mid-parenthesis | `to take (e.g. time` + `money)` | split outside parentheses only |
-| Glosses cut off at 100 characters | `…;unwise;untime` | repair from JMdict (`untimely`) |
-| Wrong readings | `途中` → `つちゅう`, `灰皿` → `はいさら` | corrected when kanji **and** meaning agree with JMdict |
-| Typos in kanji | `著` for 着, `田ぼ` for 田んぼ | matched by reading and meaning |
-| The same word at several levels | `あさって` (N5) and `明後日` (N3) | kept once, at the easiest level |
-| Example sentences by substring | `あれ` matched `冷徹であれ！` | matched by dictionary form via Tatoeba's word index |
-| Jōyō kanji missing from the lists | `分`, `誰`, `頃` | added as `supplementary` |
-
-To rebuild everything yourself: `npm install && npm run build`. See [CONTRIBUTING.md](https://github.com/evanclan/OpenJLPT/blob/main/CONTRIBUTING.md).
-
-## Alternatives: when to use something else
-
-OpenJLPT stands on the shoulders of these projects. Pick the one that fits your need:
-
-- **[jmdict-simplified](https://github.com/scriptin/jmdict-simplified)**: the *whole* JMdict and KANJIDIC2 as JSON.
-  Use it if you need a full dictionary rather than JLPT lists.
-- **[open-anki-jlpt-decks](https://github.com/jamsinclair/open-anki-jlpt-decks)**: JLPT vocabulary Anki decks.
-  Use it if you only want Anki vocab decks in its format.
-- **[kanji-data](https://github.com/davidluzgouveia/kanji-data)**: kanji with JLPT and WaniKani levels.
-  Use it if you need WaniKani levels.
-- **OpenJLPT** fits best when you want vocabulary, kanji **and** grammar together, cleaned and linked
-  to JMdict, with example sentences, in many formats, under one license.
-
-## FAQ
-
-**Can I use it in a commercial or closed-source app?** Yes. The data is under CC BY-SA 4.0, the same
-license as JMdict, which many commercial apps already use. Credit OpenJLPT and its sources: one line
-on your About screen is enough (copy it from [NOTICE.md](https://github.com/evanclan/OpenJLPT/blob/main/NOTICE.md)).
-ShareAlike applies to the *data* you redistribute, such as a modified word list. *(This is not legal advice.)*
-
-**Why is word X at level Y?** Levels come from Waller's lists. If one looks wrong, [open an issue](https://github.com/evanclan/OpenJLPT/issues/new?template=data-error.yml) with a source.
-Wrong *readings, meanings or examples* are bugs we fix.
-
-**How current is it?** A scheduled job rebuilds from JMdict, KANJIDIC2, Waller and Tatoeba every month.
-
-## A note on JLPT levels
-
-The Japan Foundation does not publish vocabulary, kanji or grammar lists for the current (post-2010)
-JLPT. Word and kanji levels come from [Jonathan Waller's lists](https://www.tanos.co.uk/jlpt/), the
-community standard. Grammar levels follow the consensus of common JLPT preparation materials. All of
-them are approximations, not a guarantee of what appears on the test.
-
-## Roadmap
-
-- [ ] Richer English meanings from JMdict alongside Waller's short glosses
-- [ ] Audio (native or TTS)
-- [ ] More example sentences for grammar points
-
-Ideas and pull requests are welcome: [open an issue](https://github.com/evanclan/OpenJLPT/issues/new/choose).
-
-## Built with OpenJLPT
-
-Made something with the data, an app, a bot, a deck or a study tool? Add it here with a pull
-request, or tell us in an [issue](https://github.com/evanclan/OpenJLPT/issues/new/choose).
-
-- *Your project here*
-
-## Contributing and support
-
-Found a wrong reading or an unnatural sentence? Every page on the website has a *Report an error* link,
-and [CONTRIBUTING.md](https://github.com/evanclan/OpenJLPT/blob/main/CONTRIBUTING.md) explains how
-fixes flow into the data. If OpenJLPT saved you time, **⭐ star the repo** so others can find it, or
-[sponsor the project](https://github.com/sponsors/evanclan).
-
-## License
-
-Dataset and code: **[CC BY-SA 4.0](https://github.com/evanclan/OpenJLPT/blob/main/LICENSE)**. Upstream attribution
-(JMdict and KANJIDIC2 from EDRDG, Jonathan Waller's lists, and Tatoeba) is in [NOTICE.md](https://github.com/evanclan/OpenJLPT/blob/main/NOTICE.md).
-To cite OpenJLPT, use GitHub's *"Cite this repository"* button, which reads [`CITATION.cff`](https://github.com/evanclan/OpenJLPT/blob/main/CITATION.cff).
+保留 [CC BY-SA 4.0 LICENSE](LICENSE)、[NOTICE](NOTICE.md) 与 [引用信息](CITATION.cff)。JMdict、KANJIDIC2、Waller、Tatoeba 和 KanjiVG 的来源及许可分别见 NOTICE；新创作例句不借用 Tatoeba 署名。项目名称中的 premium 不改变这些许可或数据来源。
