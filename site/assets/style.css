@@ -302,3 +302,89 @@ textarea.analyze { width: 100%; min-height: 160px; font-family: var(--jp); font-
   a { color: inherit; }
   table.list td { padding: 4px 6px; }
 }
+/* Appearance palettes: blue and apricot accents leave Theme 1's base intact. */
+:root {
+  --blue: #287eab;
+  --blue-ink: #246587;
+  --blue-soft: #e7f2f8;
+  --orange: #e2a35e;
+  --orange-ink: #92551e;
+  --orange-soft: #fcf0df;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --blue-ink: #8fc9e8; --blue-soft: #1d3340;
+    --orange-ink: #f0bf86; --orange-soft: #3c2e20;
+  }
+}
+:root[data-theme='dark'] {
+  --blue-ink: #8fc9e8; --blue-soft: #1d3340;
+  --orange-ink: #f0bf86; --orange-soft: #3c2e20;
+}
+.theme-picker { flex: 0 0 auto; }
+.theme-picker select {
+  font: inherit; font-size: 13px; cursor: pointer;
+  color: var(--text); background: var(--surface);
+  border: 1px solid var(--border); border-radius: 999px; padding: 7px 8px;
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.stats .stat { border-left: 3px solid var(--blue); padding-left: 12px; }
+.stats .stat:nth-child(even) { border-color: var(--orange); }
+.btn-row.quick .btn:nth-child(odd) { background: var(--blue-soft); color: var(--blue-ink); }
+.btn-row.quick .btn:nth-child(even) { background: var(--orange-soft); color: var(--orange-ink); }
+.formation { border-left: 3px solid var(--blue); }
+.note { border-color: var(--orange); background: var(--orange-soft); }
+.fc-progress div { background: var(--blue); }
+#fc-again { color: var(--orange-ink); background: var(--orange-soft); }
+
+/* Theme 2: lavender workspace, rounded white panels, purple actions and lime progress. */
+:root[data-appearance='theme2'] {
+  --bg: #f7f5fc; --surface: #ffffff; --surface-2: #f1eff7;
+  --text: #1d1928; --muted: #706a7d; --border: #e8e4f0;
+  --accent: #4b16cf; --accent-soft: #eee7ff; --link: #5127af;
+  --blue: #9774dd; --blue-ink: #5127af; --blue-soft: #eee7ff;
+  --orange: #db926d; --orange-ink: #98502e; --orange-soft: #fceee6;
+  --radius: 24px;
+  --shadow: 0 2px 10px rgb(46 24 82 / 0.03);
+  color-scheme: light;
+}
+[data-appearance='theme2'] .wrap { max-width: 1200px; }
+[data-appearance='theme2'] main { padding-top: 32px; }
+[data-appearance='theme2'] .hero {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 28px; padding: clamp(20px, 4vw, 44px);
+  box-shadow: var(--shadow);
+}
+[data-appearance='theme2'] .hero .lead { max-width: 760px; }
+[data-appearance='theme2'] .stats { gap: 12px; margin-top: 28px; }
+[data-appearance='theme2'] .stat {
+  flex: 1 1 130px; background: var(--surface-2); border: 0;
+  border-radius: 16px; padding: 18px;
+}
+[data-appearance='theme2'] .stat:last-child { background: #def79a; color: #283b0e; }
+[data-appearance='theme2'] .stat:last-child span { color: #4d6228; }
+[data-appearance='theme2'] .nav { background: var(--surface); border-radius: 999px; padding: 4px; }
+[data-appearance='theme2'] .nav a { border-radius: 999px; }
+[data-appearance='theme2'] .nav a[aria-current='page'] { background: var(--accent); color: #fff; }
+[data-appearance='theme2'] .card { padding: 24px; }
+[data-appearance='theme2'] .grid { gap: 18px; }
+[data-appearance='theme2'] .btn { border-radius: 999px; }
+[data-appearance='theme2'] .search input { border-radius: 999px; box-shadow: none; }
+[data-appearance='theme2'] .fc-progress { height: 8px; }
+[data-appearance='theme2'] .fc-progress div { background: #b4d85a; }
+[data-appearance='theme2'] .two-col > * { min-width: 0; }
+/* Keep the brand and picker accessible while navigation gets its own row. */
+@media (max-width: 960px) {
+  .site-header .wrap { flex-wrap: wrap; height: auto; padding-top: 8px; padding-bottom: 8px; gap: 6px 10px; }
+  .theme-picker { margin-left: auto; }
+  .nav { order: 3; flex: 1 1 100%; width: 100%; margin: 0; flex-wrap: wrap; }
+  .nav a { padding: 4px 8px; font-size: 14px; }
+  .hsearch { display: none; }
+  .gh-btn { margin-left: 0; }
+}
+@media (max-width: 400px) { .site-header .gh-btn { display: none; } }
+@media (max-width: 600px) {
+  [data-appearance='theme2'] main { padding-top: 18px; }
+  [data-appearance='theme2'] .card { padding: 18px; }
+  [data-appearance='theme2'] .stat { flex-basis: 100px; padding: 12px; }
+}

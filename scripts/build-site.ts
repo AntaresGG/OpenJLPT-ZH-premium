@@ -41,6 +41,7 @@ interface Grammar {
 const OUT = process.argv[2] ?? join(ROOT, '_site');
 const SITE_URL = (process.env.SITE_URL ?? 'https://AntaresGG.github.io/kotowa/').replace(/\/?$/, '/');
 const REPO = process.env.REPO_URL ?? 'https://github.com/AntaresGG/kotowa';
+const THEME_VERSION = createHash('sha256').update(readFileSync(join(ROOT, 'site/assets/theme.js'))).digest('hex').slice(0, 12);
 const STYLE_VERSION = createHash('sha256').update(readFileSync(join(ROOT, 'site/assets/style.css'))).digest('hex').slice(0, 12);
 const LEVEL_NAMES = LEVELS.map((l) => l.level);
 const readJson = <T>(p: string): T => JSON.parse(readFileSync(p, 'utf8'));
@@ -207,6 +208,7 @@ ${p.noindex ? '<meta name="robots" content="noindex">' : ''}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#d7263d">
 <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
+<script src="${root}assets/theme.js?v=${THEME_VERSION}"></script>
 <link rel="stylesheet" href="${root}assets/style.css?v=${STYLE_VERSION}">
 ${scripts}
 </head>
@@ -215,6 +217,7 @@ ${scripts}
 <a class="brand" href="${root}index.html"><img class="brand-mark" src="${root}assets/favicon.svg" width="28" height="28" alt=""><span class="brand-name">Kotowa · 词和</span></a>
 ${p.path === 'index.html' ? '' : `<form class="hsearch" action="${root}index.html" role="search"><input type="search" name="q" placeholder="Search words, kanji, grammar…" aria-label="Search"></form>`}
 <nav class="nav" aria-label="Main">${nav}</nav>
+<label class="theme-picker"><span class="sr-only">主题 / Theme</span><select id="theme-select" aria-label="主题 / Theme"><option value="theme1">Theme 1</option><option value="theme2">Theme 2</option></select></label>
 <a class="gh-btn" href="${REPO}" rel="noopener">${GITHUB_ICON}<span>Star on GitHub</span></a>
 </div></header>
 <main><div class="wrap">

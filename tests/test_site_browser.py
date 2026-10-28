@@ -41,6 +41,34 @@ def test_site_chinese_search_downloads_and_mobile():
                             getComputedStyle(el).whiteSpace === 'nowrap';
                     }"""), width
                     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), width
+                for theme in ('theme2', 'theme1'):
+                    page.locator('#theme-select').select_option(theme)
+                    for path in ('', 'grammar/te-oku.html', 'flashcards.html', 'n5/'):
+                        page.goto(f'http://127.0.0.1:8765/{path}')
+                        sync.expect(page.locator('html')).to_have_attribute('data-appearance', theme)
+                        sync.expect(page.locator('#theme-select')).to_have_value(theme)
+                        for width in (320, 390, 768, 1024, 1440):
+                            page.set_viewport_size({'width': width, 'height': 900})
+                            assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), (theme, path, width)
+                    page.goto('http://127.0.0.1:8765/')
+                    page.reload()
+                    sync.expect(page.locator('#theme-select')).to_have_value(theme)
+                page.emulate_media(color_scheme='dark')
+                page.locator('#theme-select').select_option('theme2')
+                assert page.locator('body').evaluate("el => getComputedStyle(el).backgroundColor") == 'rgb(247, 245, 252)'
+                page.locator('#theme-select').select_option('theme1')
+                assert page.locator('body').evaluate("el => getComputedStyle(el).backgroundColor") == 'rgb(20, 19, 18)'
+                page.emulate_media(color_scheme='light')
+                page.evaluate("localStorage.setItem('kotowa:appearance', 'invalid')")
+                page.reload()
+                sync.expect(page.locator('#theme-select')).to_have_value('theme1')
+                blocked = browser.new_context()
+                blocked.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('Storage blocked')}})")
+                blocked_page = blocked.new_page()
+                blocked_page.goto('http://127.0.0.1:8765/')
+                blocked_page.locator('#theme-select').select_option('theme2')
+                sync.expect(blocked_page.locator('html')).to_have_attribute('data-appearance', 'theme2')
+                blocked.close()
                 sync.expect(page.locator(".brand img")).to_have_attribute("src", "assets/favicon.svg")
                 sync.expect(page.locator('meta[property="og:site_name"]')).to_have_attribute("content", "Kotowa · 词和")
                 sync.expect(page.locator("body")).not_to_contain_text("OpenJLPT-ZH-premium")
