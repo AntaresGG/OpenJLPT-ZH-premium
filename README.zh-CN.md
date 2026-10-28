@@ -141,7 +141,7 @@ GitHub 定时更新需要开启允许 Actions 创建 PR 的仓库设置。仓库
 - 上游：`evanclan/OpenJLPT`；`contrib/*` 从其最新 main 创建，按功能提取补丁。
 - 迁移基线：`migration-baseline-2026-10-28`，对应 `f72221983fb4c970411ac9a753f6796473321164`。
 
-产品改动使用 `feature/*` 分支和经过审查的 PR。执行规则见[治理与发布](docs/GOVERNANCE.md)，贡献拆分见[上游贡献记录](UPSTREAM_CONTRIBUTIONS.md)，版本变化见[更新日志](CHANGELOG.md)。GitHub Pages 默认关闭，部署地址只保存在本地配置中。
+产品改动直接在本地 `main` 完成，运行相关检查后推送到 `origin/main`。执行规则见[治理与发布](docs/GOVERNANCE.md)，贡献拆分见[上游贡献记录](UPSTREAM_CONTRIBUTIONS.md)，版本变化见[更新日志](CHANGELOG.md)。GitHub Pages 默认关闭，部署地址只保存在本地配置中。
 
 ## 来源与许可
 

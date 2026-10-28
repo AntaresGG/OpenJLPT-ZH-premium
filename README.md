@@ -105,7 +105,7 @@ See [Mac mini deployment](docs/DEPLOY-MACOS.md). Commit and push from PC to GitH
 - Upstream: `evanclan/OpenJLPT`; start isolated `contrib/*` branches from freshly fetched upstream `main`.
 - Migration baseline: `migration-baseline-2026-10-28` at `f72221983fb4c970411ac9a753f6796473321164`.
 
-Use `feature/*` branches and reviewed PRs for product changes. See [governance and releases](docs/GOVERNANCE.md), [upstream contribution tracking](UPSTREAM_CONTRIBUTIONS.md) and the [changelog](CHANGELOG.md).
+Develop product changes directly on local `main`, run relevant checks, and push to `origin/main`. See [governance and releases](docs/GOVERNANCE.md), [upstream contribution tracking](UPSTREAM_CONTRIBUTIONS.md) and the [changelog](CHANGELOG.md).
 
 ## Attribution and license
 

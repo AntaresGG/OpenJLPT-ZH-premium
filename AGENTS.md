@@ -13,8 +13,8 @@
 
 - This standalone repository is the product source of truth. origin is AntaresGG/OpenJLPT-ZH-premium; fork is AntaresGG/OpenJLPT; upstream is evanclan/OpenJLPT.
 - Preserve the inherited history and migration-baseline-2026-10-28. Never rewrite or force-push product main.
-- Use feature/* branches and reviewed PRs for product changes. Keep fork/main tracking upstream/main by fast-forward only.
+- Owner preference (2026-10-28): use main directly for product work, both locally and on origin. Run relevant checks, commit on local main and push to origin/main; do not create feature branches or require product PRs unless explicitly requested. Keep fork/main tracking upstream/main by fast-forward only.
 - Create contrib/* branches from a freshly fetched upstream/main, with isolated patches and tests. Track source SHAs and dependencies in UPSTREAM_CONTRIBUTIONS.md.
-- Evaluate upstream changes in integration branches; neither code nor data refreshes are automatically merged.
+- Evaluate upstream changes before applying them to product main; neither code nor data refreshes are automatically merged. Separate contrib/* branches remain specific to the upstream contribution fork, not ordinary product work.
 - PC commit/push precedes Mac pull/deploy. Preserve browser storage keys, entry IDs and Anki IDs during branding and version changes.
 - GitHub Releases are the distribution channel. npm/PyPI/Hugging Face publication and public Pages hosting require separate explicit configuration.

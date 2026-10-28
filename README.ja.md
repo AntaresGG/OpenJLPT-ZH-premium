@@ -105,7 +105,7 @@ uv run --no-project --with genanki python scripts/build_exports.py _site/downloa
 - 上流：`evanclan/OpenJLPT`。最新の上流 `main` から独立した `contrib/*` ブランチを作成します。
 - 移行基準：`migration-baseline-2026-10-28`、コミット `f72221983fb4c970411ac9a753f6796473321164`。
 
-製品変更には `feature/*` ブランチとレビュー済み PR を使用します。[運用・リリース方針](docs/GOVERNANCE.md)、[上流への貢献記録](UPSTREAM_CONTRIBUTIONS.md)、[変更履歴](CHANGELOG.md)を参照してください。
+製品変更はローカルの `main` で行い、必要な検証後に `origin/main` へプッシュします。[運用・リリース方針](docs/GOVERNANCE.md)、[上流への貢献記録](UPSTREAM_CONTRIBUTIONS.md)、[変更履歴](CHANGELOG.md)を参照してください。
 
 ## 出典とライセンス
 

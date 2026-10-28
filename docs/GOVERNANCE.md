@@ -12,17 +12,17 @@ The original working copy remains a historical/contribution checkout. The standa
 
 ## Product development
 
-1. Fetch origin and create `feature/<topic>` from origin/main.
+1. Fetch origin, switch to local `main`, and fast-forward from `origin/main` before starting product work.
 2. Make an isolated change, preserve stable entry IDs, browser storage keys and Anki IDs.
-3. Run relevant checks and open a product PR. Required CI must pass; no force pushes to main.
-4. Merge after review. One maintainer may merge their own PR after CI; a second reviewer is not required for this personal project.
+3. Run relevant checks and review the diff. Commit directly on local `main` and push to `origin/main`; never force-push main.
+4. Use main for future product work on both PC and origin. Feature branches and product PRs are only used when explicitly requested by the owner.
 5. Commit/push on PC, then pull/deploy the same revision on Mac. Do not commit on Mac.
 
-No develop branch is needed at present. Integration work uses `integration/<upstream-sha>`.
+This main-only product workflow was requested by the owner on 2026-10-28 and supersedes the previous feature-branch/PR workflow. Separate upstream contribution branches are scoped to the contribution fork.
 
 ## Upstream synchronization
 
-Fetch upstream/main and inspect changes before applying them. Test a merge or a selected `cherry-pick -x` in an integration branch, then submit a product PR. No workflow merges upstream code or refreshed data automatically. Data refresh is a manual workflow that opens a review PR and retains failing outputs.
+Fetch upstream/main and inspect changes before applying them. Apply a reviewed merge or selected `cherry-pick -x` to product main, run affected checks, then push to origin/main. No workflow merges upstream code or refreshed data automatically. The existing manual data-refresh workflow produces a review PR and retains failing outputs; treat that output as a proposal, not as the product development branch.
 
 Keep fork/main aligned using `merge --ff-only upstream/main` only after confirming it has no unique changes. A failed fast-forward requires investigation; never reset or force-push to conceal a divergence.
 
