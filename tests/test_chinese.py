@@ -30,9 +30,23 @@ def test_chinese_lookup_and_fallback():
     assert any(v.word == "受付" for v in search_vocab("接待"))
     assert search_vocab("eat")[0].word == "食べる"
     assert any(g.id == "te-oku" for g in search_grammar("事先"))
-    assert len([v for v in get_vocab() if v.zh]) == 6707
-    assert len([g for g in get_grammar() if g.zh]) == 377
+    assert len([v for v in get_vocab() if v.zh]) == 7811
+    assert len([g for g in get_grammar() if g.zh]) == 526
     assert all(e.zh['status'] == 'reviewed' and e.zh['review_method'] == 'ai' for e in [*get_vocab(), *get_grammar()] if e.zh)
+
+
+@pytest.mark.parametrize("level,word_count,grammar_count", [("N5", 674, 81), ("N4", 630, 98)])
+def test_complete_beginner_chinese(level, word_count, grammar_count):
+    words = get_vocab(level)
+    grammar = get_grammar(level)
+    assert len(words) == word_count
+    assert len(grammar) == grammar_count
+    for entry in [*words, *grammar]:
+        assert entry.zh["status"] == "reviewed", entry.id
+        assert entry.zh["meanings"], entry.id
+        assert entry.zh["examples"], entry.id
+        assert [e["ja"] for e in entry.zh["examples"]] == [e.ja for e in entry.examples], entry.id
+        assert all(e["zh"].strip() for e in entry.zh["examples"]), entry.id
 
 
 def test_json_csv_sqlite_agree():

@@ -949,7 +949,40 @@
       "particle",
       "addition"
     ],
-    "notes": "も replaces は, が and を, but comes after other particles: 京都にも行きました."
+    "notes": "も replaces は, が and を, but comes after other particles: 京都にも行きました.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "95c1630c62b76c5fe4671959aeae927eadb7a1d1b97b38f301b8c93711d1cf50",
+      "meanings": [
+        "也",
+        "（与否定搭配）也不"
+      ],
+      "formation": "名词＋も",
+      "explanation": "表示同类事物也具有相同情况；与否定搭配可表示都不。",
+      "notes": "可替代は、が、を；接在に等助词之后。",
+      "examples": [
+        {
+          "ja": "私も学生です。",
+          "zh": "我也是学生。"
+        },
+        {
+          "ja": "兄はサッカーも好きです。",
+          "zh": "哥哥也喜欢足球。"
+        },
+        {
+          "ja": "肉も魚も食べません。",
+          "zh": "我既不吃肉也不吃鱼。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mo",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "88bc0978c79a63b8aa833555ad3ac1cbf267ac56020ad8abce50fc1643d4300f"
+    }
   },
   {
     "id": "no",
@@ -978,7 +1011,40 @@
     "tags": [
       "particle"
     ],
-    "notes": "The first noun describes the second: 日本の車 (a Japanese car). The second noun can be dropped when clear: それは私のです."
+    "notes": "The first noun describes the second: 日本の車 (a Japanese car). The second noun can be dropped when clear: それは私のです.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "079397fbecb4350d1caa42e5858003ec5144440b007238f503115239929f80dd",
+      "meanings": [
+        "的",
+        "所属或性质"
+      ],
+      "formation": "名词＋の＋名词",
+      "explanation": "前面的名词修饰或限定后面的名词，表示所属、性质或位置等。",
+      "notes": "后面的名词在语境明确时可以省略。",
+      "examples": [
+        {
+          "ja": "これは私のかさです。",
+          "zh": "这是我的伞。"
+        },
+        {
+          "ja": "日本語の先生はとてもやさしいです。",
+          "zh": "日语老师非常和蔼。"
+        },
+        {
+          "ja": "駅の近くに新しい店があります。",
+          "zh": "车站附近有一家新店。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#no",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "76fd429eb784e012e072655ab83faeeb7c32a7e8b298579f9895dc21d96ac033"
+    }
   },
   {
     "id": "kara-from",
@@ -1009,7 +1075,40 @@
       "time",
       "range"
     ],
-    "notes": "Often paired with まで: 月曜日から金曜日まで (from Monday to Friday)."
+    "notes": "Often paired with まで: 月曜日から金曜日まで (from Monday to Friday).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "b94e0b06b927f666b5d90450dac243749fadf514c69ac8c119563158053698a8",
+      "meanings": [
+        "从",
+        "自"
+      ],
+      "formation": "名词＋から",
+      "explanation": "表示时间或地点的起点。",
+      "notes": "常与まで搭配表示从某处或某时到另一处或另一时。",
+      "examples": [
+        {
+          "ja": "授業は9時からです。",
+          "zh": "课从九点开始。"
+        },
+        {
+          "ja": "学校から駅まで歩きます。",
+          "zh": "我从学校走到车站。"
+        },
+        {
+          "ja": "私はブラジルから来ました。",
+          "zh": "我来自巴西。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#kara-from",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "548e0526edd0a3517f478158fbb55216adf214f4fecb2bac8f68c52aca924baf"
+    }
   },
   {
     "id": "made",
@@ -1040,7 +1139,40 @@
       "time",
       "range"
     ],
-    "notes": "Marks the end point of something that continues. For a deadline ('by'), use までに (N4)."
+    "notes": "Marks the end point of something that continues. For a deadline ('by'), use までに (N4).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "59e32bdecfb3d2cff70aeb2cf9b49d3ccd4b855dd84b3444d4ff42668e8f5bdd",
+      "meanings": [
+        "到",
+        "直到"
+      ],
+      "formation": "名词＋まで",
+      "explanation": "表示持续动作或状态的时间、空间终点。",
+      "notes": "表示截止期限时用までに。",
+      "examples": [
+        {
+          "ja": "昼休みは1時までです。",
+          "zh": "午休到一点结束。"
+        },
+        {
+          "ja": "駅までいっしょに行きましょう。",
+          "zh": "一起走到车站吧。"
+        },
+        {
+          "ja": "きのうは夜11時まで勉強しました。",
+          "zh": "昨天我学习到晚上十一点。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#made",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "c6dc7581e33bbf7857f8a4bdb50275d515db265d25bc2fc07b9e438c16595d24"
+    }
   },
   {
     "id": "ka-question",
@@ -1068,7 +1200,39 @@
       "particle",
       "question"
     ],
-    "notes": "Polite questions end in か and are usually written with 。. In casual speech か is normally dropped and rising intonation is used instead."
+    "notes": "Polite questions end in か and are usually written with 。. In casual speech か is normally dropped and rising intonation is used instead.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "5a9d6f417787e43f2dd806a300e9e42d8d2a258c40faeefcccf6e6c0808382e9",
+      "meanings": [
+        "疑问助词"
+      ],
+      "formation": "句子＋か",
+      "explanation": "置于句末，将句子变成问句。",
+      "notes": "礼貌体问句常以か结尾；口语中也可省略而用升调。",
+      "examples": [
+        {
+          "ja": "これはあなたのかばんですか。",
+          "zh": "这是你的包吗？"
+        },
+        {
+          "ja": "朝ご飯を食べましたか。",
+          "zh": "你吃早饭了吗？"
+        },
+        {
+          "ja": "トイレはどこですか。",
+          "zh": "洗手间在哪里？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ka-question",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "3d2a6dfa24557633af1571982bc371ea1ff17e30cbe1355f7eebe85b62745ac5"
+    }
   },
   {
     "id": "ne",
@@ -1096,7 +1260,40 @@
     "tags": [
       "particle"
     ],
-    "notes": "Used when the speaker expects the listener to share the same view or knowledge. Compare よ, which tells the listener something new."
+    "notes": "Used when the speaker expects the listener to share the same view or knowledge. Compare よ, which tells the listener something new.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "33483dd21bab9f59b0f213d8acb586fd1ca12927154e05c33b6c8eb68d664e52",
+      "meanings": [
+        "呢",
+        "是吧"
+      ],
+      "formation": "句子＋ね",
+      "explanation": "用于寻求认同、确认共同认识或分享感受。",
+      "notes": "与向对方提供新信息的よ有所不同。",
+      "examples": [
+        {
+          "ja": "今日は暑いですね。",
+          "zh": "今天很热呢。"
+        },
+        {
+          "ja": "このケーキ、おいしいですね。",
+          "zh": "这块蛋糕很好吃呢。"
+        },
+        {
+          "ja": "明日のテストは10時からですね。",
+          "zh": "明天的考试从十点开始，对吧？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ne",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "c961d840e9fe49748ba9124263d7672e9b4cfa58166cf82214e576285f09cc7f"
+    }
   },
   {
     "id": "yo",
@@ -1125,7 +1322,40 @@
       "particle",
       "emphasis"
     ],
-    "notes": "Tells the listener something they may not know. Overusing it with superiors can sound pushy."
+    "notes": "Tells the listener something they may not know. Overusing it with superiors can sound pushy.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "9af12203d89bafa764c74fb395d251f3afd3c96c45ee9926ee534b46337c76b1",
+      "meanings": [
+        "告知",
+        "强调"
+      ],
+      "formation": "句子＋よ",
+      "explanation": "向对方传达信息或加强语气。",
+      "notes": "对上级过度使用可能显得强硬。",
+      "examples": [
+        {
+          "ja": "このラーメンはとてもおいしいですよ。",
+          "zh": "这碗拉面很好吃哦。"
+        },
+        {
+          "ja": "かさを忘れていますよ。",
+          "zh": "你忘带伞了哦。"
+        },
+        {
+          "ja": "明日はテストがありますよ。",
+          "zh": "明天有考试哦。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#yo",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "1bf46473b8adbd8fe3a26e5e4fb8798485de271db3d83723dc87641c6b40d3e8"
+    }
   },
   {
     "id": "yori",
@@ -1155,7 +1385,39 @@
       "particle",
       "comparison"
     ],
-    "notes": "In X は Y より + adjective, Y is the standard. Japanese adjectives have no '-er' form; より does that job."
+    "notes": "In X は Y より + adjective, Y is the standard. Japanese adjectives have no '-er' form; より does that job.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "3823c86832a27db43b5b1123a091a606327cae8aa189216b48cce96022c05570",
+      "meanings": [
+        "比"
+      ],
+      "formation": "名词＋より",
+      "explanation": "指出比较的基准，表示与其相比的程度。",
+      "notes": "「XはYより……」中Y是比较基准。",
+      "examples": [
+        {
+          "ja": "今日はきのうより寒いです。",
+          "zh": "今天比昨天冷。"
+        },
+        {
+          "ja": "電車はバスより速いです。",
+          "zh": "电车比公共汽车快。"
+        },
+        {
+          "ja": "兄は父より背が高いです。",
+          "zh": "哥哥比爸爸高。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#yori",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "4ea43bebc3d6ac978fbc71c9236a75b866487f13faaed027d7e1b3529575a366"
+    }
   },
   {
     "id": "no-hou-ga-yori",
@@ -1185,7 +1447,39 @@
     "tags": [
       "comparison"
     ],
-    "notes": "The two parts can come in either order. Often used to answer a どちら question."
+    "notes": "The two parts can come in either order. Often used to answer a どちら question.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "67f2f125bfed541644a4879e1a888ad4178d1dc8c1f5f721cf84558bbfcd3ef5",
+      "meanings": [
+        "比……更……"
+      ],
+      "formation": "名词＋の方が＋名词＋より",
+      "explanation": "比较两者，表示前者在某方面更突出。",
+      "notes": "两个部分的顺序可以互换，也常用来回答どちら的提问。",
+      "examples": [
+        {
+          "ja": "犬の方が猫より好きです。",
+          "zh": "比起猫，我更喜欢狗。"
+        },
+        {
+          "ja": "東京の方が大阪より人が多いです。",
+          "zh": "东京的人比大阪多。"
+        },
+        {
+          "ja": "夏より冬の方が好きです。",
+          "zh": "比起夏天，我更喜欢冬天。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#no-hou-ga-yori",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "6f2564fda01b1d27a17b46208b93f449785a6ce794b9da811432f73f22305a9c"
+    }
   },
   {
     "id": "to-to-dochira-ga",
@@ -1215,7 +1509,39 @@
       "comparison",
       "question"
     ],
-    "notes": "Compares exactly two things. どっち is the casual form of どちら. Answer with 〜の方が."
+    "notes": "Compares exactly two things. どっち is the casual form of どちら. Answer with 〜の方が.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "32dd922bc20ad3909680b1dbe7d13f23d5aae0332ceb9e6b3d64a2786fca0030",
+      "meanings": [
+        "……和……哪个更……"
+      ],
+      "formation": "名词＋と＋名词＋とどちらが",
+      "explanation": "在两个对象之间询问比较结果。",
+      "notes": "どっち是どちら的口语形式；可用〜の方が回答。",
+      "examples": [
+        {
+          "ja": "コーヒーと紅茶とどちらが好きですか。",
+          "zh": "咖啡和红茶，你更喜欢哪个？"
+        },
+        {
+          "ja": "電車とバスとどちらが安いですか。",
+          "zh": "电车和公共汽车哪个更便宜？"
+        },
+        {
+          "ja": "「山と海とどちらがいいですか。」「海の方がいいです。」",
+          "zh": "“山和海，你更喜欢哪个？”“我更喜欢海。”"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#to-to-dochira-ga",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "da2679d41420c902f9946c1e2c62e24935226908310375fbb0c98699bc821f8e"
+    }
   },
   {
     "id": "no-naka-de-ga-ichiban",
@@ -1246,7 +1572,39 @@
       "comparison",
       "range"
     ],
-    "notes": "Used for three or more items. In questions use 何, だれ, どこ or いつ before が一番."
+    "notes": "Used for three or more items. In questions use 何, だれ, どこ or いつ before が一番.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "ce5032219963233d9187f92aace6ebc295d75ee63e476e177808bd2091983767",
+      "meanings": [
+        "在……之中最……"
+      ],
+      "formation": "名词＋の中で＋名词＋が一番",
+      "explanation": "在某一范围内指出程度最高的对象。",
+      "notes": "提问时可在が一番前用何、だれ、どこ等疑问词。",
+      "examples": [
+        {
+          "ja": "果物の中でりんごが一番好きです。",
+          "zh": "水果中我最喜欢苹果。"
+        },
+        {
+          "ja": "クラスの中でだれが一番背が高いですか。",
+          "zh": "班上谁最高？"
+        },
+        {
+          "ja": "家族の中で父が一番早く起きます。",
+          "zh": "家里爸爸起得最早。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#no-naka-de-ga-ichiban",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "9db8115eda507ac40583d697cf981c5a6ddfa814a351f23fce93a552c1b12b2e"
+    }
   },
   {
     "id": "desu",
@@ -1276,7 +1634,40 @@
       "copula",
       "politeness"
     ],
-    "notes": "Forms: です, ではありません, でした, ではありませんでした. After an い-adjective, です only adds politeness: 高いです."
+    "notes": "Forms: です, ではありません, でした, ではありませんでした. After an い-adjective, です only adds politeness: 高いです.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "f0d2922259bff9718654559672e4451a3757169df60d4fe76c8d9cd2151cd9cf",
+      "meanings": [
+        "是",
+        "礼貌判断"
+      ],
+      "formation": "名词／な形容词／い形容词＋です",
+      "explanation": "表示礼貌的判断或描述。",
+      "notes": "接い形容词时，です主要增加礼貌程度；名词和な形容词的过去形式为でした，い形容词用〜かったです。",
+      "examples": [
+        {
+          "ja": "私はマリアです。",
+          "zh": "我是玛丽亚。"
+        },
+        {
+          "ja": "今日は月曜日です。",
+          "zh": "今天是星期一。"
+        },
+        {
+          "ja": "この部屋はとても静かです。",
+          "zh": "这个房间非常安静。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#desu",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "a47c54e1df2d3bcd88766eb6726f8b3326d419f6401a41d1e46b0ead02ce7a31"
+    }
   },
   {
     "id": "da",
@@ -1306,7 +1697,40 @@
       "copula",
       "casual"
     ],
-    "notes": "Forms: だ, じゃない, だった, じゃなかった. Never used right after an い-adjective (高いだ is wrong). Often dropped in casual questions: 学生？"
+    "notes": "Forms: だ, じゃない, だった, じゃなかった. Never used right after an い-adjective (高いだ is wrong). Often dropped in casual questions: 学生？",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "4036ce085cdeee76e3ba6c6c7f8d8d6b15537b4fe3b5a9f5638e9337fe22af6e",
+      "meanings": [
+        "是",
+        "简体判断"
+      ],
+      "formation": "名词／な形容词＋だ",
+      "explanation": "以简体表达判断或状态。",
+      "notes": "い形容词后不能直接接だ；过去形式为だった。",
+      "examples": [
+        {
+          "ja": "今日は日曜日だ。",
+          "zh": "今天是星期日。"
+        },
+        {
+          "ja": "あの人は私の兄だ。",
+          "zh": "那个人是我哥哥。"
+        },
+        {
+          "ja": "明日は休みだから、ゆっくり寝る。",
+          "zh": "明天休息，所以我要睡个懒觉。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#da",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "57f42bf5d12c8954ca657dadbb09219d9bd7047c58c39c91903b94b7f1419420"
+    }
   },
   {
     "id": "de-wa-arimasen-ja-nai",
@@ -1336,7 +1760,39 @@
       "copula",
       "negation"
     ],
-    "notes": "じゃありません and じゃないです are more conversational polite forms. Past: ではありませんでした / じゃなかった. い-adjectives use 〜くない instead."
+    "notes": "じゃありません and じゃないです are more conversational polite forms. Past: ではありませんでした / じゃなかった. い-adjectives use 〜くない instead.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "1aed7f3dcdd838ff8301b442a97318b4484d9cf70ad062563c0910a99d8700bd",
+      "meanings": [
+        "不是"
+      ],
+      "formation": "名词／な形容词＋ではありません／じゃない",
+      "explanation": "以礼貌或简体形式否定名词和な形容词的判断。",
+      "notes": "じゃない较口语；い形容词使用〜くない。",
+      "examples": [
+        {
+          "ja": "私は先生ではありません。学生です。",
+          "zh": "我不是老师，是学生。"
+        },
+        {
+          "ja": "今日は休みじゃない。",
+          "zh": "今天不是休息日。"
+        },
+        {
+          "ja": "この町はあまりにぎやかではありません。",
+          "zh": "这个小镇不太热闹。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#de-wa-arimasen-ja-nai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "511096eccfc4aa8b8497762450d8e434f3f2bcc0150aa0373fd823747e8cc3b2"
+    }
   },
   {
     "id": "deshita",
@@ -1366,7 +1822,40 @@
       "tense",
       "politeness"
     ],
-    "notes": "Past negative: ではありませんでした. い-adjectives do not take でした: say 高かったです, not 高いでした."
+    "notes": "Past negative: ではありませんでした. い-adjectives do not take でした: say 高かったです, not 高いでした.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "ad108d37f6882c83ed4351c751ea32a55d8521a144d04e3c307d51d96079c831",
+      "meanings": [
+        "是……",
+        "过去的状态"
+      ],
+      "formation": "名词／な形容词＋でした",
+      "explanation": "礼貌地叙述过去的判断或状态。",
+      "notes": "い形容词须用〜かったです，不能直接接でした。",
+      "examples": [
+        {
+          "ja": "きのうは私の誕生日でした。",
+          "zh": "昨天是我的生日。"
+        },
+        {
+          "ja": "子どものころ、野菜がきらいでした。",
+          "zh": "我小时候不喜欢蔬菜。"
+        },
+        {
+          "ja": "テストはかんたんでした。",
+          "zh": "考试很简单。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#deshita",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "654dc84d09093beb023380b682884e91a1f91bfb17fa3721d37a6c4ff0f5e0b3"
+    }
   },
   {
     "id": "masu",
@@ -1396,7 +1885,40 @@
       "conjugation",
       "politeness"
     ],
-    "notes": "Covers habits and future actions. 飲む→飲みます, 食べる→食べます, する→します, 来る→来ます."
+    "notes": "Covers habits and future actions. 飲む→飲みます, 食べる→食べます, する→します, 来る→来ます.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "3e7b6b0572eac5714b64963582a230fbfa2c66338f5b92d352e50c95cdcc91f4",
+      "meanings": [
+        "做",
+        "将要做（礼貌体）"
+      ],
+      "formation": "动词ます形词干＋ます",
+      "explanation": "礼貌地表示习惯性动作或将来的动作。",
+      "notes": "如飲む变成飲みます，食べる变成食べます。",
+      "examples": [
+        {
+          "ja": "毎朝コーヒーを飲みます。",
+          "zh": "我每天早上喝咖啡。"
+        },
+        {
+          "ja": "明日、京都へ行きます。",
+          "zh": "我明天去京都。"
+        },
+        {
+          "ja": "弟は毎晩9時に寝ます。",
+          "zh": "弟弟每天晚上九点睡觉。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#masu",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "470200450ede1f9f7dcc5a91bc7820d366f0aaa82aaf3e567f10d7e055bc5692"
+    }
   },
   {
     "id": "masen",
@@ -1427,7 +1949,40 @@
       "negation",
       "politeness"
     ],
-    "notes": "The plain equivalent is the ない-form: 飲みません = 飲まない."
+    "notes": "The plain equivalent is the ない-form: 飲みません = 飲まない.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "97d82958c4ab745fdabcb9df43215ef92391f2345283b5be271c43d3f7c3ada3",
+      "meanings": [
+        "不做",
+        "不会做（礼貌体）"
+      ],
+      "formation": "动词ます形词干＋ません",
+      "explanation": "礼貌地否定现在习惯或将来动作。",
+      "notes": "相应的简体是否定的ない形。",
+      "examples": [
+        {
+          "ja": "私はお酒を飲みません。",
+          "zh": "我不喝酒。"
+        },
+        {
+          "ja": "日曜日は学校へ行きません。",
+          "zh": "星期天我不去学校。"
+        },
+        {
+          "ja": "今晩はテレビを見ません。",
+          "zh": "今晚我不看电视。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#masen",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "47465b89499bdd9cf4c6b94832a94d81ab1217b1ac789cd032d55dca71f47f0f"
+    }
   },
   {
     "id": "mashita",
@@ -1458,7 +2013,39 @@
       "tense",
       "politeness"
     ],
-    "notes": "The plain equivalent is the た-form: 会いました = 会った."
+    "notes": "The plain equivalent is the た-form: 会いました = 会った.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "de04959db41a2ef9f59cc236032cf50cc9b3fa83f7ba463f560ca4ccb7b42aab",
+      "meanings": [
+        "做了（礼貌体）"
+      ],
+      "formation": "动词ます形词干＋ました",
+      "explanation": "礼貌地叙述过去的动作。",
+      "notes": "相应的简体是动词た形。",
+      "examples": [
+        {
+          "ja": "きのう、友達に会いました。",
+          "zh": "昨天我见了朋友。"
+        },
+        {
+          "ja": "先週、新しいくつを買いました。",
+          "zh": "上周我买了新鞋。"
+        },
+        {
+          "ja": "けさ、6時に起きました。",
+          "zh": "今天早上我六点起床。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mashita",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "782e7edf1c723383dcc830e9420e03119ca95df96c28e89b2076aebda103b46f"
+    }
   },
   {
     "id": "masen-deshita",
@@ -1489,7 +2076,39 @@
       "tense",
       "negation"
     ],
-    "notes": "The plain equivalent is 〜なかった: 食べませんでした = 食べなかった."
+    "notes": "The plain equivalent is 〜なかった: 食べませんでした = 食べなかった.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "1b46e0af60435066b5877b81a8d56206d23c701a45e6db0603fedfc4c91d57c2",
+      "meanings": [
+        "没有做（礼貌体）"
+      ],
+      "formation": "动词ます形词干＋ませんでした",
+      "explanation": "礼貌地否定过去的动作。",
+      "notes": "相应的简体是〜なかった。",
+      "examples": [
+        {
+          "ja": "けさは朝ご飯を食べませんでした。",
+          "zh": "今天早上我没吃早饭。"
+        },
+        {
+          "ja": "週末は宿題をしませんでした。",
+          "zh": "周末我没有做作业。"
+        },
+        {
+          "ja": "きのうは雨でしたから、出かけませんでした。",
+          "zh": "昨天因为下雨，我没有出门。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#masen-deshita",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "7619acdb1d2dcc1be6b9959a521e0f978cf4a422aee1c0b2a0ebeeff65b9ef66"
+    }
   },
   {
     "id": "nai",
@@ -1520,7 +2139,40 @@
       "negation",
       "casual"
     ],
-    "notes": "う-verbs change the last -u sound to -a: 書く→書かない, 買う→買わない. る-verbs drop る: 食べない. する→しない, 来る→こない, ある→ない. Past: 〜なかった."
+    "notes": "う-verbs change the last -u sound to -a: 書く→書かない, 買う→買わない. る-verbs drop る: 食べない. する→しない, 来る→こない, ある→ない. Past: 〜なかった.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "582defd5e8515c86b1e49cf0dd7b6624083419751d1c4dad3fa8e3090dba5ce3",
+      "meanings": [
+        "不做",
+        "不会做（简体）"
+      ],
+      "formation": "动词ない形",
+      "explanation": "以简体否定动作或习惯。",
+      "notes": "五段动词按词尾变化，一段动词去る后接ない；する变しない。",
+      "examples": [
+        {
+          "ja": "今日は学校へ行かない。",
+          "zh": "今天不去学校。"
+        },
+        {
+          "ja": "兄は肉を食べない。",
+          "zh": "哥哥不吃肉。"
+        },
+        {
+          "ja": "「コーヒー、飲む？」「ううん、飲まない。」",
+          "zh": "“喝咖啡吗？”“不，不喝。”"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#nai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "7c1ca008f7dc120f67db01001a0e2f533916a9f5b55d91b3ac5533a4d29aa93a"
+    }
   },
   {
     "id": "ta",
@@ -1551,7 +2203,39 @@
       "tense",
       "casual"
     ],
-    "notes": "Made exactly like the て-form, with て→た and で→だ: 書いて→書いた, 飲んで→飲んだ, 行って→行った. Polite equivalent: 〜ました."
+    "notes": "Made exactly like the て-form, with て→た and で→だ: 書いて→書いた, 飲んで→飲んだ, 行って→行った. Polite equivalent: 〜ました.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "0641ba55fa5ec537d874484b35f386b1903b59086a6b5142c686a23191842078",
+      "meanings": [
+        "做了（简体）"
+      ],
+      "formation": "动词た形",
+      "explanation": "以简体叙述过去的动作。",
+      "notes": "变化与て形相对应：て变た，で变だ。",
+      "examples": [
+        {
+          "ja": "週末は家で映画を見た。",
+          "zh": "周末我在家看了电影。"
+        },
+        {
+          "ja": "駅で先生に会った。",
+          "zh": "我在车站遇到了老师。"
+        },
+        {
+          "ja": "「昼ご飯、食べた？」「うん、もう食べた。」",
+          "zh": "“吃午饭了吗？”“嗯，已经吃了。”"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ta",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "4797a88ead4e6e2126b05b77cb4d647436e034efe0ec4f157a1bfaafad0f230d"
+    }
   },
   {
     "id": "mashou",
@@ -1581,7 +2265,39 @@
       "invitation",
       "suggestion"
     ],
-    "notes": "Used when the speaker expects the listener to agree. To invite more gently, use 〜ませんか."
+    "notes": "Used when the speaker expects the listener to agree. To invite more gently, use 〜ませんか.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "231a50c5738e2b16965dc80d1810f9b292c27b0d44eb05037414c934c0e6174e",
+      "meanings": [
+        "一起……吧"
+      ],
+      "formation": "动词ます形词干＋ましょう",
+      "explanation": "礼貌地提出一起做某事的建议。",
+      "notes": "较委婉的邀请可用〜ませんか。",
+      "examples": [
+        {
+          "ja": "いっしょに行きましょう。",
+          "zh": "一起去吧。"
+        },
+        {
+          "ja": "少し休みましょう。",
+          "zh": "稍微休息一下吧。"
+        },
+        {
+          "ja": "駅の前で会いましょう。",
+          "zh": "在车站前见面吧。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mashou",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "d934ec9cae23ef6319e4ba07441d40af13dceb27ec3454f06b2235c1dce5561f"
+    }
   },
   {
     "id": "mashou-ka",
@@ -1611,7 +2327,40 @@
       "suggestion",
       "invitation"
     ],
-    "notes": "Offers to do something for the listener (shall I?) or asks them to decide something together (shall we?)."
+    "notes": "Offers to do something for the listener (shall I?) or asks them to decide something together (shall we?).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "bf79ebcad31c8abf43c09e8f59ea4b07ff26218e655fb6af8d2634f878e92c33",
+      "meanings": [
+        "我来……好吗",
+        "我们……好吗"
+      ],
+      "formation": "动词ます形词干＋ましょうか",
+      "explanation": "提出替对方做某事，或询问共同决定。",
+      "notes": "根据语境可表示“我来”或“我们”。",
+      "examples": [
+        {
+          "ja": "窓を開けましょうか。",
+          "zh": "我来开窗好吗？"
+        },
+        {
+          "ja": "荷物を持ちましょうか。",
+          "zh": "我帮你拿行李好吗？"
+        },
+        {
+          "ja": "何時に会いましょうか。",
+          "zh": "我们几点见面呢？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mashou-ka",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "88517b0a45e010acfd1deb0c1c57e553a045271666c7368433f2132cb7c070da"
+    }
   },
   {
     "id": "masen-ka",
@@ -1640,7 +2389,40 @@
     "tags": [
       "invitation"
     ],
-    "notes": "Gentler than 〜ましょう because it leaves the listener room to decline. Accept with ええ、〜ましょう."
+    "notes": "Gentler than 〜ましょう because it leaves the listener room to decline. Accept with ええ、〜ましょう.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "4a469d8d778e702560b6d9c2c015b7a6a49a32ff864f450f85b49bf752075830",
+      "meanings": [
+        "要不要……",
+        "一起……好吗"
+      ],
+      "formation": "动词ます形词干＋ませんか",
+      "explanation": "礼貌而委婉地邀请对方做某事。",
+      "notes": "比直接用ましょう更留有拒绝的余地。",
+      "examples": [
+        {
+          "ja": "いっしょに昼ご飯を食べませんか。",
+          "zh": "一起吃午饭好吗？"
+        },
+        {
+          "ja": "日曜日にテニスをしませんか。",
+          "zh": "星期天一起打网球好吗？"
+        },
+        {
+          "ja": "明日、公園を散歩しませんか。",
+          "zh": "明天去公园散步好吗？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#masen-ka",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "a6597d3bc27d42a094e96b2586bd637d162e90a7931047fbf609676ab78ad53a"
+    }
   },
   {
     "id": "tai",
@@ -1669,7 +2451,39 @@
     "tags": [
       "desire"
     ],
-    "notes": "Conjugates like an い-adjective: 〜たくない, 〜たかった. The object can take が or を. Not used to state another person's wishes directly."
+    "notes": "Conjugates like an い-adjective: 〜たくない, 〜たかった. The object can take が or を. Not used to state another person's wishes directly.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "57359b90f186c75da38af964d525153100b55d397f7eaaa6a804a0fb0d1eef46",
+      "meanings": [
+        "想要做"
+      ],
+      "formation": "动词ます形词干＋たい",
+      "explanation": "表示说话人的愿望，也用于询问对方的愿望。",
+      "notes": "像い形容词一样变形；动作对象可用が或を。",
+      "examples": [
+        {
+          "ja": "夏休みに沖縄へ行きたいです。",
+          "zh": "暑假我想去冲绳。"
+        },
+        {
+          "ja": "冷たい水が飲みたいです。",
+          "zh": "我想喝凉水。"
+        },
+        {
+          "ja": "何が食べたいですか。",
+          "zh": "你想吃什么？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#tai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "471e91f61de8230ef3e5fc235508581b3bf5f9083737a9d4d5ee6b790362bedd"
+    }
   },
   {
     "id": "ga-hoshii",
@@ -1698,7 +2512,39 @@
     "tags": [
       "desire"
     ],
-    "notes": "For things, not actions (actions use 〜たい). Conjugates like an い-adjective: ほしくない, ほしかった."
+    "notes": "For things, not actions (actions use 〜たい). Conjugates like an い-adjective: ほしくない, ほしかった.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "9c1debec079d9c9cb50e1fd6dd5383bc860a9810d1ae9dfcc0fc5bca1a7f44c8",
+      "meanings": [
+        "想要（某物）"
+      ],
+      "formation": "名词＋がほしい",
+      "explanation": "表示想得到某物的愿望。",
+      "notes": "表示想做某事时用〜たい；ほしい按い形容词变形。",
+      "examples": [
+        {
+          "ja": "新しいパソコンがほしいです。",
+          "zh": "我想要一台新电脑。"
+        },
+        {
+          "ja": "誕生日に何がほしいですか。",
+          "zh": "你生日想要什么？"
+        },
+        {
+          "ja": "今は何もほしくないです。",
+          "zh": "我现在什么也不想要。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ga-hoshii",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "6672a7c9b65201426329f2c612a81d88a3bc1594555d5d6056caade552b77f99"
+    }
   },
   {
     "id": "o-kudasai",
@@ -1726,7 +2572,39 @@
     "tags": [
       "request"
     ],
-    "notes": "Used when shopping or ordering. A quantity goes after を with no particle: 切手を二枚ください."
+    "notes": "Used when shopping or ordering. A quantity goes after を with no particle: 切手を二枚ください.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "de6d6a81c3f47a5e312d35904b03d72bbd98d6fb1b84eb628692d9cb5bff7318",
+      "meanings": [
+        "请给我……"
+      ],
+      "formation": "名词＋をください",
+      "explanation": "请求对方给自己某物，常用于购物或点餐。",
+      "notes": "数量词可放在を之后，如切手を二枚ください。",
+      "examples": [
+        {
+          "ja": "すみません、水をください。",
+          "zh": "不好意思，请给我水。"
+        },
+        {
+          "ja": "このりんごを三つください。",
+          "zh": "请给我三个这样的苹果。"
+        },
+        {
+          "ja": "メニューをください。",
+          "zh": "请给我菜单。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#o-kudasai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ebd48ef641f586bcc00fefa73bea9a8edb687db1bc82515b0e24fdaf423c5ca2"
+    }
   },
   {
     "id": "te-kudasai",
@@ -1755,7 +2633,39 @@
       "request",
       "politeness"
     ],
-    "notes": "Polite, but still an instruction the speaker expects to be followed. Softer requests use 〜てくれませんか (N4)."
+    "notes": "Polite, but still an instruction the speaker expects to be followed. Softer requests use 〜てくれませんか (N4).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "e0f915661b44a04e9cffa4a657d3b689475ace8c611fcaf20e7e0888cff441cb",
+      "meanings": [
+        "请做……"
+      ],
+      "formation": "动词て形＋ください",
+      "explanation": "礼貌地请求或指示对方做某事。",
+      "notes": "更委婉的请求可用〜てくれませんか。",
+      "examples": [
+        {
+          "ja": "もう少しゆっくり話してください。",
+          "zh": "请再说慢一点。"
+        },
+        {
+          "ja": "ここでくつをぬいでください。",
+          "zh": "请在这里脱鞋。"
+        },
+        {
+          "ja": "すみません、駅までの道を教えてください。",
+          "zh": "不好意思，请告诉我去车站的路。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#te-kudasai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "e8083e428a0774a80985345b4c594e8ef104412938f09ed98132411a96098367"
+    }
   },
   {
     "id": "naide-kudasai",
@@ -1785,7 +2695,39 @@
       "request",
       "prohibition"
     ],
-    "notes": "Softer than 〜てはいけません. In casual speech ください is dropped: 見ないで."
+    "notes": "Softer than 〜てはいけません. In casual speech ください is dropped: 見ないで.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "c7d6530b4006ead583adfab43d422e2242ab4b3f0c042ab90697b23e499d26d9",
+      "meanings": [
+        "请不要做……"
+      ],
+      "formation": "动词ない形＋でください",
+      "explanation": "礼貌地请求对方不要做某事。",
+      "notes": "口语中可以省去ください。",
+      "examples": [
+        {
+          "ja": "教室で食べないでください。",
+          "zh": "请不要在教室里吃东西。"
+        },
+        {
+          "ja": "この部屋に入らないでください。",
+          "zh": "请不要进入这个房间。"
+        },
+        {
+          "ja": "心配しないでください。",
+          "zh": "请不要担心。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#naide-kudasai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "432dcc53fad6064fd6f9a37673cd7627702da238ae9e27953cc6ad0022e07c0a"
+    }
   },
   {
     "id": "te-mo-ii",
@@ -1813,7 +2755,39 @@
     "tags": [
       "permission"
     ],
-    "notes": "Add ですか to ask for permission. A polite refusal is often just すみません、ちょっと…."
+    "notes": "Add ですか to ask for permission. A polite refusal is often just すみません、ちょっと….",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "75871b8f7e4a654445d15f239fba437432be34a2fd07d6733b23f3cbb3f578a0",
+      "meanings": [
+        "可以做……"
+      ],
+      "formation": "动词て形＋もいい",
+      "explanation": "表示允许做某事，或用问句请求许可。",
+      "notes": "加ですか可询问是否允许。",
+      "examples": [
+        {
+          "ja": "この辞書を使ってもいいですか。",
+          "zh": "我可以使用这本词典吗？"
+        },
+        {
+          "ja": "今日は早く帰ってもいいです。",
+          "zh": "今天你可以早点回家。"
+        },
+        {
+          "ja": "ここにすわってもいいですか。",
+          "zh": "我可以坐在这里吗？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#te-mo-ii",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ec8ac5cba91a26da2d634fbf12483863752726bff11c754e431c66403a27a04a"
+    }
   },
   {
     "id": "te-wa-ikenai",
@@ -1842,7 +2816,40 @@
     "tags": [
       "prohibition"
     ],
-    "notes": "A strong prohibition, often for rules. Polite form: 〜てはいけません. Casual contraction: 〜ちゃいけない / 〜じゃいけない."
+    "notes": "A strong prohibition, often for rules. Polite form: 〜てはいけません. Casual contraction: 〜ちゃいけない / 〜じゃいけない.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "028d4564b12b2d32c40aaf1907dbaf286b4d711c391d2c4c3bf82ca96f0c9f37",
+      "meanings": [
+        "不可以做",
+        "禁止"
+      ],
+      "formation": "动词て形＋はいけない",
+      "explanation": "表示禁止做某事，常用于规则。",
+      "notes": "礼貌形式为〜てはいけません，口语可缩为〜ちゃいけない等。",
+      "examples": [
+        {
+          "ja": "図書館で大きい声で話してはいけません。",
+          "zh": "不可以在图书馆大声说话。"
+        },
+        {
+          "ja": "子どもはこの川で泳いではいけません。",
+          "zh": "孩子不可以在这条河里游泳。"
+        },
+        {
+          "ja": "ここでたばこを吸ってはいけません。",
+          "zh": "这里禁止吸烟。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#te-wa-ikenai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ac754e8eff4a6c480befdc6f2e5e5fdf3d480fcac8dc19b3065800a8743f5148"
+    }
   },
   {
     "id": "nakereba-naranai-nakute-wa-ikenai",
@@ -1871,7 +2878,40 @@
     "tags": [
       "obligation"
     ],
-    "notes": "Polite forms end in なりません / いけません. The two mean the same; なければならない sounds slightly more formal."
+    "notes": "Polite forms end in なりません / いけません. The two mean the same; なければならない sounds slightly more formal.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "78422bdd33ce4118495e63b70dccf4a0de297b59d5f771c9e1306dc1980d79ac",
+      "meanings": [
+        "必须做",
+        "不得不做"
+      ],
+      "formation": "动词ない形去ない＋なければならない／なくてはいけない",
+      "explanation": "表示必须做某事或有义务做某事。",
+      "notes": "礼貌形式可用なりません或いけません。",
+      "examples": [
+        {
+          "ja": "明日は6時に起きなければなりません。",
+          "zh": "明天必须六点起床。"
+        },
+        {
+          "ja": "今日は早く家に帰らなくてはいけません。",
+          "zh": "今天我必须早点回家。"
+        },
+        {
+          "ja": "日本では、家に入る前にくつをぬがなければなりません。",
+          "zh": "在日本，进屋前必须脱鞋。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#nakereba-naranai-nakute-wa-ikenai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "e0ef66c3ed2f003d764c5a375146ac309d48e4749cc51a086dcb40e7b0e9c379"
+    }
   },
   {
     "id": "nakute-mo-ii",
@@ -1901,7 +2941,39 @@
       "necessity",
       "permission"
     ],
-    "notes": "The opposite of 〜なければならない. Ask with 〜なくてもいいですか (Is it all right if I don't ...?)."
+    "notes": "The opposite of 〜なければならない. Ask with 〜なくてもいいですか (Is it all right if I don't ...?).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "66b5618a198ef8607ffc3378afe2ece600072aca79c8b71b604b859a0d088e6f",
+      "meanings": [
+        "不必做"
+      ],
+      "formation": "动词ない形去ない＋なくてもいい",
+      "explanation": "表示不做某事也可以，没有必要做。",
+      "notes": "用〜なくてもいいですか可询问不做是否可以。",
+      "examples": [
+        {
+          "ja": "明日は学校へ来なくてもいいです。",
+          "zh": "明天你不必来学校。"
+        },
+        {
+          "ja": "名前は書かなくてもいいです。",
+          "zh": "不必写名字。"
+        },
+        {
+          "ja": "今日は料理をしなくてもいいですよ。",
+          "zh": "今天你不用做饭哦。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#nakute-mo-ii",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "3e11292ecc7afd50a702e7d367cd55730394edebe7a46e596e64438704326ff3"
+    }
   },
   {
     "id": "te-iru",
@@ -1930,7 +3002,41 @@
     "tags": [
       "state"
     ],
-    "notes": "With action verbs (食べる, 読む) it shows an action in progress; with change verbs (結婚する, 開く, 知る) it shows the resulting state. Polite: 〜ています."
+    "notes": "With action verbs (食べる, 読む) it shows an action in progress; with change verbs (結婚する, 開く, 知る) it shows the resulting state. Polite: 〜ています.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "bc74ada668467bd64cd3afa878eda7b0699abb511b42daa652b93a3909857bb6",
+      "meanings": [
+        "正在做",
+        "处于某状态",
+        "经常做"
+      ],
+      "formation": "动词て形＋いる",
+      "explanation": "表示动作进行、动作结果持续的状态或习惯。",
+      "notes": "具体含义取决于动词及语境；礼貌形式为〜ています。",
+      "examples": [
+        {
+          "ja": "弟は今、部屋でゲームをしています。",
+          "zh": "弟弟现在正在房间里玩游戏。"
+        },
+        {
+          "ja": "姉は結婚しています。",
+          "zh": "姐姐已婚。"
+        },
+        {
+          "ja": "窓が開いています。",
+          "zh": "窗户开着。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#te-iru",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "f56853784c69c74fbcbcf16ec33f20067c530990123ae1c27207d72f157e6674"
+    }
   },
   {
     "id": "te",
@@ -1959,7 +3065,40 @@
     "tags": [
       "sequence"
     ],
-    "notes": "The final verb sets the tense for the whole sentence. 書く→書いて, 飲む→飲んで, 話す→話して, 買う→買って, 行く→行って (irregular)."
+    "notes": "The final verb sets the tense for the whole sentence. 書く→書いて, 飲む→飲んで, 話す→話して, 買う→買って, 行く→行って (irregular).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "cfa33e1dc7651eb701165e3b25b0faa20bb235012f621370654b304face1714b",
+      "meanings": [
+        "接续动作",
+        "然后"
+      ],
+      "formation": "动词て形＋后续句子",
+      "explanation": "连接动作，常表示动作依次发生。",
+      "notes": "整个句子的时态通常由最后的谓语决定。",
+      "examples": [
+        {
+          "ja": "朝起きて、顔を洗います。",
+          "zh": "早上起床后洗脸。"
+        },
+        {
+          "ja": "デパートへ行って、セーターを買いました。",
+          "zh": "我去了百货商店，买了毛衣。"
+        },
+        {
+          "ja": "家に帰って、晩ご飯を食べて、寝ました。",
+          "zh": "我回到家，吃了晚饭，然后睡觉。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#te",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "607782e33be5c63b4d1a6b63062d362e0f0b7e3c25981104f71ae41a1c2b286d"
+    }
   },
   {
     "id": "te-kara",
@@ -1989,7 +3128,40 @@
       "sequence",
       "time"
     ],
-    "notes": "Stresses that A is finished before B starts, more clearly than a plain て. With ている in the main clause it often means 'since'."
+    "notes": "Stresses that A is finished before B starts, more clearly than a plain て. With ている in the main clause it often means 'since'.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "4a395141ae7fd105ee0b04ea5f812e09f0f9caa6d54b9dd8022160f719aad7a7",
+      "meanings": [
+        "做完之后",
+        "自从"
+      ],
+      "formation": "动词て形＋から",
+      "explanation": "表示前项完成后再做后项，也可表示自某事以来。",
+      "notes": "比单独使用て更强调先后关系。",
+      "examples": [
+        {
+          "ja": "手を洗ってから、ご飯を食べましょう。",
+          "zh": "洗手后吃饭吧。"
+        },
+        {
+          "ja": "宿題をしてから、テレビを見ます。",
+          "zh": "做完作业后我看电视。"
+        },
+        {
+          "ja": "日本に来てから、毎日日本語を勉強しています。",
+          "zh": "自从来到日本，我每天都在学习日语。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#te-kara",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "6343cb6697b02a842ef7cb14a1ae7396d8b20a93d45b1942a7f117bbd18ea15d"
+    }
   },
   {
     "id": "tari-tari-suru",
@@ -2018,7 +3190,39 @@
     "tags": [
       "example"
     ],
-    "notes": "Picks out a few actions from many. Tense and politeness go on the final する: 〜たりしました."
+    "notes": "Picks out a few actions from many. Tense and politeness go on the final する: 〜たりしました.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "988a461d70cb1325ae2283ae5c85458f7233584ed5e1f51befe88d51037e4ab1",
+      "meanings": [
+        "做……啦……之类"
+      ],
+      "formation": "动词た形＋り＋动词た形＋りする",
+      "explanation": "列举多个具有代表性的动作，不表示穷尽。",
+      "notes": "时态和礼貌程度体现在句末的する上。",
+      "examples": [
+        {
+          "ja": "日曜日はそうじをしたり、洗濯をしたりします。",
+          "zh": "星期天我做做清扫、洗洗衣服之类。"
+        },
+        {
+          "ja": "休みの日は本を読んだり、音楽を聞いたりします。",
+          "zh": "休息日我看看书、听听音乐之类。"
+        },
+        {
+          "ja": "夏休みは海で泳いだり、山に登ったりしました。",
+          "zh": "暑假我在海里游泳、爬山等等。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#tari-tari-suru",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "197766c1d84fb43d19f7f8bd936d1eed4b0f7849911bc086e283410989ab1a2f"
+    }
   },
   {
     "id": "ta-koto-ga-aru",
@@ -2047,7 +3251,40 @@
     "tags": [
       "experience"
     ],
-    "notes": "Talks about life experience, not something just done: きのう食べたことがある is wrong. Negative 〜たことがありません means 'have never'."
+    "notes": "Talks about life experience, not something just done: きのう食べたことがある is wrong. Negative 〜たことがありません means 'have never'.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "c008c7c241cc44766325f80974e3500677b592b23238d998f4b6a4bfba7e5c6f",
+      "meanings": [
+        "曾经做过",
+        "有过经历"
+      ],
+      "formation": "动词た形＋ことがある",
+      "explanation": "表示过去有过某种经历。",
+      "notes": "否定形式〜たことがない表示从未有过该经历。",
+      "examples": [
+        {
+          "ja": "富士山に登ったことがあります。",
+          "zh": "我爬过富士山。"
+        },
+        {
+          "ja": "日本の映画を見たことがありますか。",
+          "zh": "你看过日本电影吗？"
+        },
+        {
+          "ja": "私は馬に乗ったことがありません。",
+          "zh": "我从来没有骑过马。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ta-koto-ga-aru",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "98cc0409db42982ebf1f86bc70ef95019ff057e77385e8235d6ef00dbfe0dd5d"
+    }
   },
   {
     "id": "mae-ni",
@@ -2078,7 +3315,40 @@
       "time",
       "sequence"
     ],
-    "notes": "The verb before 前に is always in dictionary form, even when talking about the past. With a length of time there is no の: 3年前に (three years ago)."
+    "notes": "The verb before 前に is always in dictionary form, even when talking about the past. With a length of time there is no の: 3年前に (three years ago).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "dc013b813bda1a6c168643bfa747f248b3d4780b686b5ecb30508d4e09346c59",
+      "meanings": [
+        "在……之前",
+        "以前"
+      ],
+      "formation": "动词辞书形＋前に／名词＋の前に／时间长度＋前に",
+      "explanation": "表示动作或事件发生之前，也可接时间长度表示多久以前。",
+      "notes": "即使主句是过去时，动词前接形式仍用辞书形。",
+      "examples": [
+        {
+          "ja": "寝る前に歯をみがきます。",
+          "zh": "我睡觉前刷牙。"
+        },
+        {
+          "ja": "授業の前にコーヒーを飲みます。",
+          "zh": "上课前我喝咖啡。"
+        },
+        {
+          "ja": "3年前に日本へ来ました。",
+          "zh": "我三年前来到日本。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mae-ni",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "96775e177240e8610a864febcee177a34f4d86630166f5be4d3f5fddf3f954ea"
+    }
   },
   {
     "id": "ato-de",
@@ -2109,7 +3379,39 @@
       "time",
       "sequence"
     ],
-    "notes": "The verb before 後で is always in た-form, even for future plans. On its own, 後で means 'later'."
+    "notes": "The verb before 後で is always in た-form, even for future plans. On its own, 後で means 'later'.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "6ea06d462f5e531a94d35dec9137d1c1b75eec365d5c5c6e13a61d3f046c9b0b",
+      "meanings": [
+        "在……之后"
+      ],
+      "formation": "动词た形＋後で／名词＋の後で",
+      "explanation": "表示在某个动作或事件之后。",
+      "notes": "即使表示未来，接後で的动词也用た形。",
+      "examples": [
+        {
+          "ja": "晩ご飯を食べた後で、散歩をします。",
+          "zh": "吃过晚饭后我去散步。"
+        },
+        {
+          "ja": "仕事の後で、いっしょに飲みに行きませんか。",
+          "zh": "下班后一起去喝一杯好吗？"
+        },
+        {
+          "ja": "テストが終わった後で、友達と遊びました。",
+          "zh": "考试结束后，我和朋友玩了。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ato-de",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "25a36e808d1b485b70a8bbd863cb57c8f8cbcb6825ffa96a82cee31603660403"
+    }
   },
   {
     "id": "nagara",
@@ -2138,7 +3440,39 @@
     "tags": [
       "simultaneity"
     ],
-    "notes": "Both actions are done by the same person. The main action comes last: in A-ながら B, B is the main activity."
+    "notes": "Both actions are done by the same person. The main action comes last: in A-ながら B, B is the main activity.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "88688ab9b2380659839954a1aa46efb712c10342f8de9f867e6b73f72fd990d6",
+      "meanings": [
+        "一边……一边……"
+      ],
+      "formation": "动词ます形词干＋ながら",
+      "explanation": "表示同一主体同时进行两个动作。",
+      "notes": "主要动作通常放在ながら之后。",
+      "examples": [
+        {
+          "ja": "音楽を聞きながら勉強します。",
+          "zh": "我一边听音乐一边学习。"
+        },
+        {
+          "ja": "父はいつも新聞を読みながら朝ご飯を食べます。",
+          "zh": "爸爸总是一边看报纸一边吃早饭。"
+        },
+        {
+          "ja": "コーヒーを飲みながら話しましょう。",
+          "zh": "我们边喝咖啡边聊吧。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#nagara",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "fb01771ca46b0859904adb4a2d574eeb680bed5249663f2a1f262d6116dd2398"
+    }
   },
   {
     "id": "ni-iku",
@@ -2168,7 +3502,39 @@
     "tags": [
       "purpose"
     ],
-    "notes": "来る and 帰る work the same way: 遊びに来る. With する-nouns the noun can come directly: 買い物に行く, 散歩に行く."
+    "notes": "来る and 帰る work the same way: 遊びに来る. With する-nouns the noun can come directly: 買い物に行く, 散歩に行く.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "ae6da6b8173016e5e3c71ac9c3bced69c49e221a54ef7eb13445db405d2496d3",
+      "meanings": [
+        "去做……"
+      ],
+      "formation": "动词ます形词干／表示动作的名词＋に行く",
+      "explanation": "表示前往某处做某事的目的。",
+      "notes": "也可用来る、帰る，如遊びに来る。",
+      "examples": [
+        {
+          "ja": "デパートへ服を買いに行きます。",
+          "zh": "我去百货商店买衣服。"
+        },
+        {
+          "ja": "週末、海へ泳ぎに行きました。",
+          "zh": "周末我去海边游泳了。"
+        },
+        {
+          "ja": "友達がうちへ遊びに来ました。",
+          "zh": "朋友来我家玩了。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ni-iku",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "09a609c580bcc7ee70c041c82dd034b361d57049198fdbbc4b9797424afb5736"
+    }
   },
   {
     "id": "ga-suki-ga-kirai",
@@ -2198,7 +3564,40 @@
     "tags": [
       "emotion"
     ],
-    "notes": "好き and 嫌い are な-adjectives, so the thing liked takes が, not を. 大好き and 大嫌い are stronger. 嫌い can sound blunt; あまり好きじゃない is softer."
+    "notes": "好き and 嫌い are な-adjectives, so the thing liked takes が, not を. 大好き and 大嫌い are stronger. 嫌い can sound blunt; あまり好きじゃない is softer.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "b892aed9e9b84c892e886039777f4ccd65181ca27c2dc54cb4f52db6ad99d586",
+      "meanings": [
+        "喜欢",
+        "讨厌"
+      ],
+      "formation": "名词＋が好き／が嫌い；动词辞书形＋のが好き",
+      "explanation": "表示喜欢或讨厌某物，也可通过の将动作名词化。",
+      "notes": "大好き和大嫌い语气更强；あまり好きじゃない较委婉。",
+      "examples": [
+        {
+          "ja": "私は甘いものが好きです。",
+          "zh": "我喜欢甜食。"
+        },
+        {
+          "ja": "弟は野菜が嫌いです。",
+          "zh": "弟弟不喜欢蔬菜。"
+        },
+        {
+          "ja": "母は料理をするのが好きです。",
+          "zh": "妈妈喜欢做饭。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ga-suki-ga-kirai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "790c1b91dd1afc94df1c45bfb842c91034d2751c707b1449f68672ae22052e5a"
+    }
   },
   {
     "id": "ga-jouzu-ga-heta",
@@ -2228,7 +3627,40 @@
     "tags": [
       "ability"
     ],
-    "notes": "Mostly used about other people; calling yourself 上手 can sound like bragging. Both are な-adjectives: 料理が上手な人."
+    "notes": "Mostly used about other people; calling yourself 上手 can sound like bragging. Both are な-adjectives: 料理が上手な人.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "7f0d99f60e9ee396d320bdd612051decd5dec7205c76864833ee3030658c486a",
+      "meanings": [
+        "擅长",
+        "不擅长"
+      ],
+      "formation": "名词＋が上手／が下手",
+      "explanation": "表示在某项技能方面擅长或不擅长。",
+      "notes": "上手和下手是な形容词；称自己上手可能显得自夸。",
+      "examples": [
+        {
+          "ja": "姉はピアノが上手です。",
+          "zh": "姐姐擅长弹钢琴。"
+        },
+        {
+          "ja": "私は歌が下手です。",
+          "zh": "我不擅长唱歌。"
+        },
+        {
+          "ja": "マイクさんは日本語が上手ですね。",
+          "zh": "迈克，你日语说得真好。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ga-jouzu-ga-heta",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "3b0133311b9323cae9ca15e2283691b30e75627c874a73faccff3093c81e9900"
+    }
   },
   {
     "id": "ga-aru-ga-iru",
@@ -2257,7 +3689,40 @@
     "tags": [
       "state"
     ],
-    "notes": "ある is for things, plants and events; いる is for people and animals. Negatives: ない / いない (polite: ありません / いません)."
+    "notes": "ある is for things, plants and events; いる is for people and animals. Negatives: ない / いない (polite: ありません / いません).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "124d81de83a9acf1049129b8b81866b704ebdceabac7f8d3769966803ba3ac71",
+      "meanings": [
+        "有",
+        "存在"
+      ],
+      "formation": "名词＋がある／がいる",
+      "explanation": "表示某物或某人存在，也可表示拥有。",
+      "notes": "ある用于物品、植物和事件；いる用于人和动物。",
+      "examples": [
+        {
+          "ja": "公園に大きい木があります。",
+          "zh": "公园里有一棵大树。"
+        },
+        {
+          "ja": "私は妹が一人います。",
+          "zh": "我有一个妹妹。"
+        },
+        {
+          "ja": "明日、日本語のテストがあります。",
+          "zh": "明天有日语考试。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ga-aru-ga-iru",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "1f7f71e28118f5d74a594c35d21d225f73bc86fd58dca07a605d27d17fc2bbe0"
+    }
   },
   {
     "id": "kara-reason",
@@ -2286,7 +3751,40 @@
     "tags": [
       "reason"
     ],
-    "notes": "The reason comes first: A から B (A, so B). Answer どうして with 〜からです. Nouns and な-adjectives need だ: 雨だから."
+    "notes": "The reason comes first: A から B (A, so B). Answer どうして with 〜からです. Nouns and な-adjectives need だ: 雨だから.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "86aeda48e733f22f44d45307153535b16702f1b811f9036d6a2e8399687575a0",
+      "meanings": [
+        "因为",
+        "所以"
+      ],
+      "formation": "句子＋から",
+      "explanation": "表示原因，后项给出由此产生的结果或决定。",
+      "notes": "名词／な形容词词干＋だから，如学生だから、静かだから。",
+      "examples": [
+        {
+          "ja": "今日は寒いから、コートを着ます。",
+          "zh": "今天冷，所以我要穿外套。"
+        },
+        {
+          "ja": "時間がありませんから、タクシーで行きましょう。",
+          "zh": "没时间了，我们坐出租车去吧。"
+        },
+        {
+          "ja": "「どうして休みましたか。」「頭が痛かったからです。」",
+          "zh": "“为什么请假了？”“因为头疼。”"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#kara-reason",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ba89422b8814175f4489e49ec29b9a4feb60b045fb1dba7239a41688900abfd1"
+    }
   },
   {
     "id": "ga-but",
@@ -2316,7 +3814,40 @@
       "contrast",
       "particle"
     ],
-    "notes": "Also used just to soften a request or lead into a topic: すみませんが…. A little more formal than けど (N4)."
+    "notes": "Also used just to soften a request or lead into a topic: すみませんが…. A little more formal than けど (N4).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "e49dc57a568bbc944f62196c185ed6ab654eea305d763800977f45ee4c8388e8",
+      "meanings": [
+        "但是",
+        "虽然"
+      ],
+      "formation": "句子＋が",
+      "explanation": "连接前后内容，表示转折，也可用作委婉引入。",
+      "notes": "相比けど较正式；すみませんが常用于引出请求。",
+      "examples": [
+        {
+          "ja": "この店は安いですが、あまりおいしくないです。",
+          "zh": "这家店便宜，但是不太好吃。"
+        },
+        {
+          "ja": "日本語は難しいですが、おもしろいです。",
+          "zh": "日语很难，但很有趣。"
+        },
+        {
+          "ja": "すみませんが、ちょっと静かにしてください。",
+          "zh": "不好意思，请稍微安静一点。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ga-but",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "c2d7c21106ce1c575db410c357a6b636cab4a1fa741e2c2d0f6f3ccb5b5e57e8"
+    }
   },
   {
     "id": "deshou",
@@ -2344,7 +3875,40 @@
     "tags": [
       "conjecture"
     ],
-    "notes": "Typical of weather forecasts. Said with rising intonation, it asks the listener to agree. Plain form: だろう (N4)."
+    "notes": "Typical of weather forecasts. Said with rising intonation, it asks the listener to agree. Plain form: だろう (N4).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "703d49b424f5a9998c40991aa64ce7191ae986fce3d990e091c3fefc352664c3",
+      "meanings": [
+        "大概",
+        "……吧"
+      ],
+      "formation": "动词普通形／い形容词普通形／な形容词词干／名词＋でしょう",
+      "explanation": "表示推测，也可用升调寻求对方认同。",
+      "notes": "天气预报中常用；简体形式为だろう。",
+      "examples": [
+        {
+          "ja": "明日は雨が降るでしょう。",
+          "zh": "明天大概会下雨。"
+        },
+        {
+          "ja": "山の上は寒いでしょう。",
+          "zh": "山上大概很冷吧。"
+        },
+        {
+          "ja": "このかばん、かわいいでしょう？",
+          "zh": "这个包很可爱吧？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#deshou",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ed4d4122ee0534fd054c2f9f285314e1428abed5330fe7c37040e6d443f76e7f"
+    }
   },
   {
     "id": "ku-naru-ni-naru",
@@ -2372,7 +3936,40 @@
     "tags": [
       "change"
     ],
-    "notes": "いい becomes よくなる. Often used in the past to describe a change that has happened: 大きくなりました."
+    "notes": "いい becomes よくなる. Often used in the past to describe a change that has happened: 大きくなりました.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "d7965aaa1823dfeef2197ecd087784cf2120a873cfcfa894fc0e4156f209a9c2",
+      "meanings": [
+        "变得",
+        "成为"
+      ],
+      "formation": "い形容词词干＋くなる／な形容词或名词＋になる",
+      "explanation": "表示状态发生变化或成为某种身份。",
+      "notes": "いい的变化形式为よくなる。",
+      "examples": [
+        {
+          "ja": "あたたかくなりましたね。",
+          "zh": "天气变暖了呢。"
+        },
+        {
+          "ja": "部屋がきれいになりました。",
+          "zh": "房间变干净了。"
+        },
+        {
+          "ja": "兄は来年、医者になります。",
+          "zh": "哥哥明年要成为医生。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ku-naru-ni-naru",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "333be75648ff9e6bd1d1eb1ff41333ac0579ee3da50846523fc6ff28cc70db1d"
+    }
   },
   {
     "id": "ni-suru",
@@ -2401,7 +3998,40 @@
     "tags": [
       "decision"
     ],
-    "notes": "Common when ordering food or picking from options. Past: 〜にしました (I decided on ...)."
+    "notes": "Common when ordering food or picking from options. Past: 〜にしました (I decided on ...).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "bf4a83ee8e939af4a021e1c5f4779d3d8e9c233875c56a1172506dca618bdecf",
+      "meanings": [
+        "决定选",
+        "要"
+      ],
+      "formation": "名词＋にする",
+      "explanation": "从选项中作出决定，常用于点餐。",
+      "notes": "过去形式にしました表示已经选定。",
+      "examples": [
+        {
+          "ja": "私はカレーにします。",
+          "zh": "我要咖喱。"
+        },
+        {
+          "ja": "飲み物は何にしますか。",
+          "zh": "饮料你要什么？"
+        },
+        {
+          "ja": "旅行は来月にしましょう。",
+          "zh": "旅行就定在下个月吧。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ni-suru",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "41a10d66545770e963019895cc37823a03aa796d85711f81b28c6ab2f93b4b8b"
+    }
   },
   {
     "id": "mada-te-inai",
@@ -2431,7 +4061,39 @@
       "negation",
       "completion"
     ],
-    "notes": "Use ていない, not ませんでした, for something that may still happen. The short answer is いいえ、まだです."
+    "notes": "Use ていない, not ませんでした, for something that may still happen. The short answer is いいえ、まだです.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "d39fcadbb591a9c2da1ee9262a7d9e58050d9d513416fb20a811a76f0d6acd95",
+      "meanings": [
+        "还没有做"
+      ],
+      "formation": "まだ＋动词て形＋いない／いません",
+      "explanation": "表示截至目前某事尚未发生或完成。",
+      "notes": "简短回答可用いいえ、まだです。",
+      "examples": [
+        {
+          "ja": "まだ昼ご飯を食べていません。",
+          "zh": "我还没有吃午饭。"
+        },
+        {
+          "ja": "「宿題はもうしましたか。」「いいえ、まだしていません。」",
+          "zh": "“作业已经做了吗？”“不，还没做。”"
+        },
+        {
+          "ja": "電車はまだ来ていません。",
+          "zh": "电车还没有来。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mada-te-inai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "61ed0f03e1b20ee3708f63f9b6493f0e33a3bcb6efddc3956c2715d4987b0ce6"
+    }
   },
   {
     "id": "mou-ta",
@@ -2461,7 +4123,40 @@
       "completion",
       "time"
     ],
-    "notes": "In questions もう means 'yet'. With a negative verb, もう means 'no longer': もう食べません."
+    "notes": "In questions もう means 'yet'. With a negative verb, もう means 'no longer': もう食べません.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "835ba0018ca45891046bb5f20a2136fc4edfd8ea38a407d4a7d1535f3ae76189",
+      "meanings": [
+        "已经做了",
+        "是否已经做了"
+      ],
+      "formation": "もう＋动词た形／动词ます形词干＋ました",
+      "explanation": "表示动作已经完成；用于问句时询问是否已经完成。",
+      "notes": "もう与否定形式搭配时可表示“不再”。",
+      "examples": [
+        {
+          "ja": "「もう晩ご飯を食べましたか。」「はい、もう食べました。」",
+          "zh": "“已经吃晚饭了吗？”“嗯，已经吃了。”"
+        },
+        {
+          "ja": "妹はもう寝ました。",
+          "zh": "妹妹已经睡了。"
+        },
+        {
+          "ja": "映画はもう始まりましたよ。",
+          "zh": "电影已经开始了哦。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#mou-ta",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ccab5df76a5dde65154c101126c4cb24b0598cccda93911bfaa0526aeeb8e53c"
+    }
   },
   {
     "id": "amari-nai",
@@ -2491,7 +4186,40 @@
       "negation",
       "degree"
     ],
-    "notes": "Always followed by a negative form. あまり好きじゃない is a softer way to say you dislike something."
+    "notes": "Always followed by a negative form. あまり好きじゃない is a softer way to say you dislike something.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "3afb4a46feba69a30fb9817464745cf161f8088576f8693228515f9f9d0829f9",
+      "meanings": [
+        "不太",
+        "不怎么"
+      ],
+      "formation": "あまり＋动词或形容词否定形",
+      "explanation": "表示程度或频率不高。",
+      "notes": "常与否定形式搭配；あまり好きじゃない可委婉表达不喜欢。",
+      "examples": [
+        {
+          "ja": "私はあまりテレビを見ません。",
+          "zh": "我不太看电视。"
+        },
+        {
+          "ja": "このりんごはあまり甘くないです。",
+          "zh": "这个苹果不太甜。"
+        },
+        {
+          "ja": "今日はあまり忙しくありません。",
+          "zh": "我今天不太忙。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#amari-nai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "d5f29c5d948b5a243591431a7c3b7f85669e31ba6074f4cf60cb6e24df3389be"
+    }
   },
   {
     "id": "zenzen-nai",
@@ -2522,7 +4250,40 @@
       "negation",
       "degree"
     ],
-    "notes": "Stronger than あまり〜ない. In casual speech 全然 is sometimes used with positive words (全然大丈夫), but with a negative is the standard use."
+    "notes": "Stronger than あまり〜ない. In casual speech 全然 is sometimes used with positive words (全然大丈夫), but with a negative is the standard use.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "e788ec20f5ed955c7556a1aebadad29c529df4a75cc5acabfeba91ea815bbc0d",
+      "meanings": [
+        "完全不",
+        "一点也不"
+      ],
+      "formation": "全然＋动词或形容词否定形",
+      "explanation": "强调完全没有某种状态或行为。",
+      "notes": "口语中全然也可与肯定表达搭配，但此处介绍否定用法。",
+      "examples": [
+        {
+          "ja": "この問題は全然わかりません。",
+          "zh": "这道题我完全不懂。"
+        },
+        {
+          "ja": "今日は全然寒くないです。",
+          "zh": "今天一点也不冷。"
+        },
+        {
+          "ja": "弟は全然勉強しません。",
+          "zh": "弟弟完全不学习。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#zenzen-nai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "f51654f54976e3afe282e5f9e581065b0c2600d3b38bb214139230e1b3dd7a20"
+    }
   },
   {
     "id": "dake",
@@ -2551,7 +4312,40 @@
     "tags": [
       "limitation"
     ],
-    "notes": "Neutral in tone. Compare しか〜ない (N4), which stresses that the amount is small."
+    "notes": "Neutral in tone. Compare しか〜ない (N4), which stresses that the amount is small.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "ced8384b6b356f08d557173060f6713731e68f4b97a4ca8c1ac487260dea91a7",
+      "meanings": [
+        "只",
+        "仅仅"
+      ],
+      "formation": "名词／动词辞书形＋だけ",
+      "explanation": "限定数量、范围或动作，表示只有这些。",
+      "notes": "语气通常中性；しか〜ない常突出数量不足。",
+      "examples": [
+        {
+          "ja": "財布に100円だけあります。",
+          "zh": "钱包里只有一百日元。"
+        },
+        {
+          "ja": "朝はコーヒーだけ飲みます。",
+          "zh": "早上我只喝咖啡。"
+        },
+        {
+          "ja": "日曜日だけ休みです。",
+          "zh": "我只有星期天休息。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#dake",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "611546dd2af02a3a25f31add183f4126b8d2121395c13293c1d50d47480faf1f"
+    }
   },
   {
     "id": "kurai-gurai",
@@ -2581,7 +4375,40 @@
       "quantity",
       "degree"
     ],
-    "notes": "Used with amounts and durations. For a point in time (around three o'clock), use ごろ: 3時ごろ."
+    "notes": "Used with amounts and durations. For a point in time (around three o'clock), use ごろ: 3時ごろ.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "b2afa84de0ca3e9c57f9fb02fdd252fd39a6a01b7e88e47d41b7871a9621f10b",
+      "meanings": [
+        "大约",
+        "左右"
+      ],
+      "formation": "数量或时长＋くらい／ぐらい",
+      "explanation": "表示数量或持续时间的大致程度。",
+      "notes": "具体时刻附近通常用ごろ。",
+      "examples": [
+        {
+          "ja": "駅まで歩いて10分ぐらいです。",
+          "zh": "走到车站大约十分钟。"
+        },
+        {
+          "ja": "毎日2時間くらい勉強します。",
+          "zh": "我每天学习大约两小时。"
+        },
+        {
+          "ja": "このかばんは5000円ぐらいでした。",
+          "zh": "这个包大约五千日元。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#kurai-gurai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "231846123c890bb30881a7ed8b78e5b058b1a55688a35f4416e3347fe906fd7b"
+    }
   },
   {
     "id": "goro",
@@ -2610,7 +4437,40 @@
     "tags": [
       "time"
     ],
-    "notes": "Attaches to clock times, dates and months. に after ごろ is optional: 7時ごろ(に)起きます."
+    "notes": "Attaches to clock times, dates and months. に after ごろ is optional: 7時ごろ(に)起きます.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "345ddd0351dbb67f14f5b2c1f51f3bc91f0e52321404b73e4488b42bdb6a7b12",
+      "meanings": [
+        "大约",
+        "……前后"
+      ],
+      "formation": "时刻、日期等＋ごろ",
+      "explanation": "表示某个时间点的前后。",
+      "notes": "ごろ之后的に可以省略。",
+      "examples": [
+        {
+          "ja": "毎晩11時ごろ寝ます。",
+          "zh": "我每天晚上十一点左右睡觉。"
+        },
+        {
+          "ja": "4月ごろ、桜が咲きます。",
+          "zh": "樱花大约在四月开放。"
+        },
+        {
+          "ja": "夕方6時ごろに家に帰ります。",
+          "zh": "我傍晚六点左右回家。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#goro",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "f2c21a12ff3d0dda874a476905055dfe1af43f00f065d94bf18e350ca2852e5e"
+    }
   },
   {
     "id": "nani-mo-nai-dare-mo-nai",
@@ -2640,7 +4500,40 @@
     "tags": [
       "negation"
     ],
-    "notes": "With places, a particle comes before も: どこにも / どこへも行きません (go nowhere). 誰 is often written in hiragana: だれ."
+    "notes": "With places, a particle comes before も: どこにも / どこへも行きません (go nowhere). 誰 is often written in hiragana: だれ.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "1f839db6c700cf628826a1dc03cf1f55480258ed02652e1188b8be691a0d00ce",
+      "meanings": [
+        "什么也不",
+        "谁也不"
+      ],
+      "formation": "何も／誰も＋否定形",
+      "explanation": "与否定形式呼应，表示没有任何事物或人。",
+      "notes": "表示地点时助词放在も前面，如どこにも。",
+      "examples": [
+        {
+          "ja": "けさは何も食べませんでした。",
+          "zh": "今天早上我什么也没吃。"
+        },
+        {
+          "ja": "教室にはだれもいません。",
+          "zh": "教室里一个人也没有。"
+        },
+        {
+          "ja": "冷蔵庫の中には何もありません。",
+          "zh": "冰箱里什么也没有。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#nani-mo-nai-dare-mo-nai",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "d13e36d30f5e15dfcb52a81ae53e35e67b13e4dfe1e65fe91da9137d4a505c80"
+    }
   },
   {
     "id": "nani-ka-dare-ka-doko-ka",
@@ -2670,7 +4563,41 @@
     "tags": [
       "question"
     ],
-    "notes": "Question word + か gives 'some-' words; question word + も + negative gives 'no-' words. が and を after 何か / だれか are often dropped."
+    "notes": "Question word + か gives 'some-' words; question word + も + negative gives 'no-' words. が and を after 何か / だれか are often dropped.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "fc58f50d352960d2effb30e300641f420e21d21bf3a124a5efc3b89a1f8d5f1e",
+      "meanings": [
+        "某物",
+        "某人",
+        "某处"
+      ],
+      "formation": "疑问词＋か",
+      "explanation": "表示不特定的事物、人或地点。",
+      "notes": "何か、誰か后面的が或を有时省略。",
+      "examples": [
+        {
+          "ja": "何か飲みますか。",
+          "zh": "要喝点什么吗？"
+        },
+        {
+          "ja": "だれか来ましたよ。",
+          "zh": "有人来了哦。"
+        },
+        {
+          "ja": "夏休みにどこかへ行きましたか。",
+          "zh": "暑假你去什么地方了吗？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#nani-ka-dare-ka-doko-ka",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "82711b148fef98452f87ecdc47dd5dad404354aefddc9321b9b869fb7616ad5f"
+    }
   },
   {
     "id": "kore-sore-are-dore",
@@ -2698,7 +4625,41 @@
     "tags": [
       "demonstrative"
     ],
-    "notes": "こ = near the speaker, そ = near the listener, あ = away from both, ど = question. They stand alone; as a subject どれ takes が, not は."
+    "notes": "こ = near the speaker, そ = near the listener, あ = away from both, ど = question. They stand alone; as a subject どれ takes が, not は.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "a987f27b6e83d76357c1a8b7d7157d9a1dbac83a39e844d4d2e7dde5973e6048",
+      "meanings": [
+        "这个",
+        "那个",
+        "哪个"
+      ],
+      "formation": "これ／それ／あれ／どれ",
+      "explanation": "单独指代事物，并按距离或疑问区分。",
+      "notes": "こ指近说话人，そ指近听话人，あ指远离双方，ど用于疑问。",
+      "examples": [
+        {
+          "ja": "これは私の辞書です。",
+          "zh": "这是我的词典。"
+        },
+        {
+          "ja": "それは何ですか。",
+          "zh": "那是什么？"
+        },
+        {
+          "ja": "「あなたのかさはどれですか。」「あれです。」",
+          "zh": "“你的伞是哪一把？”“是那边那把。”"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#kore-sore-are-dore",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "1d1ebc93a2869fcfec2eb5ecb1b5c15d13a3104c145a680b67f1ba890594d32e"
+    }
   },
   {
     "id": "kono-sono-ano-dono",
@@ -2726,7 +4687,41 @@
     "tags": [
       "demonstrative"
     ],
-    "notes": "Always followed by a noun: この本, never この alone. これ / それ / あれ / どれ are used when there is no noun."
+    "notes": "Always followed by a noun: この本, never この alone. これ / それ / あれ / どれ are used when there is no noun.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "74ef3d9ee2944920a9af08d5b2f39abd0dbffe128b8bcccafa26ef77f86c7655",
+      "meanings": [
+        "这个",
+        "那个",
+        "哪个"
+      ],
+      "formation": "この／その／あの／どの＋名词",
+      "explanation": "放在名词前，指示或询问某个对象。",
+      "notes": "这些词必须接名词；单独指代时用これ等。",
+      "examples": [
+        {
+          "ja": "このケーキはおいしいです。",
+          "zh": "这块蛋糕很好吃。"
+        },
+        {
+          "ja": "その本はだれのですか。",
+          "zh": "那本书是谁的？"
+        },
+        {
+          "ja": "「どの人が先生ですか。」「あの人です。」",
+          "zh": "“哪位是老师？”“那边那位。”"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#kono-sono-ano-dono",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "ed895b4b6299c37ad145fe6b9db0df3db3b82714dafce6f165a9bee811957343"
+    }
   },
   {
     "id": "koko-soko-asoko-doko",
@@ -2754,7 +4749,41 @@
     "tags": [
       "demonstrative"
     ],
-    "notes": "こちら / そちら / あちら / どちら are politer versions: お国はどちらですか (Where are you from?)."
+    "notes": "こちら / そちら / あちら / どちら are politer versions: お国はどちらですか (Where are you from?).",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "50c4f78525c1d2b9cb58ce070f1340f0b1a03f11986ccbd5c6ec89fb4031f1ac",
+      "meanings": [
+        "这里",
+        "那里",
+        "哪里"
+      ],
+      "formation": "ここ／そこ／あそこ／どこ",
+      "explanation": "指示或询问地点，区别与说话人、听话人的距离。",
+      "notes": "こちら等可作为更礼貌的表达。",
+      "examples": [
+        {
+          "ja": "ここは私の学校です。",
+          "zh": "这里是我的学校。"
+        },
+        {
+          "ja": "トイレはあそこです。",
+          "zh": "洗手间在那边。"
+        },
+        {
+          "ja": "すみません、駅はどこですか。",
+          "zh": "不好意思，车站在哪里？"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#koko-soko-asoko-doko",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "d0a9a7101c77b6e3f09ea1574d1396dd5f558f01a595230ca85e3fed6b430533"
+    }
   },
   {
     "id": "ku-nai-katta-ku-nakatta",
@@ -2785,7 +4814,39 @@
       "negation",
       "tense"
     ],
-    "notes": "高い→高くない, 高かった, 高くなかった. Add です to be polite. いい is irregular: よくない, よかった, よくなかった."
+    "notes": "高い→高くない, 高かった, 高くなかった. Add です to be polite. いい is irregular: よくない, よかった, よくなかった.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "61f990fde83e44cdf3ac9683feda004d156104d2c60ee2b3f2db4727ed3558a3",
+      "meanings": [
+        "い形容词的否定、过去和过去否定"
+      ],
+      "formation": "い形容词去い＋くない／かった／くなかった",
+      "explanation": "表示い形容词的否定、过去或过去否定。",
+      "notes": "いい特殊，变为よくない、よかった、よくなかった。",
+      "examples": [
+        {
+          "ja": "この部屋はあまり広くないです。",
+          "zh": "这个房间不太大。"
+        },
+        {
+          "ja": "きのうのテストは難しかったです。",
+          "zh": "昨天的考试很难。"
+        },
+        {
+          "ja": "先週見た映画はおもしろくなかったです。",
+          "zh": "上周看的电影没意思。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#ku-nai-katta-ku-nakatta",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "8195bd99c54fd2f975e148fa61f61eabe6d80645bc2c8d78c6edb39f2c37d70f"
+    }
   },
   {
     "id": "na-na-adjective",
@@ -2814,7 +4875,39 @@
     "tags": [
       "conjugation"
     ],
-    "notes": "Before a noun, add な: 静かな部屋. At the end of a sentence they change like nouns. きれい and きらい end in い but are な-adjectives."
+    "notes": "Before a noun, add な: 静かな部屋. At the end of a sentence they change like nouns. きれい and きらい end in い but are な-adjectives.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "4218dbc1c4b22433b7f1ebe51db18722fc0f24ed28d5b70f947db1df8480fd53",
+      "meanings": [
+        "な形容词的修饰和句末形式"
+      ],
+      "formation": "な形容词＋な＋名词／です／ではありません／でした",
+      "explanation": "な形容词修饰名词时接な，作句末谓语时可接です等。",
+      "notes": "きれい和きらい虽然以い结尾，仍属于な形容词。",
+      "examples": [
+        {
+          "ja": "京都は有名な町です。",
+          "zh": "京都是一座有名的城市。"
+        },
+        {
+          "ja": "きのうは暇でした。",
+          "zh": "我昨天有空。"
+        },
+        {
+          "ja": "この部屋はあまり静かではありません。",
+          "zh": "这个房间不太安静。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#na-na-adjective",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "3c0baac50cb7479e15dfb74dfe3d523cfa2b74cfdc92f2f1c8d2a5aa6421cd5a"
+    }
   },
   {
     "id": "kute-de",
@@ -2844,7 +4937,40 @@
       "addition",
       "conjugation"
     ],
-    "notes": "いい becomes よくて. Join qualities that point the same way (both good or both bad); for a contrast, use が instead."
+    "notes": "いい becomes よくて. Join qualities that point the same way (both good or both bad); for a contrast, use が instead.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "99d0d1a9c6a8d1d9580ee18a74c6f23c02228001329e81aea0e276672465a41e",
+      "meanings": [
+        "……而且……",
+        "连接描述"
+      ],
+      "formation": "い形容词词干＋くて／な形容词或名词＋で",
+      "explanation": "连接多个性质、状态或名词性判断。",
+      "notes": "いい变为よくて；明显转折可用が。",
+      "examples": [
+        {
+          "ja": "この店は安くておいしいです。",
+          "zh": "这家店便宜又好吃。"
+        },
+        {
+          "ja": "私の町は静かできれいです。",
+          "zh": "我的小镇安静又整洁。"
+        },
+        {
+          "ja": "兄は大学生で、妹は高校生です。",
+          "zh": "哥哥是大学生，妹妹是高中生。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#kute-de",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "c2bad60ef0f02d8418e117e7882da9bf5240707265aae34b5e32cab3b117f93d"
+    }
   },
   {
     "id": "to-iu-named",
@@ -2873,6 +4999,39 @@
     "tags": [
       "quotation"
     ],
-    "notes": "Introduces a name the listener may not know."
+    "notes": "Introduces a name the listener may not know.",
+    "zh": {
+      "status": "reviewed",
+      "source_hash": "310761c683ff4495d781d41adfa6ed3210afd9ad2d3a8fb5985c3007cbe8f745",
+      "meanings": [
+        "叫作",
+        "名为"
+      ],
+      "formation": "名词＋という＋名词",
+      "explanation": "介绍人或事物的名称。",
+      "notes": "常用于向听话人介绍可能不知道的名字。",
+      "examples": [
+        {
+          "ja": "これは「すきやき」という料理です。",
+          "zh": "这是一道叫寿喜烧的菜。"
+        },
+        {
+          "ja": "「さくら」という店でアルバイトをしています。",
+          "zh": "我在一家叫“樱”的店打工。"
+        },
+        {
+          "ja": "山田さんという人から電話がありました。",
+          "zh": "一位叫山田的人打来电话。"
+        }
+      ],
+      "references": [
+        "sources/grammar/n5.json#to-iu-named",
+        "Original Chinese authored and reviewed by Codex; no independent human review"
+      ],
+      "reviewer": "Codex",
+      "review_method": "ai",
+      "reviewed_at": "2026-10-28",
+      "review_hash": "55d155f1f5d2dc82181218230657cc71f2d389a6269f82a0b836add37baf0223"
+    }
   }
 ]

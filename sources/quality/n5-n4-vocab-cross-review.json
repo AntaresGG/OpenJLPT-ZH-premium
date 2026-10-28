@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-28",
+  "reviewer": "Codex",
+  "review_method": "ai",
+  "model": "gpt-6.1-terra",
+  "scope": "Cross-review of all N5 and N4 proposed corrections plus 30 evenly spaced newly authored vocabulary records per level. The corrected entries are additional except where they overlap the samples.",
+  "method": "Compared original or proposed Japanese examples, English glosses, Chinese translations, and available furigana. Source correction proposals were inspected without modifying authors’ staging files.",
+  "sample_ids": {
+    "n5": [
+      "2007947770",
+      "89807c7c22",
+      "cdfb776826",
+      "f7c7f35d9e",
+      "a556e5edce",
+      "4fee5be397",
+      "a123a147d7",
+      "2e1642b248",
+      "be9b8bcb5e",
+      "20fcc4f54f",
+      "dd36cae3a9",
+      "50525927ee",
+      "10fe0704ca",
+      "501df34d31",
+      "c74892f565",
+      "a21ba677f2",
+      "d99745fbb6",
+      "3c039918ba",
+      "e8a4843059",
+      "ef9536b1ee",
+      "b824bec2c5",
+      "658b912df8",
+      "4db42e0181",
+      "d91ee7a9ed",
+      "94c2076821",
+      "785a997045",
+      "162e00c6ef",
+      "b36b221d33",
+      "782272bfda",
+      "4f8e83945d"
+    ],
+    "n4": [
+      "2710211107",
+      "cbbc4c3524",
+      "57c68573b7",
+      "6b240c6105",
+      "8bbbe3a9e8",
+      "a2a012c05f",
+      "78c6412e35",
+      "c3da539389",
+      "795156bbfe",
+      "038f67b635",
+      "cbb63150b8",
+      "22a8ff8a88",
+      "7855de335f",
+      "a7dc742b01",
+      "b04bf40187",
+      "ff60f2830f",
+      "424826c446",
+      "1e4db2ac9d",
+      "d2ab60015b",
+      "b442490fff",
+      "9f86b83cad",
+      "3f26d1cef7",
+      "15f9f72b7c",
+      "84e17fcbc2",
+      "1200266b8d",
+      "3a915c9be5",
+      "6631558c00",
+      "d051720806",
+      "a6b7fa4afc",
+      "8c813519f4"
+    ]
+  },
+  "proposed_correction_ids": {
+    "n5": [
+      "687082e55c",
+      "0ce2b98d3b",
+      "5538df2bce",
+      "05123676c2",
+      "2da7034c1e",
+      "cb1c02a574",
+      "d33540fe8e",
+      "3f71089c32",
+      "d0fb41651f",
+      "397b682fa7",
+      "b21477c7db",
+      "e05de4981d",
+      "098e9e7e67",
+      "71e2aefb9d",
+      "0e8f798dbf"
+    ],
+    "n4": [
+      "376ccb94c4",
+      "8fb005254a",
+      "3cd723d544",
+      "f9a20b5203",
+      "776c4df05f"
+    ]
+  },
+  "findings": [
+    {
+      "level": "N5",
+      "id": "573bc15b1d",
+      "issue": "The Japanese does not specify the subject; サボる may mean slacking at work. The current translation inserts 我 and narrows the sense to absence.",
+      "suggestion": "因为工作偷懒，被解雇了。"
+    },
+    {
+      "level": "N5",
+      "id": "38c854e97f",
+      "issue": "The source 立ってまった validly writes 待った in kana; the Chinese translation omits waiting.",
+      "suggestion": "Keep source Japanese and translate 我们站在门旁等着。"
+    },
+    {
+      "level": "N5",
+      "id": "b21477c7db",
+      "issue": "どれ is not restricted to three or more choices; English source and Chinese translation give an overly rigid restriction.",
+      "suggestion": "Chinese 哪一个; consider guarding a correction to English which one, and explaining どちら as another choice for two."
+    },
+    {
+      "level": "N4",
+      "id": "2adec6b9b4",
+      "issue": "Second source example furigana contains invalid {前|#1392580}.",
+      "suggestion": "Guarded replacement {前|まえ}."
+    },
+    {
+      "level": "N4",
+      "id": "a02c2a6790",
+      "issue": "Example 急がなくてもいいよ contains the different verb 急ぐ, not 急（きゅう）; furigana incorrectly marks 急 as きゅう.",
+      "suggestion": "Replace with an illustrative 急（きゅう） example through guarded source correction."
+    }
+  ],
+  "limitations": "A targeted sample and correction review, not an exhaustive review of all vocabulary. AI review is not independent human review. Findings were sent to the root and relevant authors; their resolutions should be checked separately."
+}

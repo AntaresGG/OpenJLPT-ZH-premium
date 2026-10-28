@@ -9,18 +9,18 @@
       "N5": {
         "total": 674,
         "draft": 0,
-        "reviewed": 100,
-        "ai_reviewed": 100,
+        "reviewed": 674,
+        "ai_reviewed": 674,
         "stale": 0,
-        "translated_examples": 200
+        "translated_examples": 1332
       },
       "N4": {
         "total": 630,
         "draft": 0,
-        "reviewed": 100,
-        "ai_reviewed": 100,
+        "reviewed": 630,
+        "ai_reviewed": 630,
         "stale": 0,
-        "translated_examples": 200
+        "translated_examples": 1246
       },
       "N3": {
         "total": 1659,
@@ -51,18 +51,18 @@
       "N5": {
         "total": 81,
         "draft": 0,
-        "reviewed": 15,
-        "ai_reviewed": 15,
+        "reviewed": 81,
+        "ai_reviewed": 81,
         "stale": 0,
-        "translated_examples": 44
+        "translated_examples": 242
       },
       "N4": {
         "total": 98,
         "draft": 0,
-        "reviewed": 15,
-        "ai_reviewed": 15,
+        "reviewed": 98,
+        "ai_reviewed": 98,
         "stale": 0,
-        "translated_examples": 45
+        "translated_examples": 292
       },
       "N3": {
         "total": 101,
@@ -8828,6 +8828,354 @@
       "references": [
         "Japanese reading reviewed by Codex"
       ]
+    },
+    {
+      "id": "2120ff505c",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "687082e55c",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "0ce2b98d3b",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "5538df2bce",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "19f270c68f",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "05123676c2",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "2da7034c1e",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "cb1c02a574",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "d33540fe8e",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "0144505953",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "3f71089c32",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "677d3c5fac",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "d0fb41651f",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "397b682fa7",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "b21477c7db",
+      "reason": "Supply an original example and avoid treating the usual three-or-more distinction as an absolute restriction; どちら is commonly used when choosing between two. The JMdict snapshot itself labels the pronoun sense “which (of three or more)”.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense",
+        "sources/quality/n5-n4-dictionary-evidence.json#b21477c7db; JMdict ent_seq 1009290"
+      ]
+    },
+    {
+      "id": "e05de4981d",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "c428d02d43",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "098e9e7e67",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "71e2aefb9d",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "0e8f798dbf",
+      "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "ede9ab2f7f",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "285b008622",
+      "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "92b3bb727e",
+      "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+      "references": [
+        "Original examples authored by Codex for the listed beginner sense"
+      ]
+    },
+    {
+      "id": "a1cda8cb11",
+      "reason": "Correct the upstream gloss: JMdict and both examples identify half, not half a minute.",
+      "references": [
+        "sources/quality/n5-n4-dictionary-evidence.json#a1cda8cb11; JMdict ent_seq 1479890"
+      ]
+    },
+    {
+      "id": "376ccb94c4",
+      "reason": "The source has no example and its English gloss petrol is valid but omits the common gas sense. Add an original illustration and expand the gloss while retaining petrol.",
+      "references": [
+        "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+        "JMdict ent_seq 1040060: gasoline/gas/petrol is sense 6; source snapshot SHA-256 aacc8703771759ad302f01199db13e83043fdf8cabb2357df742e9e758e8aa8d, checked by Codex on 2026-10-28",
+        "Original example authored by Codex"
+      ]
+    },
+    {
+      "id": "8fb005254a",
+      "reason": "The existing example matches 胸やけがする (to have heartburn), not けがする (to be injured). Replace the mismatched example with an original relevant illustration.",
+      "references": [
+        "Original example authored by Codex; no external dictionary verification claimed"
+      ]
+    },
+    {
+      "id": "3cd723d544",
+      "reason": "The source has no example; add an original illustration.",
+      "references": [
+        "Original example authored by Codex; no external dictionary verification claimed"
+      ]
+    },
+    {
+      "id": "f9a20b5203",
+      "reason": "Both source sentences use 叱る (to scold), whereas Waller and the existing JMdict match use the homophone 然る (a particular). Align this card with its two source examples while retaining the ID.",
+      "references": [
+        "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+        "JMdict ent_seq 1319580, read from local snapshot SHA-256 aacc8703771759ad302f01199db13e83043fdf8cabb2357df742e9e758e8aa8d on 2026-10-28; senses to scold, to chide, to rebuke, to reprimand",
+        "sources/waller/vocab-eng-n4.json"
+      ]
+    },
+    {
+      "id": "776c4df05f",
+      "reason": "The source has no example; add an original illustration.",
+      "references": [
+        "Original example authored by Codex; no external dictionary verification claimed"
+      ]
+    },
+    {
+      "id": "cc34f28850",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "7225b79db5",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "a431dff83f",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "beb32f751c",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "40c673da45",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "8065461ace",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "1e1b53a2d3",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "be7c090b8e",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "e9c1a3ae2c",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "3aadcbc234",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "2adec6b9b4",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "433da13afb",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "4610276c99",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "a441432c8a",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "f6b676e45f",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "cb6d7546fb",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "d81bb54f03",
+      "reason": "Repair corrupted dictionary-number furigana for 前 to its reading まえ; preserve source sentences.",
+      "references": [
+        "Direct inspection of source sentence and reading"
+      ]
+    },
+    {
+      "id": "a02c2a6790",
+      "reason": "The second source example uses the unrelated verb 急ぐ (いそぐ), incorrectly annotated as きゅう. Replace it with an original example of 急 (きゅう).",
+      "references": [
+        "Original example authored by Codex; no external dictionary verification claimed"
+      ]
+    },
+    {
+      "id": "1fb9d39cd6",
+      "reason": "The source has no example; add an original illustration.",
+      "references": [
+        "Original example authored by Codex; no external dictionary verification claimed"
+      ]
+    },
+    {
+      "id": "f2a77c1c6d",
+      "reason": "The first example contains やっとる, a dialect form of やっている, not the adverb やっと (finally). Replace it with an original example.",
+      "references": [
+        "Original example authored by Codex; no external dictionary verification claimed"
+      ]
     }
   ],
   "candidates": [
@@ -9125,6 +9473,20 @@
       "words": [
         "探す",
         "捜す"
+      ],
+      "status": "needs_review",
+      "reason": "May be legitimate distinct spellings. Do not merge without an ID migration."
+    },
+    {
+      "kind": "shared_dictionary_reading",
+      "key": "1319580:しかる",
+      "ids": [
+        "f9a20b5203",
+        "9b941bc52f"
+      ],
+      "words": [
+        "しかる",
+        "叱る"
       ],
       "status": "needs_review",
       "reason": "May be legitimate distinct spellings. Do not merge without an ID migration."
@@ -9852,175 +10214,6 @@
       "reason": "May be legitimate distinct spellings. Do not merge without an ID migration."
     }
   ],
-  "malformed_furigana": [
-    {
-      "id": "2120ff505c",
-      "word": "会社",
-      "ja": "ビルは三年前にこの会社に入った。",
-      "furigana": "ビルは{三年|さんねん}{前|#1392580}にこの{会社|かいしゃ}に{入|はい}った。",
-      "status": "needs_review"
-    },
-    {
-      "id": "19f270c68f",
-      "word": "消す",
-      "ja": "寝る前に電気を消してください。",
-      "furigana": "{寝|ね}る{前|#1392580}に{電気|でんき}を{消|け}してください。",
-      "status": "needs_review"
-    },
-    {
-      "id": "0144505953",
-      "word": "デパート",
-      "ja": "そのデパートの前に書店がある。",
-      "furigana": "そのデパートの{前|#1392580}に{書店|しょてん}がある。",
-      "status": "needs_review"
-    },
-    {
-      "id": "677d3c5fac",
-      "word": "ドア",
-      "ja": "入る前にドアをノックして下さい。",
-      "furigana": "{入|はい}る{前|#1392580}にドアをノックして{下|くだ}さい。",
-      "status": "needs_review"
-    },
-    {
-      "id": "c428d02d43",
-      "word": "入る",
-      "ja": "入る前にドアをノックして下さい。",
-      "furigana": "{入|はい}る{前|#1392580}にドアをノックして{下|くだ}さい。",
-      "status": "needs_review"
-    },
-    {
-      "id": "ede9ab2f7f",
-      "word": "まっすぐ",
-      "ja": "まっすぐ前を見てください。",
-      "furigana": "まっすぐ{前|#1392580}を{見|み}てください。",
-      "status": "needs_review"
-    },
-    {
-      "id": "285b008622",
-      "word": "夕方",
-      "ja": "ひょっとすると夕方前に雨になるかもしれない。",
-      "furigana": "ひょっとすると{夕方|ゆうがた}{前|#1392580}に{雨|あめ}になるかもしれない。",
-      "status": "needs_review"
-    },
-    {
-      "id": "cc34f28850",
-      "word": "考える",
-      "ja": "答える前によく考えねばならない。",
-      "furigana": "{答|こた}える{前|#1392580}によく{考|かんが}えねばならない。",
-      "status": "needs_review"
-    },
-    {
-      "id": "7225b79db5",
-      "word": "聞こえる",
-      "ja": "車が家の前に止まる音が聞こえた。",
-      "furigana": "{車|くるま}が{家|いえ}の{前|#1392580}に{止|と}まる{音|おと}が{聞|き}こえた。",
-      "status": "needs_review"
-    },
-    {
-      "id": "a431dff83f",
-      "word": "公務員",
-      "ja": "彼は２０年前、大学を卒業するとすぐに公務員になった。",
-      "furigana": "{彼|かれ}は２０{年|ねん}{前|#1392580}、{大学|だいがく}を{卒業|そつぎょう}するとすぐに{公務員|こうむいん}になった。",
-      "status": "needs_review"
-    },
-    {
-      "id": "beb32f751c",
-      "word": "調べる",
-      "ja": "家は買う前によく調べるべきだ。",
-      "furigana": "{家|いえ}は{買|か}う{前|#1392580}によく{調|しら}べるべきだ。",
-      "status": "needs_review"
-    },
-    {
-      "id": "40c673da45",
-      "word": "神社",
-      "ja": "その神社は２００年前に建てられた。",
-      "furigana": "その{神社|じんじゃ}は２００{年|ねん}{前|#1392580}に{建|た}てられた。",
-      "status": "needs_review"
-    },
-    {
-      "id": "8065461ace",
-      "word": "すく",
-      "ja": "バスの前の方は空いていた。",
-      "furigana": "バスの{前|#1392580}の{方|ほう}は{空|す}いていた。",
-      "status": "needs_review"
-    },
-    {
-      "id": "1e1b53a2d3",
-      "word": "済む",
-      "ja": "１０時ちょっと前に仕事が済んだ。",
-      "furigana": "１０{時|じ}ちょっと{前|#1392580}に{仕事|しごと}が{済|す}んだ。",
-      "status": "needs_review"
-    },
-    {
-      "id": "be7c090b8e",
-      "word": "手袋",
-      "ja": "ポールは出かける前に手袋をした。",
-      "furigana": "ポールは{出|で}かける{前|#1392580}に{手袋|てぶくろ}をした。",
-      "status": "needs_review"
-    },
-    {
-      "id": "e9c1a3ae2c",
-      "word": "通る",
-      "ja": "私は毎日その教会の前を通る。",
-      "furigana": "{私|わたし}は{毎日|まいにち}その{教会|きょうかい}の{前|#1392580}を{通|とお}る。",
-      "status": "needs_review"
-    },
-    {
-      "id": "3aadcbc234",
-      "word": "止める",
-      "ja": "急にジムは銀行の前で車を止めた。",
-      "furigana": "{急|きゅう}にジムは{銀行|ぎんこう}の{前|#1392580}で{車|くるま}を{止|と}めた。",
-      "status": "needs_review"
-    },
-    {
-      "id": "2adec6b9b4",
-      "word": "亡くなる",
-      "ja": "父は２年前に亡くなった。",
-      "furigana": "{父|ちち}は２{年|ねん}{前|#1392580}に{亡|な}くなった。",
-      "status": "needs_review"
-    },
-    {
-      "id": "433da13afb",
-      "word": "入学",
-      "ja": "私はこの学校に２年前に入学した。",
-      "furigana": "{私|わたし}はこの{学校|がっこう}に２{年|ねん}{前|#1392580}に{入学|にゅうがく}した。",
-      "status": "needs_review"
-    },
-    {
-      "id": "4610276c99",
-      "word": "始める",
-      "ja": "父はこの事業を４０年前に始めた。",
-      "furigana": "{父|ちち}はこの{事業|じぎょう}を４０{年|ねん}{前|#1392580}に{始|はじ}めた。",
-      "status": "needs_review"
-    },
-    {
-      "id": "a441432c8a",
-      "word": "拾う",
-      "ja": "ホテルの前で私を車で拾ってください。",
-      "furigana": "ホテルの{前|#1392580}で{私|わたし}を{車|くるま}で{拾|ひろ}ってください。",
-      "status": "needs_review"
-    },
-    {
-      "id": "f6b676e45f",
-      "word": "太る",
-      "ja": "あまり太ったのでカラーの前が合わなかった。",
-      "furigana": "あまり{太|ふと}ったのでカラーの{前|#1392580}が{合|あ}わなかった。",
-      "status": "needs_review"
-    },
-    {
-      "id": "cb6d7546fb",
-      "word": "負ける",
-      "ja": "私は友人の前で負けたくなかった。",
-      "furigana": "{私|わたし}は{友人|ゆうじん}の{前|#1392580}で{負|ま}けたくなかった。",
-      "status": "needs_review"
-    },
-    {
-      "id": "d81bb54f03",
-      "word": "湯",
-      "ja": "日本人は寝る前に熱い湯につかるのが好きです。",
-      "furigana": "{日本人|にほんじん}は{寝|ね}る{前|#1392580}に{熱|あつ}い{湯|ゆ}につかるのが{好|す}きです。",
-      "status": "needs_review"
-    }
-  ],
+  "malformed_furigana": [],
   "limitation": "Structural audit and explicitly recorded Codex linguistic review; no independent human review or statistical error-rate estimate. Initial pilot selection and expanded coverage are reported separately."
 }

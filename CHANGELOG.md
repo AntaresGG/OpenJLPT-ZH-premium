@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Complete N5/N4 Chinese vocabulary and grammar with GPT-6.1 Terra authoring and AI review: 1,104 additional words and 149 additional grammar points, including translations of their examples. N5–N1 now cover all 7,811 words and 526 grammar points; kanji Chinese meanings remain outside this change.
+- Add guarded beginner example, reading and meaning corrections while preserving entry IDs and source attribution. Record review provenance and dictionary evidence without implying independent human review.
+- Align the README language set with upstream English/Japanese, retain Simplified Chinese, and document full dataset totals separately from Chinese coverage.
+
 ## 0.4.0 — 2026-10-28 (first independent release)
 
 - Established OpenJLPT-ZH-premium as the product repository; the original fork remains the upstream contribution channel. Full Git ancestry and original attribution are retained.

@@ -1,0 +1,773 @@
+[
+  {
+    "id": "2120ff505c",
+    "word": "会社",
+    "reading": "かいしゃ",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "ビルは三年前にこの会社に入った。",
+          "furigana": "ビルは{三年|さんねん}{前|#1392580}にこの{会社|かいしゃ}に{入|はい}った。",
+          "en": "Bill joined our company three years ago.",
+          "tatoeba_id": 197326
+        },
+        {
+          "ja": "会社をクビにならなきゃいいけどね。",
+          "furigana": "{会社|かいしゃ}をクビにならなきゃいいけどね。",
+          "en": "I hope I can hold on to my job.",
+          "tatoeba_id": 185231
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "ビルは三年前にこの会社に入った。",
+          "furigana": "ビルは{三年|さんねん}{前|まえ}にこの{会社|かいしゃ}に{入|はい}った。",
+          "en": "Bill joined our company three years ago.",
+          "tatoeba_id": 197326
+        },
+        {
+          "ja": "会社をクビにならなきゃいいけどね。",
+          "furigana": "{会社|かいしゃ}をクビにならなきゃいいけどね。",
+          "en": "I hope I can hold on to my job.",
+          "tatoeba_id": 185231
+        }
+      ]
+    }
+  },
+  {
+    "id": "687082e55c",
+    "word": "かかる",
+    "reading": "かかる",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "どうしたらエンジンがかかりますか。",
+          "en": "How can I start the engine?",
+          "tatoeba_id": 201593
+        },
+        {
+          "ja": "それはほとんど終わりかかっています。",
+          "furigana": "それはほとんど{終|お}わりかかっています。",
+          "en": "It's almost over.",
+          "tatoeba_id": 205401
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "駅まで十分かかります。",
+          "furigana": "{駅|えき}まで{十|じゅっ}{分|ぷん}かかります。",
+          "en": "It takes ten minutes to get to the station."
+        },
+        {
+          "ja": "この本を買うのに千円かかります。",
+          "furigana": "この{本|ほん}を{買|か}うのに{千円|せんえん}かかります。",
+          "en": "It costs one thousand yen to buy this book."
+        }
+      ]
+    }
+  },
+  {
+    "id": "0ce2b98d3b",
+    "word": "かける",
+    "reading": "かける",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "１０円で電話がかけられますか。",
+          "furigana": "１０{円|えん}で{電話|でんわ}がかけられますか。",
+          "en": "Can I make a phone call for ten yen?",
+          "tatoeba_id": 236074
+        },
+        {
+          "ja": "コックさんは少しもかけていない。",
+          "furigana": "コックさんは{少|すこ}しもかけていない。",
+          "en": "The cook hasn't put any on it.",
+          "tatoeba_id": 224138
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "１０円で電話がかけられますか。",
+          "furigana": "１０{円|えん}で{電話|でんわ}がかけられますか。",
+          "en": "Can I make a phone call for ten yen?",
+          "tatoeba_id": 236074
+        },
+        {
+          "ja": "母に電話をかけます。",
+          "furigana": "{母|はは}に{電話|でんわ}をかけます。",
+          "en": "I will call my mother."
+        }
+      ]
+    }
+  },
+  {
+    "id": "5538df2bce",
+    "word": "グラム",
+    "reading": "グラム",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "プログラムをいただけますか。",
+          "en": "May I have a program?",
+          "tatoeba_id": 196880
+        },
+        {
+          "ja": "インスタグラムやってる？",
+          "en": "Do you use Instagram?",
+          "tatoeba_id": 10704636
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "砂糖を百グラム入れます。",
+          "furigana": "{砂糖|さとう}を{百|ひゃく}グラム{入|い}れます。",
+          "en": "Add one hundred grams of sugar."
+        },
+        {
+          "ja": "このりんごは二百グラムです。",
+          "furigana": "このりんごは{二百|にひゃく}グラムです。",
+          "en": "This apple weighs two hundred grams."
+        }
+      ]
+    }
+  },
+  {
+    "id": "19f270c68f",
+    "word": "消す",
+    "reading": "けす",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "寝る前に電気を消してください。",
+          "furigana": "{寝|ね}る{前|#1392580}に{電気|でんき}を{消|け}してください。",
+          "en": "Turn off the light before you go to bed.",
+          "tatoeba_id": 145648
+        },
+        {
+          "ja": "ローソクを消していただけますか。",
+          "furigana": "ローソクを{消|け}していただけますか。",
+          "en": "Would you put out the candles?",
+          "tatoeba_id": 192284
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "寝る前に電気を消してください。",
+          "furigana": "{寝|ね}る{前|まえ}に{電気|でんき}を{消|け}してください。",
+          "en": "Turn off the light before you go to bed.",
+          "tatoeba_id": 145648
+        },
+        {
+          "ja": "ローソクを消していただけますか。",
+          "furigana": "ローソクを{消|け}していただけますか。",
+          "en": "Would you put out the candles?",
+          "tatoeba_id": 192284
+        }
+      ]
+    }
+  },
+  {
+    "id": "05123676c2",
+    "word": "ここ",
+    "reading": "ここ",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "ここで待ってください。",
+          "furigana": "ここで{待|ま}ってください。",
+          "en": "Please wait here."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2da7034c1e",
+    "word": "コップ",
+    "reading": "コップ",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "コップに水を入れてください。",
+          "furigana": "コップに{水|みず}を{入|い}れてください。",
+          "en": "Please pour water into the glass."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cb1c02a574",
+    "word": "その",
+    "reading": "その",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "その本は私のです。",
+          "furigana": "その{本|ほん}は{私|わたし}のです。",
+          "en": "That book is mine."
+        }
+      ]
+    }
+  },
+  {
+    "id": "d33540fe8e",
+    "word": "では",
+    "reading": "では",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "では今晩またね、さようなら。",
+          "furigana": "では{今晩|こんばん}またね、さようなら。",
+          "en": "See you tonight, then. Cheers!",
+          "tatoeba_id": 202137
+        },
+        {
+          "ja": "アメリカでは何語が話されていますか。",
+          "furigana": "アメリカでは{何語|なにご}が{話|はな}されていますか。",
+          "en": "What language is spoken in America?",
+          "tatoeba_id": 187507
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "では今晩またね、さようなら。",
+          "furigana": "では{今晩|こんばん}またね、さようなら。",
+          "en": "See you tonight, then. Cheers!",
+          "tatoeba_id": 202137
+        },
+        {
+          "ja": "では、始めましょう。",
+          "furigana": "では、{始|はじ}めましょう。",
+          "en": "Well then, let us begin."
+        }
+      ]
+    }
+  },
+  {
+    "id": "0144505953",
+    "word": "デパート",
+    "reading": "デパート",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "あのデパートで新しいコートを買いたい。",
+          "furigana": "あのデパートで{新|あたら}しいコートを{買|か}いたい。",
+          "en": "I would like to buy a new coat at that department store.",
+          "tatoeba_id": 155750
+        },
+        {
+          "ja": "そのデパートの前に書店がある。",
+          "furigana": "そのデパートの{前|#1392580}に{書店|しょてん}がある。",
+          "en": "There is a bookstore in front of the department store.",
+          "tatoeba_id": 212947
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "あのデパートで新しいコートを買いたい。",
+          "furigana": "あのデパートで{新|あたら}しいコートを{買|か}いたい。",
+          "en": "I would like to buy a new coat at that department store.",
+          "tatoeba_id": 155750
+        },
+        {
+          "ja": "そのデパートの前に書店がある。",
+          "furigana": "そのデパートの{前|まえ}に{書店|しょてん}がある。",
+          "en": "There is a bookstore in front of the department store.",
+          "tatoeba_id": 212947
+        }
+      ]
+    }
+  },
+  {
+    "id": "3f71089c32",
+    "word": "でも",
+    "reading": "でも",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "どんな人でもいないよりはましだ。",
+          "furigana": "どんな{人|ひと}でもいないよりはましだ。",
+          "en": "Anybody would be better than nobody.",
+          "tatoeba_id": 199395
+        },
+        {
+          "ja": "どんなベッドでもないよりはよい。",
+          "en": "Any bed is better than no bed.",
+          "tatoeba_id": 199480
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "行きたいです。でも、今日は忙しいです。",
+          "furigana": "{行|い}きたいです。でも、{今日|きょう}は{忙|いそが}しいです。",
+          "en": "I want to go, but I am busy today."
+        },
+        {
+          "ja": "これは高いです。でも、便利です。",
+          "furigana": "これは{高|たか}いです。でも、{便利|べんり}です。",
+          "en": "This is expensive, but convenient."
+        }
+      ]
+    }
+  },
+  {
+    "id": "677d3c5fac",
+    "word": "ドア",
+    "reading": "ドア",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "入る前にドアをノックして下さい。",
+          "furigana": "{入|はい}る{前|#1392580}にドアをノックして{下|くだ}さい。",
+          "en": "Please knock on the door before you enter.",
+          "tatoeba_id": 122091
+        },
+        {
+          "ja": "ドアをあけてくださいませんか。",
+          "en": "Will you open the door?",
+          "tatoeba_id": 201824
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "入る前にドアをノックして下さい。",
+          "furigana": "{入|はい}る{前|まえ}にドアをノックして{下|くだ}さい。",
+          "en": "Please knock on the door before you enter.",
+          "tatoeba_id": 122091
+        },
+        {
+          "ja": "ドアをあけてくださいませんか。",
+          "en": "Will you open the door?",
+          "tatoeba_id": 201824
+        }
+      ]
+    }
+  },
+  {
+    "id": "d0fb41651f",
+    "word": "どう",
+    "reading": "どう",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "これはどうですか。",
+          "en": "How about this?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "397b682fa7",
+    "word": "飛ぶ",
+    "reading": "とぶ",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "ヒューズが飛んだ。",
+          "furigana": "ヒューズが{飛|と}んだ。",
+          "en": "A fuse has blown.",
+          "tatoeba_id": 197450
+        },
+        {
+          "ja": "彼の話はいろいろなところへ飛ぶ。",
+          "furigana": "{彼|かれ}の{話|はなし}はいろいろなところへ{飛|と}ぶ。",
+          "en": "He frequently jumps from one topic to another while he is talking.",
+          "tatoeba_id": 115795
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "鳥が空を飛んでいます。",
+          "furigana": "{鳥|とり}が{空|そら}を{飛|と}んでいます。",
+          "en": "A bird is flying in the sky."
+        },
+        {
+          "ja": "ボールがあちらへ飛びました。",
+          "furigana": "ボールがあちらへ{飛|と}びました。",
+          "en": "The ball flew over there."
+        }
+      ]
+    }
+  },
+  {
+    "id": "b21477c7db",
+    "word": "どれ",
+    "reading": "どれ",
+    "reason": "Supply an original example and avoid treating the usual three-or-more distinction as an absolute restriction; どちら is commonly used when choosing between two. The JMdict snapshot itself labels the pronoun sense “which (of three or more)”.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense",
+      "sources/quality/n5-n4-dictionary-evidence.json#b21477c7db; JMdict ent_seq 1009290"
+    ],
+    "before": {
+      "meanings": [
+        "which (of three or more)"
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "あなたの傘はどれですか。",
+          "furigana": "あなたの{傘|かさ}はどれですか。",
+          "en": "Which umbrella is yours?"
+        }
+      ],
+      "meanings": [
+        "which"
+      ]
+    }
+  },
+  {
+    "id": "e05de4981d",
+    "word": "なる",
+    "reading": "なる",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "ちまたではインターネットなるものがはやっています。",
+          "en": "People are talking about this Internet phenomenon.",
+          "tatoeba_id": 202981
+        },
+        {
+          "ja": "日がだんだん長くなってきています。",
+          "furigana": "{日|ひ}がだんだん{長|なが}くなってきています。",
+          "en": "The days are getting longer and longer.",
+          "tatoeba_id": 122958
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "暖かくなりました。",
+          "furigana": "{暖|あたた}かくなりました。",
+          "en": "It has become warm."
+        },
+        {
+          "ja": "日がだんだん長くなってきています。",
+          "furigana": "{日|ひ}がだんだん{長|なが}くなってきています。",
+          "en": "The days are getting longer and longer.",
+          "tatoeba_id": 122958
+        }
+      ]
+    }
+  },
+  {
+    "id": "c428d02d43",
+    "word": "入る",
+    "reading": "はいる",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "入る前にドアをノックして下さい。",
+          "furigana": "{入|はい}る{前|#1392580}にドアをノックして{下|くだ}さい。",
+          "en": "Please knock on the door before you enter.",
+          "tatoeba_id": 122091
+        },
+        {
+          "ja": "校長が先生の後ろから入ってきた。",
+          "furigana": "{校長|こうちょう}が{先生|せんせい}の{後|うし}ろから{入|はい}ってきた。",
+          "en": "The principal came in after the teacher.",
+          "tatoeba_id": 173570
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "入る前にドアをノックして下さい。",
+          "furigana": "{入|はい}る{前|まえ}にドアをノックして{下|くだ}さい。",
+          "en": "Please knock on the door before you enter.",
+          "tatoeba_id": 122091
+        },
+        {
+          "ja": "校長が先生の後ろから入ってきた。",
+          "furigana": "{校長|こうちょう}が{先生|せんせい}の{後|うし}ろから{入|はい}ってきた。",
+          "en": "The principal came in after the teacher.",
+          "tatoeba_id": 173570
+        }
+      ]
+    }
+  },
+  {
+    "id": "098e9e7e67",
+    "word": "パン",
+    "reading": "パン",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "朝、パンを食べます。",
+          "furigana": "{朝|あさ}、パンを{食|た}べます。",
+          "en": "I eat bread in the morning."
+        }
+      ]
+    }
+  },
+  {
+    "id": "71e2aefb9d",
+    "word": "フォーク",
+    "reading": "フォーク",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "フォークで食べてください。",
+          "furigana": "フォークで{食|た}べてください。",
+          "en": "Please eat with a fork."
+        }
+      ]
+    }
+  },
+  {
+    "id": "0e8f798dbf",
+    "word": "本",
+    "reading": "ほん",
+    "reason": "Replace unrelated senses or substring matches with original examples illustrating this beginner card; newly authored replacement sentences carry no Tatoeba attribution.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "ウイスキーを１本持っています。",
+          "en": "I have a bottle of whiskey.",
+          "tatoeba_id": 228339
+        },
+        {
+          "ja": "本をさかさまに入れないで下さい。",
+          "furigana": "{本|ほん}をさかさまに{入|い}れないで{下|くだ}さい。",
+          "en": "Don't put the books in the shelf upside down.",
+          "tatoeba_id": 81634
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "本を一冊持っています。",
+          "furigana": "{本|ほん}を{一冊|いっさつ}{持|も}っています。",
+          "en": "I have a book."
+        },
+        {
+          "ja": "本をさかさまに入れないで下さい。",
+          "furigana": "{本|ほん}をさかさまに{入|い}れないで{下|くだ}さい。",
+          "en": "Don't put the books in the shelf upside down.",
+          "tatoeba_id": 81634
+        }
+      ]
+    }
+  },
+  {
+    "id": "ede9ab2f7f",
+    "word": "まっすぐ",
+    "reading": "まっすぐ",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "まっすぐ前を見てください。",
+          "furigana": "まっすぐ{前|#1392580}を{見|み}てください。",
+          "en": "Look forward, please.",
+          "tatoeba_id": 195363
+        },
+        {
+          "ja": "サイドミラーがまっすぐになっていない。",
+          "en": "My side mirror is out of alignment.",
+          "tatoeba_id": 216856
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "まっすぐ前を見てください。",
+          "furigana": "まっすぐ{前|まえ}を{見|み}てください。",
+          "en": "Look forward, please.",
+          "tatoeba_id": 195363
+        },
+        {
+          "ja": "サイドミラーがまっすぐになっていない。",
+          "en": "My side mirror is out of alignment.",
+          "tatoeba_id": 216856
+        }
+      ]
+    }
+  },
+  {
+    "id": "285b008622",
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "reason": "Replace dictionary identifier in furigana with the correct reading まえ; sentence text and attribution are preserved.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {
+      "examples": [
+        {
+          "ja": "ひょっとすると夕方前に雨になるかもしれない。",
+          "furigana": "ひょっとすると{夕方|ゆうがた}{前|#1392580}に{雨|あめ}になるかもしれない。",
+          "en": "It might rain before evening.",
+          "tatoeba_id": 197417
+        },
+        {
+          "ja": "ある夕方、一人の男がやってきた。",
+          "furigana": "ある{夕方|ゆうがた}、{一人|ひとり}の{男|おとこ}がやってきた。",
+          "en": "One evening a man came to my house.",
+          "tatoeba_id": 229774
+        }
+      ]
+    },
+    "set": {
+      "examples": [
+        {
+          "ja": "ひょっとすると夕方前に雨になるかもしれない。",
+          "furigana": "ひょっとすると{夕方|ゆうがた}{前|まえ}に{雨|あめ}になるかもしれない。",
+          "en": "It might rain before evening.",
+          "tatoeba_id": 197417
+        },
+        {
+          "ja": "ある夕方、一人の男がやってきた。",
+          "furigana": "ある{夕方|ゆうがた}、{一人|ひとり}の{男|おとこ}がやってきた。",
+          "en": "One evening a man came to my house.",
+          "tatoeba_id": 229774
+        }
+      ]
+    }
+  },
+  {
+    "id": "92b3bb727e",
+    "word": "零",
+    "reading": "れい",
+    "reason": "Supply an original example illustrating this beginner card; the source has no example.",
+    "references": [
+      "Original examples authored by Codex for the listed beginner sense"
+    ],
+    "before": {},
+    "set": {
+      "examples": [
+        {
+          "ja": "答えは零です。",
+          "furigana": "{答|こた}えは{零|れい}です。",
+          "en": "The answer is zero."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a1cda8cb11",
+    "word": "半分",
+    "reading": "はんぶん",
+    "reason": "Correct the upstream gloss: JMdict and both examples identify half, not half a minute.",
+    "references": [
+      "sources/quality/n5-n4-dictionary-evidence.json#a1cda8cb11; JMdict ent_seq 1479890"
+    ],
+    "before": {
+      "meanings": [
+        "half minute"
+      ]
+    },
+    "set": {
+      "meanings": [
+        "half"
+      ]
+    }
+  }
+]

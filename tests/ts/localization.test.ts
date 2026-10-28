@@ -51,8 +51,25 @@ test('Chinese search finds exact and partial Chinese while preserving English be
   assert.equal(searchVocab('吃')[0].word, '食べる');
   assert.equal(searchVocab('eat')[0].word, '食べる');
   assert.ok(searchGrammar('事先').some(g => g.id === 'te-oku'));
-  assert.equal(getVocab().filter(v => v.zh?.status === 'reviewed').length, 6707);
-  assert.equal(getGrammar().filter(g => g.zh?.status === 'reviewed').length, 377);
+  assert.equal(getVocab().filter(v => v.zh?.status === 'reviewed').length, 7811);
+  assert.equal(getGrammar().filter(g => g.zh?.status === 'reviewed').length, 526);
+});
+
+test('completed beginner cards correct homophones and substring examples without changing IDs', () => {
+  const scold = getVocab().find(e => e.id === 'f9a20b5203')!;
+  assert.equal(scold.word, 'しかる');
+  assert.equal(scold.jmdict_id, 1319580);
+  assert.ok(scold.meanings.includes('to scold'));
+  const gas = getVocab().find(e => e.id === '376ccb94c4')!;
+  assert.ok(gas.meanings.includes('petrol'), 'Retain the attested alternative sense');
+  assert.ok(gas.meanings.some(m => /gas/.test(m)));
+  assert.ok(findWord('半分')!.meanings.includes('half'));
+  assert.ok(!findWord('半分')!.meanings.includes('half minute'));
+  for (const [id, rejected] of [['8fb005254a', /胸やけ/], ['5538df2bce', /プログラム|インスタグラム/], ['a02c2a6790', /急がなく/]] as const) {
+    const entry = getVocab().find(e => e.id === id)!;
+    assert.ok(entry.examples!.every(e => !rejected.test(e.ja)), id);
+    assert.ok(entry.examples!.some(e => !e.tatoeba_id), id);
+  }
 });
 
 test('review binds the exact Chinese wording and requires honest provenance', () => {
@@ -80,7 +97,11 @@ test('all reviewed entries have complete aligned Chinese examples and current so
     assert.ok(entry.zh!.examples.every(e => e.zh.trim().length > 0), entry.id);
     assert.ok(entry.examples!.every(e => !/#[0-9]+/.test(e.furigana ?? '')), entry.id);
   }
-  assert.equal(entries.filter(e => ['N5', 'N4'].includes(e.level)).reduce((n,e) => n + e.zh!.examples.length, 0), 489);
+  for (const level of ['N5', 'N4']) {
+    const beginners = entries.filter(e => e.level === level);
+    assert.equal(beginners.reduce((n, e) => n + e.zh!.examples.length, 0),
+      beginners.reduce((n, e) => n + (e.examples?.length ?? 0), 0), level);
+  }
 });
 
 test('all N3 vocabulary and grammar have reviewed Chinese with aligned examples', () => {
@@ -114,7 +135,7 @@ test('review fixes counter, greeting, lexical reading and inclusive boundary err
   assert.ok(getVocab().find(e => e.word === '明日' && e.reading === 'あす')!.examples!.every(e => e.furigana?.includes('{明日|あす}')));
 });
 
-for (const [level, vocabCount, grammarCount] of [['N2', 1778, 123], ['N1', 3070, 123]] as const) {
+for (const [level, vocabCount, grammarCount] of [['N5', 674, 81], ['N4', 630, 98], ['N2', 1778, 123], ['N1', 3070, 123]] as const) {
   test(`all ${level} vocabulary and grammar have reviewed Chinese and translated examples`, () => {
     const vocab = getVocab().filter(e => e.level === level);
     const grammar = getGrammar().filter(e => e.level === level);
