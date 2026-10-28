@@ -321,12 +321,33 @@ textarea.analyze { width: 100%; min-height: 160px; font-family: var(--jp); font-
   --blue-ink: #8fc9e8; --blue-soft: #1d3340;
   --orange-ink: #f0bf86; --orange-soft: #3c2e20;
 }
-.theme-picker { flex: 0 0 auto; }
-.theme-picker select {
-  font: inherit; font-size: 13px; cursor: pointer;
-  color: var(--text); background: var(--surface);
-  border: 1px solid var(--border); border-radius: 999px; padding: 7px 8px;
+.theme-switch {
+  position: relative; isolation: isolate; display: inline-flex; flex: 0 0 auto;
+  align-items: center; width: 112px; height: 38px; padding: 3px;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: linear-gradient(135deg, var(--surface-2), var(--surface));
+  box-shadow: inset 0 1px 3px rgb(35 25 50 / 0.08), 0 1px 0 rgb(255 255 255 / 0.5);
+  color: var(--muted); cursor: pointer; touch-action: pan-y; user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
+.theme-thumb {
+  position: absolute; z-index: -1; inset: 3px auto 3px 3px;
+  width: calc((100% - 6px) / 2); border-radius: 999px;
+  background: linear-gradient(145deg, #fffdf8, #eee3d3);
+  border: 1px solid rgb(255 255 255 / 0.85);
+  box-shadow: 0 2px 5px rgb(60 42 27 / 0.16), inset 0 1px 0 #fff;
+  transition: transform 260ms cubic-bezier(.22,.8,.25,1), background 260ms;
+}
+.theme-option { display: inline-flex; align-items: center; justify-content: center; gap: 4px; width: 50%; font: 600 12px/1 system-ui, sans-serif; }
+.theme-option i { width: 6px; height: 6px; border-radius: 50%; box-shadow: inset 0 1px 1px rgb(0 0 0 / 0.12); }
+.theme-paper i { background: #d98e50; }
+.theme-mist i { background: #9871d8; }
+.theme-paper { color: #725237; }
+[data-appearance='theme2'] .theme-thumb { transform: translateX(100%); background: linear-gradient(145deg, #faf6ff, #ded0f6); }
+[data-appearance='theme2'] .theme-paper { color: var(--muted); }
+[data-appearance='theme2'] .theme-mist { color: #542e86; }
+.theme-switch:hover { border-color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .theme-thumb { transition: none; } }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .stats .stat { border-left: 3px solid var(--blue); padding-left: 12px; }
 .stats .stat:nth-child(even) { border-color: var(--orange); }
@@ -376,7 +397,7 @@ textarea.analyze { width: 100%; min-height: 160px; font-family: var(--jp); font-
 /* Keep the brand and picker accessible while navigation gets its own row. */
 @media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; height: auto; padding-top: 8px; padding-bottom: 8px; gap: 6px 10px; }
-  .theme-picker { margin-left: auto; }
+  .theme-switch { margin-left: auto; }
   .nav { order: 3; flex: 1 1 100%; width: 100%; margin: 0; flex-wrap: wrap; }
   .nav a { padding: 4px 8px; font-size: 14px; }
   .hsearch { display: none; }

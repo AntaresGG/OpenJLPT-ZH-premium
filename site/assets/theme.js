@@ -6,8 +6,8 @@
   function apply(value) {
     var theme = value === 'theme2' ? 'theme2' : 'theme1';
     root.dataset.appearance = theme;
-    var select = document.getElementById('theme-select');
-    if (select) select.value = theme;
+    var toggle = document.getElementById('theme-switch');
+    if (toggle) toggle.setAttribute('aria-checked', String(theme === 'theme2'));
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = theme === 'theme2' ? '#4b16cf' : '#d7263d';
   }
@@ -15,12 +15,41 @@
   try { saved = localStorage.getItem(key); } catch (err) { /* storage blocked */ }
   apply(saved);
   document.addEventListener('DOMContentLoaded', function () {
-    var select = document.getElementById('theme-select');
-    if (!select) return;
-    select.value = root.dataset.appearance;
-    select.addEventListener('change', function () {
-      apply(select.value);
-      try { localStorage.setItem(key, select.value); } catch (err) { /* session-only choice */ }
+    var toggle = document.getElementById('theme-switch');
+    if (!toggle) return;
+    apply(root.dataset.appearance);
+    function choose(theme) {
+      apply(theme);
+      try { localStorage.setItem(key, theme); } catch (err) { /* session-only choice */ }
+    }
+    var startX = null;
+    var dragged = false;
+    toggle.addEventListener('pointerdown', function (event) {
+      if (!event.isPrimary || event.button !== 0) return;
+      startX = event.clientX;
+      dragged = false;
+      toggle.setPointerCapture(event.pointerId);
+    });
+    toggle.addEventListener('pointerup', function (event) {
+      if (startX === null) return;
+      var distance = event.clientX - startX;
+      startX = null;
+      if (Math.abs(distance) > 12) {
+        dragged = true;
+        choose(distance > 0 ? 'theme2' : 'theme1');
+      }
+    });
+    toggle.addEventListener('pointercancel', function () { startX = null; dragged = false; });
+    toggle.addEventListener('click', function (event) {
+      if (dragged && event.detail !== 0) { dragged = false; return; }
+      dragged = false;
+      choose(root.dataset.appearance === 'theme2' ? 'theme1' : 'theme2');
+    });
+    toggle.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        choose(event.key === 'ArrowRight' ? 'theme2' : 'theme1');
+      }
     });
   });
   window.addEventListener('storage', function (event) {

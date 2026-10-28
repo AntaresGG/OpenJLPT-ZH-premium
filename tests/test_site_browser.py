@@ -42,31 +42,49 @@ def test_site_chinese_search_downloads_and_mobile():
                     }"""), width
                     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), width
                 for theme in ('theme2', 'theme1'):
-                    page.locator('#theme-select').select_option(theme)
+                    page.locator('#theme-switch').press('ArrowRight' if theme == 'theme2' else 'ArrowLeft')
                     for path in ('', 'grammar/te-oku.html', 'flashcards.html', 'n5/'):
                         page.goto(f'http://127.0.0.1:8765/{path}')
                         sync.expect(page.locator('html')).to_have_attribute('data-appearance', theme)
-                        sync.expect(page.locator('#theme-select')).to_have_value(theme)
+                        sync.expect(page.locator('#theme-switch')).to_have_attribute('aria-checked', str(theme == 'theme2').lower())
                         for width in (320, 390, 768, 1024, 1440):
                             page.set_viewport_size({'width': width, 'height': 900})
                             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1'), (theme, path, width)
                     page.goto('http://127.0.0.1:8765/')
                     page.reload()
-                    sync.expect(page.locator('#theme-select')).to_have_value(theme)
+                    sync.expect(page.locator('#theme-switch')).to_have_attribute('aria-checked', str(theme == 'theme2').lower())
+                toggle = page.locator('#theme-switch')
+                toggle.click()
+                sync.expect(toggle).to_have_attribute('aria-checked', 'true')
+                toggle.press('Space')
+                sync.expect(toggle).to_have_attribute('aria-checked', 'false')
+                toggle.press('Enter')
+                sync.expect(toggle).to_have_attribute('aria-checked', 'true')
+                for right in (False, True):
+                    box = toggle.bounding_box()
+                    left, end = box['x'] + 18, box['x'] + box['width'] - 18
+                    start, finish = (left, end) if right else (end, left)
+                    page.mouse.move(start, box['y'] + box['height'] / 2)
+                    page.mouse.down()
+                    page.mouse.move(finish, box['y'] + box['height'] / 2, steps=8)
+                    page.mouse.up()
+                    sync.expect(toggle).to_have_attribute('aria-checked', str(right).lower())
+                page.emulate_media(reduced_motion='reduce')
+                assert page.locator('.theme-thumb').evaluate("el => getComputedStyle(el).transitionDuration") == '0s'
                 page.emulate_media(color_scheme='dark')
-                page.locator('#theme-select').select_option('theme2')
+                page.locator('#theme-switch').press('ArrowRight')
                 assert page.locator('body').evaluate("el => getComputedStyle(el).backgroundColor") == 'rgb(247, 245, 252)'
-                page.locator('#theme-select').select_option('theme1')
+                page.locator('#theme-switch').press('ArrowLeft')
                 assert page.locator('body').evaluate("el => getComputedStyle(el).backgroundColor") == 'rgb(20, 19, 18)'
                 page.emulate_media(color_scheme='light')
                 page.evaluate("localStorage.setItem('kotowa:appearance', 'invalid')")
                 page.reload()
-                sync.expect(page.locator('#theme-select')).to_have_value('theme1')
+                sync.expect(page.locator('#theme-switch')).to_have_attribute('aria-checked', 'false')
                 blocked = browser.new_context()
                 blocked.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('Storage blocked')}})")
                 blocked_page = blocked.new_page()
                 blocked_page.goto('http://127.0.0.1:8765/')
-                blocked_page.locator('#theme-select').select_option('theme2')
+                blocked_page.locator('#theme-switch').press('ArrowRight')
                 sync.expect(blocked_page.locator('html')).to_have_attribute('data-appearance', 'theme2')
                 blocked.close()
                 sync.expect(page.locator(".brand img")).to_have_attribute("src", "assets/favicon.svg")

@@ -217,7 +217,7 @@ ${scripts}
 <a class="brand" href="${root}index.html"><img class="brand-mark" src="${root}assets/favicon.svg" width="28" height="28" alt=""><span class="brand-name">Kotowa · 词和</span></a>
 ${p.path === 'index.html' ? '' : `<form class="hsearch" action="${root}index.html" role="search"><input type="search" name="q" placeholder="Search words, kanji, grammar…" aria-label="Search"></form>`}
 <nav class="nav" aria-label="Main">${nav}</nav>
-<label class="theme-picker"><span class="sr-only">主题 / Theme</span><select id="theme-select" aria-label="主题 / Theme"><option value="theme1">Theme 1</option><option value="theme2">Theme 2</option></select></label>
+<button class="theme-switch" id="theme-switch" type="button" role="switch" aria-checked="false" aria-label="紫雾主题 / Lilac Mist" title="暖纸 Warm Paper ↔ 紫雾 Lilac Mist"><span class="theme-thumb" aria-hidden="true"></span><span class="theme-option theme-paper" aria-hidden="true"><i></i>暖纸</span><span class="theme-option theme-mist" aria-hidden="true"><i></i>紫雾</span></button>
 <a class="gh-btn" href="${REPO}" rel="noopener">${GITHUB_ICON}<span>Star on GitHub</span></a>
 </div></header>
 <main><div class="wrap">
