@@ -31,6 +31,16 @@ def test_site_chinese_search_downloads_and_mobile():
                 page.goto("http://127.0.0.1:8765/")
                 sync.expect(page).to_have_title(re.compile("Kotowa · 词和"))
                 sync.expect(page.locator(".brand")).to_have_text("Kotowa · 词和")
+                sync.expect(page.locator('link[rel="stylesheet"]')).to_have_attribute("href", re.compile(r"assets/style\.css\?v=[a-f0-9]{12}$"))
+                for width in (320, 390, 768, 1024, 1440):
+                    page.set_viewport_size({"width": width, "height": 844})
+                    assert page.locator(".brand-name").evaluate("""el => {
+                        const range = document.createRange();
+                        range.selectNodeContents(el);
+                        return range.getClientRects().length === 1 &&
+                            getComputedStyle(el).whiteSpace === 'nowrap';
+                    }"""), width
+                    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), width
                 sync.expect(page.locator(".brand img")).to_have_attribute("src", "assets/favicon.svg")
                 sync.expect(page.locator('meta[property="og:site_name"]')).to_have_attribute("content", "Kotowa · 词和")
                 sync.expect(page.locator("body")).not_to_contain_text("OpenJLPT-ZH-premium")

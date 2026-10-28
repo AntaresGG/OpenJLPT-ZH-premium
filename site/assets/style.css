@@ -74,7 +74,8 @@ img { max-width: 100%; }
   border-bottom: 1px solid var(--border);
 }
 .site-header .wrap { display: flex; align-items: center; gap: 16px; height: 56px; }
-.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--text); font-size: 17px; white-space: nowrap; }
+.brand { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; font-weight: 700; color: var(--text); font-size: 17px; white-space: nowrap; }
+.brand-name { display: block; flex: 0 0 auto; white-space: nowrap; }
 .brand:hover { text-decoration: none; }
 .brand-mark {
   display: block; width: 28px; height: 28px; flex: 0 0 28px;
