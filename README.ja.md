@@ -1,10 +1,10 @@
-# OpenJLPT-ZH-premium
+# Kotowa · 词和
 
 [English](README.md) · **日本語** · [简体中文](README.zh-CN.md)
 
 [OpenJLPT](https://github.com/evanclan/OpenJLPT) を基に、AntaresGG が独立して保守する日本語学習プロジェクトです。簡体字中国語の学習コンテンツと学習機能を追加しています。上流のコミット履歴、出典表記、固定 ID、静的サイト構成を引き継いでいます。
 
-[![CI](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml)
+[![CI](https://github.com/AntaresGG/kotowa/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/kotowa/actions/workflows/ci.yml)
 
 ## データと中国語対応範囲
 
@@ -30,23 +30,27 @@
 
 ## ダウンロードとインストール
 
-データ、Anki デッキ、Yomitan 辞書、JavaScript/Python パッケージは [GitHub Releases](https://github.com/AntaresGG/OpenJLPT-ZH-premium/releases) から取得できます。独立版は **v0.4.0** です。継承した v0.1.0・v0.2.0 タグは上流の履歴に属します。
+データ、Anki デッキ、Yomitan 辞書、JavaScript/Python パッケージは [GitHub Releases](https://github.com/AntaresGG/kotowa/releases) から取得できます。独立版は **v0.4.0** です。継承した v0.1.0・v0.2.0 タグは上流の履歴に属します。
 
 本プロジェクトは npm/PyPI に未公開です。レジストリ上の `openjlpt` は上流製品です。本リポジトリのリリースパッケージ、またはソースを使用してください。
 
 ```sh
-git clone https://github.com/AntaresGG/OpenJLPT-ZH-premium.git
-cd OpenJLPT-ZH-premium
+git clone https://github.com/AntaresGG/kotowa.git
+cd kotowa
 npm ci
 npm run build:pkg
 ```
 
 ### JavaScript / TypeScript
 
-利用先プロジェクトに本プロジェクトの Releases の `.tgz` パッケージをインストールして使用します。
+利用先プロジェクトに現在のソースをインストールして使用します。
+
+```sh
+npm install git+https://github.com/AntaresGG/kotowa.git#main
+```
 
 ```ts
-import { searchVocab, getGrammar } from 'openjlpt-zh-premium';
+import { searchVocab, getGrammar } from 'kotowa';
 
 const words = searchVocab('肥皂');
 const grammar = getGrammar('N3');
@@ -71,7 +75,7 @@ words = search_vocab("肥皂")
 grammar = get_grammar("N3")
 ```
 
-配布名は `openjlpt-zh-premium`、Python のインポート名と CLI 名は引き続き `openjlpt` です。
+配布名は `kotowa`、CLI は `kotowa` で、従来の `openjlpt` も利用できます。Python のインポート名は `openjlpt` を維持します。既存の v0.4.0 リリースは旧パッケージ名です。Kotowa 名のパッケージには `main` のソースを使用してください。
 
 ## 検証とデプロイ
 
@@ -100,7 +104,7 @@ uv run --no-project --with genanki python scripts/build_exports.py _site/downloa
 
 ## リポジトリの運用
 
-- 製品：`AntaresGG/OpenJLPT-ZH-premium`。`origin/main` が製品の基準です。
+- 製品：`AntaresGG/kotowa`。`origin/main` が製品の基準です。
 - 貢献用 Fork：`AntaresGG/OpenJLPT`。その `main` に製品固有の変更を混ぜません。
 - 上流：`evanclan/OpenJLPT`。最新の上流 `main` から独立した `contrib/*` ブランチを作成します。
 - 移行基準：`migration-baseline-2026-10-28`、コミット `f72221983fb4c970411ac9a753f6796473321164`。
@@ -111,4 +115,4 @@ uv run --no-project --with genanki python scripts/build_exports.py _site/downloa
 
 Evan Clan とコントリビューターによる [OpenJLPT](https://github.com/evanclan/OpenJLPT) を基に、中国語の学習内容と学習機能を独立して追加・保守しています。
 
-[CC BY-SA 4.0 ライセンス](LICENSE)、[NOTICE](NOTICE.md)、[引用情報](CITATION.cff)を維持しています。JMdict、KANJIDIC2、Waller、Tatoeba、KanjiVG の個別の出典とライセンスは NOTICE を参照してください。新規作成した例文に Tatoeba の出典表記を流用しません。名称の「premium」はライセンスやデータの出典を変更するものではありません。
+[CC BY-SA 4.0 ライセンス](LICENSE)、[NOTICE](NOTICE.md)、[引用情報](CITATION.cff)を維持しています。JMdict、KANJIDIC2、Waller、Tatoeba、KanjiVG の個別の出典とライセンスは NOTICE を参照してください。新規作成した例文に Tatoeba の出典表記を流用しません。Kotowa への改名はライセンスやデータの出典を変更するものではありません。

@@ -1,10 +1,10 @@
-# OpenJLPT-ZH-premium
+# Kotowa · 词和
 
 **English** · [日本語](README.ja.md) · [简体中文](README.zh-CN.md)
 
 An independently maintained Japanese learning project based on [OpenJLPT](https://github.com/evanclan/OpenJLPT). AntaresGG adds Simplified Chinese learning content and study workflow improvements, preserving upstream history, attribution, stable IDs and the static-site architecture.
 
-[![CI](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml)
+[![CI](https://github.com/AntaresGG/kotowa/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/kotowa/actions/workflows/ci.yml)
 
 ## Dataset and Chinese coverage
 
@@ -30,23 +30,27 @@ See the [Chinese maintenance notes](README.zh-CN.md) for review records and know
 
 ## Download and install
 
-Download data, Anki decks, Yomitan dictionaries and JavaScript/Python packages from [GitHub Releases](https://github.com/AntaresGG/OpenJLPT-ZH-premium/releases). The independent version is **v0.4.0**; inherited v0.1.0 and v0.2.0 tags belong to upstream history.
+Download data, Anki decks, Yomitan dictionaries and JavaScript/Python packages from [GitHub Releases](https://github.com/AntaresGG/kotowa/releases). The independent version is **v0.4.0**; inherited v0.1.0 and v0.2.0 tags belong to upstream history.
 
 This project has not been published to npm or PyPI. The registry package `openjlpt` is the upstream product. Use this repository's release packages or install from source:
 
 ```sh
-git clone https://github.com/AntaresGG/OpenJLPT-ZH-premium.git
-cd OpenJLPT-ZH-premium
+git clone https://github.com/AntaresGG/kotowa.git
+cd kotowa
 npm ci
 npm run build:pkg
 ```
 
 ### JavaScript / TypeScript
 
-Install the `.tgz` package from this project's Releases in your consuming project, then import:
+Install the current source in your consuming project, then import:
+
+```sh
+npm install git+https://github.com/AntaresGG/kotowa.git#main
+```
 
 ```ts
-import { searchVocab, getGrammar } from 'openjlpt-zh-premium';
+import { searchVocab, getGrammar } from 'kotowa';
 
 const words = searchVocab('肥皂');
 const grammar = getGrammar('N3');
@@ -71,7 +75,7 @@ words = search_vocab("肥皂")
 grammar = get_grammar("N3")
 ```
 
-The distribution is named `openjlpt-zh-premium`; the Python import and CLI remain `openjlpt`.
+The distribution is named `kotowa`; the CLI is `kotowa`, with `openjlpt` retained as an alias. The Python import remains `openjlpt`. Existing v0.4.0 release packages retain their original names; use the `main` source for the Kotowa package name.
 
 ## Validation and deployment
 
@@ -100,7 +104,7 @@ See [Mac mini deployment](docs/DEPLOY-MACOS.md). Commit and push from PC to GitH
 
 ## Repository governance
 
-- Product: `AntaresGG/OpenJLPT-ZH-premium`; `origin/main` is the product source of truth.
+- Product: `AntaresGG/kotowa`; `origin/main` is the product source of truth.
 - Contribution fork: `AntaresGG/OpenJLPT`; keep product-specific changes off its `main`.
 - Upstream: `evanclan/OpenJLPT`; start isolated `contrib/*` branches from freshly fetched upstream `main`.
 - Migration baseline: `migration-baseline-2026-10-28` at `f72221983fb4c970411ac9a753f6796473321164`.
@@ -111,4 +115,4 @@ Develop product changes directly on local `main`, run relevant checks, and push 
 
 Originally based on [OpenJLPT](https://github.com/evanclan/OpenJLPT) by Evan Clan and contributors. This project is independently maintained and adds Chinese learning content and study workflow improvements.
 
-The [CC BY-SA 4.0 license](LICENSE), [NOTICE](NOTICE.md) and [citation information](CITATION.cff) are preserved. See NOTICE for the sources and licenses of JMdict, KANJIDIC2, Waller, Tatoeba and KanjiVG. Newly authored examples do not borrow Tatoeba attribution. The word “premium” does not change these licenses or data origins.
+The [CC BY-SA 4.0 license](LICENSE), [NOTICE](NOTICE.md) and [citation information](CITATION.cff) are preserved. See NOTICE for the sources and licenses of JMdict, KANJIDIC2, Waller, Tatoeba and KanjiVG. Newly authored examples do not borrow Tatoeba attribution. The Kotowa name does not change these licenses or data origins.

@@ -59,10 +59,10 @@ async function main() {
   }
 
   writeJson(metaPath, {
-    name: 'OpenJLPT-ZH-premium',
+    name: 'Kotowa · 词和',
     version: pkg.version,
     license: 'CC-BY-SA-4.0',
-    homepage: 'https://github.com/AntaresGG/OpenJLPT-ZH-premium',
+    homepage: 'https://github.com/AntaresGG/kotowa',
     counts,
     vocab_with_examples: sentences,
     sources: {

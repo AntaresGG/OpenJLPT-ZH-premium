@@ -1,5 +1,5 @@
 {
-  "name": "openjlpt-zh-premium",
+  "name": "kotowa",
   "version": "0.4.0",
   "description": "Chinese JLPT learning data and flashcards, independently maintained from OpenJLPT.",
   "keywords": [
@@ -46,13 +46,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "author": "Evan Clan (https://github.com/evanclan)",
-  "homepage": "https://github.com/AntaresGG/OpenJLPT-ZH-premium",
+  "homepage": "https://github.com/AntaresGG/kotowa",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntaresGG/OpenJLPT-ZH-premium.git"
+    "url": "git+https://github.com/AntaresGG/kotowa.git"
   },
   "bugs": {
-    "url": "https://github.com/AntaresGG/OpenJLPT-ZH-premium/issues"
+    "url": "https://github.com/AntaresGG/kotowa/issues"
   },
   "funding": {
     "type": "github",
@@ -63,6 +63,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
+    "kotowa": "dist/cli.js",
     "openjlpt": "dist/cli.js"
   },
   "exports": {

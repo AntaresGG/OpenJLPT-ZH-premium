@@ -88,7 +88,7 @@ def test_yomitan_update_urls_follow_release_or_explicit_site(tmp_path, monkeypat
     monkeypatch.delenv("SITE_URL", raising=False)
     exports.build_yomitan(str(tmp_path), "0.4.0")
     index = json.loads((tmp_path / "openjlpt-yomitan-index.json").read_text(encoding="utf-8"))
-    assert index["indexUrl"] == "https://github.com/AntaresGG/OpenJLPT-ZH-premium/releases/latest/download/openjlpt-yomitan-index.json"
+    assert index["indexUrl"] == "https://github.com/AntaresGG/kotowa/releases/latest/download/openjlpt-yomitan-index.json"
     assert index["downloadUrl"].endswith("/releases/latest/download/openjlpt-yomitan.zip")
     monkeypatch.setenv("SITE_URL", "http://127.0.0.1:8765/")
     exports.build_yomitan(str(tmp_path), "0.4.0")

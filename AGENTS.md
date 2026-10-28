@@ -1,4 +1,4 @@
-# OpenJLPT fork conventions
+# Kotowa project conventions
 
 - Preserve upstream English fields and stable IDs. New Chinese content belongs in sources/zh-CN; do not hand-edit generated data.
 - Apply guarded entry corrections through sources/corrections/entries.json and npm run prepare:data. If upstream content conflicts, investigate rather than rewriting the guard.
@@ -11,10 +11,11 @@
 
 ## Repository governance
 
-- This standalone repository is the product source of truth. origin is AntaresGG/OpenJLPT-ZH-premium; fork is AntaresGG/OpenJLPT; upstream is evanclan/OpenJLPT.
+- This standalone repository is the product source of truth. origin is AntaresGG/kotowa; fork is AntaresGG/OpenJLPT; upstream is evanclan/OpenJLPT.
 - Preserve the inherited history and migration-baseline-2026-10-28. Never rewrite or force-push product main.
 - Owner preference (2026-10-28): use main directly for product work, both locally and on origin. Run relevant checks, commit on local main and push to origin/main; do not create feature branches or require product PRs unless explicitly requested. Keep fork/main tracking upstream/main by fast-forward only.
 - Create contrib/* branches from a freshly fetched upstream/main, with isolated patches and tests. Track source SHAs and dependencies in UPSTREAM_CONTRIBUTIONS.md.
 - Evaluate upstream changes before applying them to product main; neither code nor data refreshes are automatically merged. Separate contrib/* branches remain specific to the upstream contribution fork, not ordinary product work.
 - PC commit/push precedes Mac pull/deploy. Preserve browser storage keys, entry IDs and Anki IDs during branding and version changes.
+- Product branding is Kotowa · 词和; repository and distribution name is kotowa. Preserve the openjlpt Python import/CLI alias, legacy export filenames, Yomitan dictionary title and deployment service identifiers for compatibility. Keep upstream OpenJLPT attribution.
 - GitHub Releases are the distribution channel. npm/PyPI/Hugging Face publication and public Pages hosting require separate explicit configuration.

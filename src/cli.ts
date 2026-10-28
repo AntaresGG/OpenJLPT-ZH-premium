@@ -2,12 +2,12 @@
 /**
  * openjlpt — look up JLPT words, kanji and grammar from the terminal.
  *
- *   npx openjlpt 食べる              search words (kanji, kana, romaji or English)
- *   npx openjlpt kanji 日            kanji details
- *   npx openjlpt grammar てもいい     grammar points
- *   npx openjlpt random N5          a random word (add --kanji or --grammar)
- *   npx openjlpt quiz N4            flashcard quiz in the terminal
- *   npx openjlpt stats              dataset counts and sources
+ *   kotowa 食べる              search words (kanji, kana, romaji or English)
+ *   kotowa kanji 日            kanji details
+ *   kotowa grammar てもいい     grammar points
+ *   kotowa random N5          a random word (add --kanji or --grammar)
+ *   kotowa quiz N4            flashcard quiz in the terminal
+ *   kotowa stats              dataset counts and sources
  */
 import { createInterface } from 'node:readline/promises';
 import { stdin, stdout } from 'node:process';
@@ -83,7 +83,7 @@ async function quiz(level?: Level): Promise<void> {
   const rl = createInterface({ input: stdin, output: stdout });
   const deck = sample(getVocab(level), 10);
   let right = 0;
-  console.log(bold(`OpenJLPT quiz — ${level ?? 'all levels'}, ${deck.length} words. Type the reading (kana or romaji), or press Enter to reveal.\n`));
+  console.log(bold(`Kotowa quiz — ${level ?? 'all levels'}, ${deck.length} words. Type the reading (kana or romaji), or press Enter to reveal.\n`));
   let closed = false;
   rl.on('close', () => (closed = true));
   try {
@@ -108,16 +108,16 @@ async function quiz(level?: Level): Promise<void> {
 }
 
 function usage(): void {
-  console.log(`${bold('openjlpt')} — JLPT N5–N1 words, kanji and grammar
+  console.log(`${bold('kotowa')} — JLPT N5–N1 words, kanji and grammar
 
-  openjlpt <word|kana|romaji|english>   search vocabulary
-  openjlpt kanji <character>            kanji details
-  openjlpt grammar <pattern|english>    grammar points
-  openjlpt random [N5..N1] [--kanji|--grammar]
-  openjlpt quiz [N5..N1]                10-word reading quiz
-  openjlpt stats                        dataset counts and sources
+  kotowa <word|kana|romaji|english>   search vocabulary
+  kotowa kanji <character>            kanji details
+  kotowa grammar <pattern|english>    grammar points
+  kotowa random [N5..N1] [--kanji|--grammar]
+  kotowa quiz [N5..N1]                10-word reading quiz
+  kotowa stats                        dataset counts and sources
 
-Data: CC BY-SA 4.0 — https://github.com/evanclan/OpenJLPT`);
+Data: CC BY-SA 4.0 — https://github.com/AntaresGG/kotowa`);
 }
 
 async function main(argv: string[]): Promise<number> {
@@ -154,7 +154,7 @@ async function main(argv: string[]): Promise<number> {
       return 0;
     case 'stats': {
       const m = meta();
-      console.log(bold(`OpenJLPT ${m.version}`));
+      console.log(bold(`Kotowa ${m.version}`));
       for (const kind of ['vocab', 'kanji', 'grammar'] as const) {
         console.log(`  ${kind.padEnd(8)} ${levels.map((l) => `${l} ${m.counts[kind][l]}`).join('  ')}  ${dim(`total ${m.counts[kind].total}`)}`);
       }

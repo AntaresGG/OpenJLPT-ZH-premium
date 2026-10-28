@@ -1,16 +1,16 @@
-# Contributing to OpenJLPT
+# Contributing to Kotowa · 词和
 
-Thanks for helping make OpenJLPT better! 🎌 Corrections from learners, teachers and native
+Thanks for helping make Kotowa better! 🎌 Corrections from learners, teachers and native
 speakers are the most valuable contributions of all.
 
 ## Quick ways to help
 
 - **Report a data error.** Wrong reading, bad meaning, a word at the wrong level? Use the
-  [data error form](https://github.com/evanclan/OpenJLPT/issues/new?template=data-error.yml).
+  [data error form](https://github.com/AntaresGG/kotowa/issues/new?template=data-error.yml).
   Every page on the website has a *Report an error* link that fills in the details.
 - **Improve grammar.** Better explanations, more natural example sentences, missing points.
-- **Share what you built.** Apps, bots and decks using OpenJLPT can go in the README's
-  ["Built with OpenJLPT"](./README.md#built-with-openjlpt) list.
+- **Share what you built.** Tell us about apps, bots and decks using Kotowa in an
+  [issue](https://github.com/AntaresGG/kotowa/issues).
 - **Native speaker or teacher?** Reviewing a handful of grammar points or example sentences is
   one of the most useful things you can do: open an issue with anything that sounds unnatural.
 

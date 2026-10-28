@@ -1,4 +1,4 @@
-/* OpenJLPT site — no framework, no build step. */
+/* Kotowa site — no framework, no build step. */
 :root {
   --bg: #fbfaf8;
   --surface: #ffffff;
@@ -74,11 +74,10 @@ img { max-width: 100%; }
   border-bottom: 1px solid var(--border);
 }
 .site-header .wrap { display: flex; align-items: center; gap: 16px; height: 56px; }
-.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--text); font-size: 17px; }
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--text); font-size: 17px; white-space: nowrap; }
 .brand:hover { text-decoration: none; }
 .brand-mark {
-  display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
-  background: #e60012; color: #fff; font-family: var(--jp); font-size: 15px; line-height: 1;
+  display: block; width: 28px; height: 28px; flex: 0 0 28px;
 }
 .nav { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; flex: 0 0 auto; }
 .nav a { color: var(--muted); padding: 6px 10px; border-radius: 8px; white-space: nowrap; font-size: 15px; }

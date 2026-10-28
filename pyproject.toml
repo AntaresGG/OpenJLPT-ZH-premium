@@ -1,5 +1,5 @@
 [project]
-name = "openjlpt-zh-premium"
+name = "kotowa"
 version = "0.4.0"
 description = "Open JLPT N5–N1 dataset for Python — 7,800+ words, 2,300+ kanji, 500+ grammar points with example sentences, plus SQLite and a CLI"
 readme = "README.md"
@@ -63,14 +63,15 @@ dependencies = []
 test = ["pytest>=7"]
 
 [project.scripts]
+kotowa = "openjlpt.__main__:main"
 openjlpt = "openjlpt.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
-Documentation = "https://github.com/AntaresGG/OpenJLPT-ZH-premium#readme"
-Repository = "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
-Issues = "https://github.com/AntaresGG/OpenJLPT-ZH-premium/issues"
-Changelog = "https://github.com/AntaresGG/OpenJLPT-ZH-premium/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/AntaresGG/kotowa"
+Documentation = "https://github.com/AntaresGG/kotowa#readme"
+Repository = "https://github.com/AntaresGG/kotowa"
+Issues = "https://github.com/AntaresGG/kotowa/issues"
+Changelog = "https://github.com/AntaresGG/kotowa/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["setuptools>=77.0"]

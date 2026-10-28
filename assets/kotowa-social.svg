@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Kotowa · 词和</title>
+  <desc id="desc">N5–N1 中文日语学习 · 词汇、语法与闪卡</desc>
+  <rect width="1280" height="640" fill="#faf8f5"/>
+  <path d="M0 620h1280v20H0z" fill="#d7263d"/>
+  <g transform="translate(88 88) scale(1.5)">
+    <rect width="64" height="64" rx="16" fill="#d7263d"/>
+    <rect x="16" y="15" width="8" height="34" rx="2" fill="#fff"/>
+    <path d="M28 29 40 15h10L35 32l15 17H40L28 35z" fill="#fff"/>
+  </g>
+  <g font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="88" y="310" fill="#202025" font-size="94" font-weight="700" letter-spacing="-3">Kotowa <tspan fill="#d7263d">·</tspan> 词和</text>
+    <text x="94" y="385" fill="#55545b" font-size="34">N5–N1 中文日语学习</text>
+    <text x="94" y="446" fill="#77747b" font-size="26">词汇、语法与闪卡 · 学习每一步</text>
+    <text x="94" y="558" fill="#55545b" font-size="22">github.com/AntaresGG/kotowa</text>
+  </g>
+</svg>

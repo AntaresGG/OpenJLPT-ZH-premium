@@ -25,7 +25,7 @@ import genanki
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "json")
 LEVELS = ["N5", "N4", "N3", "N2", "N1"]
-REPO = "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
+REPO = "https://github.com/AntaresGG/kotowa"
 
 # Fixed IDs so every release produces the same note types and decks.
 VOCAB_MODEL_ID = 1_730_100_001
@@ -84,7 +84,7 @@ hr#answer { border: 0; border-top: 1px solid #ccc; margin: 16px 0; }
 # notes on re-import when the note type is identical.
 VOCAB_MODEL = genanki.Model(
     VOCAB_MODEL_ID,
-    "OpenJLPT Vocabulary",
+    "Kotowa Vocabulary",
     fields=[{"name": n} for n in ["Word", "Reading", "Furigana", "Romaji", "Meaning", "PartOfSpeech",
                                   "ExampleJa", "ExampleEn", "Level", "OpenJLPT ID", "ExampleFurigana"]],
     templates=[{
@@ -105,7 +105,7 @@ VOCAB_MODEL = genanki.Model(
 
 KANJI_MODEL = genanki.Model(
     KANJI_MODEL_ID,
-    "OpenJLPT Kanji",
+    "Kotowa Kanji",
     fields=[{"name": n} for n in ["Kanji", "Meaning", "Onyomi", "Kunyomi", "Strokes", "Radical", "Words", "Level"]],
     templates=[{
         "name": "Kanji → meaning",
@@ -121,7 +121,7 @@ KANJI_MODEL = genanki.Model(
 
 GRAMMAR_MODEL = genanki.Model(
     GRAMMAR_MODEL_ID,
-    "OpenJLPT Grammar",
+    "Kotowa Grammar",
     fields=[{"name": n} for n in ["Pattern", "Reading", "Romaji", "Meaning", "Formation", "Example1Ja", "Example1En",
                                   "Example2Ja", "Example2En", "Notes", "Level", "OpenJLPT ID"]],
     templates=[{
@@ -216,7 +216,7 @@ def deck_id(kind: str, level: str) -> int:
     return DECK_BASE_ID + list(KINDS).index(kind) * 10 + LEVELS.index(level)
 
 
-DESCRIPTION = (f'Free JLPT deck from <a href="{REPO}">OpenJLPT</a> (CC BY-SA 4.0). '
+DESCRIPTION = (f'Free JLPT deck from <a href="{REPO}">Kotowa · 词和</a> (CC BY-SA 4.0). '
                "Levels by Jonathan Waller; dictionary data from JMdict/KANJIDIC2 (EDRDG); "
                "example sentences from Tatoeba (CC BY 2.0 FR).")
 
@@ -232,7 +232,7 @@ def build_anki(out: str) -> list:
     complete = []
     for kind, label in KINDS.items():
         for level in LEVELS:
-            deck = genanki.Deck(deck_id(kind, level), f"OpenJLPT::{level}::{label}", description=DESCRIPTION)
+            deck = genanki.Deck(deck_id(kind, level), f"Kotowa::{level}::{label}", description=DESCRIPTION)
             for item in load(kind, level):
                 deck.add_note(make[kind](item))
             complete.append(deck)
@@ -263,13 +263,14 @@ def build_yomitan(out: str, version: str) -> str:
     site = os.environ.get("SITE_URL")
     downloads = site.rstrip("/") + "/downloads/" if site else REPO + "/releases/latest/download/"
     index = {
+        # Keep the dictionary title stable so existing Yomitan installations can update.
         "title": "OpenJLPT",
         "revision": f"{version}.{updated.replace('-', '')}" if updated else version,
         "format": 3,
         "sequenced": False,
-        "author": "OpenJLPT contributors",
+        "author": "AntaresGG and Kotowa contributors",
         "url": REPO,
-        "description": "JLPT level (N5–N1) for every word and kanji in the OpenJLPT dataset.",
+        "description": "Kotowa · 词和 — JLPT level (N5–N1) for every word and kanji, based on OpenJLPT.",
         "attribution": "OpenJLPT (CC BY-SA 4.0); levels by Jonathan Waller (CC BY); JMdict/KANJIDIC2 (EDRDG, CC BY-SA 4.0).",
         "frequencyMode": "rank-based",
         "sourceLanguage": "ja",

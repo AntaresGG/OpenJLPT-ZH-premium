@@ -1,6 +1,8 @@
 # Mac mini LAN deployment
 
-The PC standalone checkout of AntaresGG/OpenJLPT-ZH-premium is the source of truth. The Mac origin remote must point to that repository and track main; the old AntaresGG/OpenJLPT remote may remain as fork for history. Commit and push changes to GitHub first, then pull the same revision on the Mac. Do not commit changes on the deployment host.
+The PC standalone checkout of AntaresGG/kotowa is the source of truth. The Mac origin remote must point to that repository and track main; the old AntaresGG/OpenJLPT remote may remain as fork for history. Commit and push changes to GitHub first, then pull the same revision on the Mac. Do not commit changes on the deployment host.
+
+After the Kotowa rename, update an existing Mac checkout with `git remote set-url origin https://github.com/AntaresGG/kotowa.git`. Keep the existing deployment directory, `io.openjlpt.lan` service identifier and public site URL so bookmarks and browser progress continue to work. Repository branding does not require a deployment-directory migration.
 
 The site is static. Build on PC/CI with `SITE_URL=http://LAN-IP:8086/`, using the actual private IP in local configuration only:
 

@@ -1,10 +1,10 @@
-# OpenJLPT-ZH-premium 中文说明
+# Kotowa · 词和 中文说明
 
 [English](README.md) · [日本語](README.ja.md) · **简体中文**
 
 本项目由 AntaresGG 独立维护，源自 [OpenJLPT](https://github.com/evanclan/OpenJLPT)，增加简体中文内容与数据质量检查。保留上游提交历史、稳定 ID 和静态站点架构，独立管理 Issue、CI 和 Release。上游项目和数据来源的署名见 [NOTICE.md](NOTICE.md)。
 
-[![CI](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/OpenJLPT-ZH-premium/actions/workflows/ci.yml)
+[![CI](https://github.com/AntaresGG/kotowa/actions/workflows/ci.yml/badge.svg)](https://github.com/AntaresGG/kotowa/actions/workflows/ci.yml)
 
 ## 数据范围与当前能力
 
@@ -25,19 +25,23 @@
 
 ## 获取与安装
 
-从 [GitHub Releases](https://github.com/AntaresGG/OpenJLPT-ZH-premium/releases) 下载数据、Anki 牌组、Yomitan 词典及 JavaScript/Python 安装包。独立版本为 **v0.4.0**；继承的 v0.1.0、v0.2.0 标签属于上游历史。本项目未发布到 npm/PyPI，注册表中的 `openjlpt` 是上游产品。
+从 [GitHub Releases](https://github.com/AntaresGG/kotowa/releases) 下载数据、Anki 牌组、Yomitan 词典及 JavaScript/Python 安装包。独立版本为 **v0.4.0**；继承的 v0.1.0、v0.2.0 标签属于上游历史。本项目未发布到 npm/PyPI，注册表中的 `openjlpt` 是上游产品。
 
 ```sh
-git clone https://github.com/AntaresGG/OpenJLPT-ZH-premium.git
-cd OpenJLPT-ZH-premium
+git clone https://github.com/AntaresGG/kotowa.git
+cd kotowa
 npm ci
 npm run build:pkg
 ```
 
-JavaScript/TypeScript 项目安装本仓库 Release 的 `.tgz` 包后使用：
+JavaScript/TypeScript 项目安装当前源码后使用：
+
+```sh
+npm install git+https://github.com/AntaresGG/kotowa.git#main
+```
 
 ```ts
-import { searchVocab, getGrammar } from 'openjlpt-zh-premium';
+import { searchVocab, getGrammar } from 'kotowa';
 
 const words = searchVocab('肥皂');
 const grammar = getGrammar('N3');
@@ -45,7 +49,7 @@ const grammar = getGrammar('N3');
 
 主入口使用 Node.js 文件访问；浏览器项目应打包 `data/json/` 中的 JSON，或将其作为静态资源提供。
 
-Python 在仓库根目录安装。分发名为 `openjlpt-zh-premium`，导入名和 CLI 仍为 `openjlpt`，请使用独立环境避免与上游混装：
+Python 在仓库根目录安装。分发名为 `kotowa`，CLI 为 `kotowa`，兼容旧命令 `openjlpt`；Python 导入名仍为 `openjlpt`。现有 v0.4.0 Release 安装包保留旧名称，使用 Kotowa 包名请从 `main` 源码安装。请使用独立环境避免与上游混装：
 
 ```sh
 uv venv
@@ -136,7 +140,7 @@ GitHub 定时更新需要开启允许 Actions 创建 PR 的仓库设置。仓库
 
 ## Git 治理
 
-- 产品：`AntaresGG/OpenJLPT-ZH-premium`，`origin/main` 是唯一产品主线。
+- 产品：`AntaresGG/kotowa`，`origin/main` 是唯一产品主线。
 - 上游贡献通道：`AntaresGG/OpenJLPT`，保留为 Fork；不向其 main 混入产品特有改动。
 - 上游：`evanclan/OpenJLPT`；`contrib/*` 从其最新 main 创建，按功能提取补丁。
 - 迁移基线：`migration-baseline-2026-10-28`，对应 `f72221983fb4c970411ac9a753f6796473321164`。
@@ -145,4 +149,4 @@ GitHub 定时更新需要开启允许 Actions 创建 PR 的仓库设置。仓库
 
 ## 来源与许可
 
-本项目基于 Evan Clan 和贡献者开发的 OpenJLPT，独立增加中文学习内容与学习功能。保留 [CC BY-SA 4.0 LICENSE](LICENSE)、[NOTICE](NOTICE.md) 与[引用信息](CITATION.cff)。JMdict、KANJIDIC2、Waller、Tatoeba 和 KanjiVG 的来源及许可分别见 NOTICE；新创作例句不借用 Tatoeba 署名。项目名称中的 premium 不改变这些许可或数据来源。
+本项目基于 Evan Clan 和贡献者开发的 OpenJLPT，独立增加中文学习内容与学习功能。保留 [CC BY-SA 4.0 LICENSE](LICENSE)、[NOTICE](NOTICE.md) 与[引用信息](CITATION.cff)。JMdict、KANJIDIC2、Waller、Tatoeba 和 KanjiVG 的来源及许可分别见 NOTICE；新创作例句不借用 Tatoeba 署名。更名为 Kotowa 不改变这些许可或数据来源。

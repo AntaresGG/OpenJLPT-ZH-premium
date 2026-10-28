@@ -4,7 +4,7 @@
 
 | Remote | Repository | Purpose |
 | --- | --- | --- |
-| origin | AntaresGG/OpenJLPT-ZH-premium | Product main, issues, CI, releases |
+| origin | AntaresGG/kotowa | Product main, issues, CI, releases |
 | fork | AntaresGG/OpenJLPT | Contribution branches only |
 | upstream | evanclan/OpenJLPT | Original project and accepted contributions |
 

@@ -1,6 +1,6 @@
 # NOTICE — Data Sources & Attribution
 
-OpenJLPT-ZH-premium is independently maintained by AntaresGG and derives from
+Kotowa · 词和 is independently maintained by AntaresGG and derives from
 [OpenJLPT by Evan Clan and contributors](https://github.com/evanclan/OpenJLPT).
 Chinese translations, usage notes, example additions and fork-specific changes
 are distributed under the existing CC BY-SA 4.0 license. Upstream attribution

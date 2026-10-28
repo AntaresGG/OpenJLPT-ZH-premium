@@ -1,14 +1,14 @@
 cff-version: 1.2.0
-message: "If you use OpenJLPT-ZH-premium, please cite it as below."
-title: "OpenJLPT-ZH-premium: an open JLPT N5–N1 dataset of vocabulary, kanji and grammar"
+message: "If you use Kotowa · 词和, please cite it as below."
+title: "Kotowa · 词和: an open JLPT N5–N1 dataset of vocabulary, kanji and grammar"
 type: dataset
 authors:
   - name: "AntaresGG"
   - name: "OpenJLPT contributors"
   - family-names: "Clan"
     given-names: "Evan"
-repository-code: "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
-url: "https://github.com/AntaresGG/OpenJLPT-ZH-premium"
+repository-code: "https://github.com/AntaresGG/kotowa"
+url: "https://github.com/AntaresGG/kotowa"
 license: CC-BY-SA-4.0
 version: 0.4.0
 date-released: 2026-10-28

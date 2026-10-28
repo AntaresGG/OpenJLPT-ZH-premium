@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#e60012"/><text x="32" y="44" font-size="34" text-anchor="middle" fill="#fff" font-family="Hiragino Sans, Noto Sans JP, Yu Gothic, sans-serif">あ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Kotowa · 词和</title>
+  <rect width="64" height="64" rx="16" fill="#d7263d"/>
+  <rect x="16" y="15" width="8" height="34" rx="2" fill="#fff"/>
+  <path d="M28 29 40 15h10L35 32l15 17H40L28 35z" fill="#fff"/>
+</svg>

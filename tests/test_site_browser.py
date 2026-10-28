@@ -29,6 +29,13 @@ def test_site_chinese_search_downloads_and_mobile():
                 errors = []
                 page.on("pageerror", lambda error: errors.append(str(error)))
                 page.goto("http://127.0.0.1:8765/")
+                sync.expect(page).to_have_title(re.compile("Kotowa · 词和"))
+                sync.expect(page.locator(".brand")).to_have_text("Kotowa · 词和")
+                sync.expect(page.locator(".brand img")).to_have_attribute("src", "assets/favicon.svg")
+                sync.expect(page.locator('meta[property="og:site_name"]')).to_have_attribute("content", "Kotowa · 词和")
+                sync.expect(page.locator("body")).not_to_contain_text("OpenJLPT-ZH-premium")
+                logo = page.request.get("http://127.0.0.1:8765/assets/favicon.svg").text()
+                assert "Kotowa" in logo and "あ</text>" not in logo
                 hidden_metadata = re.compile("中文试点版|正式稿|审校|已审核|初稿|待复核")
                 sync.expect(page.locator("body")).not_to_contain_text(hidden_metadata)
                 page.locator("#q").fill("肥皂")
@@ -39,6 +46,7 @@ def test_site_chinese_search_downloads_and_mobile():
                 sync.expect(page.locator("body")).not_to_contain_text(hidden_metadata)
                 sync.expect(page.locator("main")).to_contain_text("我用肥皂洗了手")
                 page.goto("http://127.0.0.1:8765/grammar/te-oku.html")
+                sync.expect(page).to_have_title(re.compile("Kotowa · 词和"))
                 sync.expect(page.locator("main")).to_contain_text("事先做好")
                 sync.expect(page.locator("main")).to_contain_text("请让空调保持开着")
                 page.goto("http://127.0.0.1:8765/grammar/sou-da-hearsay.html")

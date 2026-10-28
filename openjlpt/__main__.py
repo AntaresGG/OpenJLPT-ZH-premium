@@ -1,11 +1,11 @@
-"""Command-line interface: ``openjlpt`` or ``python -m openjlpt``.
+"""Kotowa command-line interface: ``kotowa`` (legacy alias: ``openjlpt``) or ``python -m openjlpt``.
 
-    openjlpt 食べる               search words (kanji, kana, romaji or English)
-    openjlpt kanji 日             kanji details
-    openjlpt grammar てもいい      grammar points
-    openjlpt random N5 [--kanji|--grammar]
-    openjlpt quiz N4              reading quiz in the terminal
-    openjlpt stats                dataset counts and sources
+    kotowa 食べる               search words (kanji, kana, romaji or English)
+    kotowa kanji 日             kanji details
+    kotowa grammar てもいい      grammar points
+    kotowa random N5 [--kanji|--grammar]
+    kotowa quiz N4              reading quiz in the terminal
+    kotowa stats                dataset counts and sources
 """
 
 from __future__ import annotations
@@ -98,7 +98,7 @@ def _level(arg: Optional[str]) -> Optional[str]:
 def quiz(level: Optional[str]) -> None:
     deck = sample(get_vocab(level), 10)  # type: ignore[arg-type]
     right = 0
-    print(_bold(f"OpenJLPT quiz — {level or 'all levels'}, {len(deck)} words. "
+    print(_bold(f"Kotowa quiz — {level or 'all levels'}, {len(deck)} words. "
                 "Type the reading (kana or romaji), or press Enter to reveal.\n"))
     for i, v in enumerate(deck, 1):
         try:
@@ -144,7 +144,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 0
     if cmd == "stats":
         m = meta()
-        print(_bold(f"OpenJLPT {m['version']}"))
+        print(_bold(f"Kotowa {m['version']}"))
         for kind in ("vocab", "kanji", "grammar"):
             counts = "  ".join(f"{lvl} {m['counts'][kind][lvl]}" for lvl in levels)
             print(f"  {kind:<8} {counts}  {_dim('total ' + str(m['counts'][kind]['total']))}")

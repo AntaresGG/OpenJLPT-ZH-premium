@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Browse the dataset
-    url: https://evanclan.github.io/OpenJLPT/
-    about: Search every JLPT word, kanji and grammar point.
+  - name: Kotowa data and downloads
+    url: https://github.com/AntaresGG/kotowa/releases
+    about: Download Kotowa learning data, Anki decks and dictionaries.
